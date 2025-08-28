@@ -30,11 +30,41 @@ myra/
 ├── README.md                              ← You are here!
 ├── Setup-Guide-for-Young-HTML-Artists.md  ← Essential setup guide
 ├── 10-Week-HTML-Learning-Program.md       ← Complete program overview
-├── chapter1/
+├── chapter1/                              ← HTML Structure & Color Magic
 │   ├── lesson1-exercises.md               ← Chapter 1 instructions
 │   ├── lesson1-starter.html               ← Practice playground
 │   └── project-template.html              ← Final project template
-└── [future chapters will be added here]
+├── chapter2/                              ← CSS Styling Fundamentals
+│   ├── lesson2-exercises.md               ← Chapter 2 instructions
+│   ├── lesson2-starter.html               ← CSS playground
+│   └── project-template.html              ← Styled poem project
+├── chapter3/                              ← Lists, Links & Navigation
+│   ├── lesson3-exercises.md               ← Chapter 3 instructions
+│   ├── lesson3-starter.html               ← Lists and links playground
+│   ├── about.html                         ← Sample about page
+│   └── project-template.html              ← Multi-page website
+├── chapter4/                              ← Images & Visual Elements
+│   ├── lesson4-exercises.md               ← Chapter 4 instructions
+│   ├── lesson4-starter.html               ← Image playground
+│   ├── sample-images/                     ← Practice images folder
+│   └── project-template.html              ← Visual portfolio
+├── chapter5/                              ← Tables & Geometric Layouts
+│   ├── lesson5-exercises.md               ← Chapter 5 instructions
+│   └── project-template.html              ← Data dashboard
+├── chapter6/                              ← Divs & Layout Fundamentals
+│   ├── lesson6-exercises.md               ← Chapter 6 instructions
+│   └── project-template.html              ← Website layout
+├── chapter7/                              ← Forms & Interactive Elements
+│   ├── lesson7-exercises.md               ← Chapter 7 instructions
+│   └── project-template.html              ← Interactive feedback system
+├── chapter8/                              ← CSS Layout & Design Patterns
+│   ├── lesson8-exercises.md               ← Chapter 8 instructions
+│   └── project-template.html              ← Professional portfolio
+├── chapter9/                              ← Multimedia & Advanced Elements
+│   ├── lesson9-exercises.md               ← Chapter 9 instructions
+│   └── project-template.html              ← Multimedia showcase
+└── chapter10/                             ← Final Project & Portfolio
+    └── lesson10-exercises.md              ← Capstone project guide
 ```
 
 ---

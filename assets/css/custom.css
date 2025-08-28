@@ -1,0 +1,95 @@
+/* Myra's HTML Art Studio - Custom Font Sizing */
+/* ============================================= */
+
+:root {
+  /* Reduce sidebar navigation font size */
+  --md-nav-link-font-size: 0.85rem;
+  
+  /* Reduce main content font size for better density */
+  --md-typeset-font-size: 0.9rem;
+  
+  /* Reduce sidebar section headers */
+  --md-nav-title-font-size: 0.8rem;
+  
+  /* Adjust table of contents */
+  --md-toc-font-size: 0.8rem;
+}
+
+/* Sidebar navigation links */
+.md-nav__link {
+  font-size: 0.85rem !important;
+  line-height: 1.4;
+}
+
+/* Main content area */
+.md-content {
+  font-size: 0.9rem !important;
+}
+
+/* Sidebar primary navigation (main chapters) */
+.md-sidebar--primary .md-nav__link {
+  font-size: 0.85rem !important;
+}
+
+/* Sidebar secondary navigation (table of contents) */
+.md-sidebar--secondary .md-nav__link {
+  font-size: 0.8rem !important;
+}
+
+/* Navigation titles (chapter headers in sidebar) */
+.md-nav__title {
+  font-size: 0.8rem !important;
+  font-weight: 600;
+}
+
+/* Content inner wrapper */
+.md-content__inner {
+  font-size: 0.9rem !important;
+}
+
+/* Table of contents */
+.md-nav--secondary .md-nav__link {
+  font-size: 0.8rem !important;
+}
+
+/* Code blocks - keep readable for learning */
+.md-typeset code {
+  font-size: 0.85rem !important;
+}
+
+/* Ensure headers maintain good hierarchy */
+.md-typeset h1 { font-size: 2rem !important; }
+.md-typeset h2 { font-size: 1.6rem !important; }
+.md-typeset h3 { font-size: 1.3rem !important; }
+.md-typeset h4 { font-size: 1.1rem !important; }
+
+/* Keep navigation readable on mobile */
+@media (max-width: 768px) {
+  .md-nav__link {
+    font-size: 0.85rem !important;
+  }
+  
+  .md-content {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Myra's custom colors - enhance the teal/purple theme */
+.md-nav__link:hover {
+  color: var(--md-accent-fg-color) !important;
+}
+
+/* Make the sidebar more compact */
+.md-nav__item {
+  margin: 0.1rem 0;
+}
+
+/* Adjust search box font size */
+.md-search__input {
+  font-size: 0.85rem !important;
+}
+
+/* Footer text */
+.md-footer-meta {
+  font-size: 0.8rem !important;
+}

@@ -239,7 +239,7 @@
 ### **📋 Essential Setup (Do This First!)**
 **Before starting Chapter 1, complete the setup process:**
 
-👉 **See: `Setup-Guide-for-Young-HTML-Artists.md`** - Complete installation and configuration guide
+👉 **See: [Setup Guide](setup-guide.md)** - Complete installation and configuration guide
 
 This detailed guide covers:
 - **Mac & Windows setup** with multiple text editor options

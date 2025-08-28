@@ -1,4 +1,4 @@
-# Chapter 1: HTML Structure & Color Magic 🌈
+# Chapter 1: Myra's Color Magic Laboratory 🌈
 
 ## Learning Goals
 - Understand HTML document structure
@@ -10,7 +10,7 @@
 
 ### **📋 Setup Check**
 **First time coding?** Complete the setup process first:
-👉 **See: `../Setup-Guide-for-Young-HTML-Artists.md`** for detailed installation instructions
+👉 **See: [Setup Guide](../../setup-guide.md)** for detailed installation instructions
 
 ### **📁 Chapter 1 Files**
 You'll need these files for this chapter:

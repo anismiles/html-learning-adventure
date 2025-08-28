@@ -10,7 +10,7 @@
 ## Before We Start
 
 ### **📋 Setup Check**
-**Need help with setup?** See: `../Setup-Guide-for-Young-HTML-Artists.md`
+**Need help with setup?** See: [Setup Guide](../../setup-guide.md)
 
 ### **📁 Chapter 3 Files**
 You'll need these files for this chapter:

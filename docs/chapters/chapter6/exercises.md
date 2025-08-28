@@ -321,6 +321,23 @@ First, [view the source code](../../assets/downloads/chapter6-starter.txt) to se
 
 **Ready to become a layout architect?** Let's start building! 🚀
 
+### **💾 Download These Examples to Explore!**
+
+Want to tinker with these layouts? Download and experiment!
+
+- **[`blog-layout-example.html`](../../assets/downloads/blog-layout-example.txt){:target="_blank"}** <small>([download](../../assets/downloads/blog-layout-example.html){:download="blog-layout-example.html"})</small> - Classic blog layout with sidebar
+- **[`portfolio-grid-example.html`](../../assets/downloads/portfolio-grid-example.txt){:target="_blank"}** <small>([download](../../assets/downloads/portfolio-grid-example.html){:download="portfolio-grid-example.html"})</small> - Beautiful portfolio grid layout  
+- **[`dashboard-layout-example.html`](../../assets/downloads/dashboard-layout-example.txt){:target="_blank"}** <small>([download](../../assets/downloads/dashboard-layout-example.html){:download="dashboard-layout-example.html"})</small> - Interactive learning dashboard
+
+**🔍 Exploration Tips:**
+
+- **Open the files** in your browser to see them in action
+- **View the source code** to see how each layout is built
+- **Try changing colors** - replace hex codes with your favorites!
+- **Modify the content** - add your own artwork and projects
+- **Experiment with sizes** - change padding, margins, and widths
+- **Mix and match** - combine elements from different layouts
+
 ---
 
 ## Exercise 1: Understanding Divs - Invisible Containers 📦

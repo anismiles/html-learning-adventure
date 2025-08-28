@@ -18,6 +18,7 @@
 Create a comprehensive online gallery showcasing your artistic journey:
 
 **Required Pages:**
+
 - **Homepage** - Welcome visitors with featured artwork
 - **Gallery** - Organized collection of your artwork with descriptions
 - **About Artist** - Your story, inspiration, and artistic philosophy  
@@ -25,6 +26,7 @@ Create a comprehensive online gallery showcasing your artistic journey:
 - **Contact** - Ways for people to reach you or commission work
 
 **Advanced Features:**
+
 - Image zoom functionality
 - Artwork categorization (medium, subject, date)
 - Visitor feedback forms
@@ -37,6 +39,7 @@ Create a comprehensive online gallery showcasing your artistic journey:
 Build an interactive learning platform combining math and web design:
 
 **Required Pages:**
+
 - **Game Hub** - Central navigation for different math games
 - **Multiplication Masters** - Interactive multiplication practice
 - **Pattern Puzzles** - Visual pattern recognition games
@@ -44,11 +47,12 @@ Build an interactive learning platform combining math and web design:
 - **Progress Tracker** - Track learning achievements
 
 **Advanced Features:**
+
 - Score tracking and progress visualization
 - Difficulty level selection
 - Timed challenges and competitions
 - Educational explanations for each concept
-- Parent/teacher dashboard
+- Progress tracking dashboard
 
 ---
 
@@ -56,6 +60,7 @@ Build an interactive learning platform combining math and web design:
 Create an interactive storytelling website:
 
 **Required Pages:**
+
 - **Story Library** - Browse all available stories
 - **Interactive Stories** - Choose-your-own-adventure narratives
 - **Story Creator** - Tools for visitors to create their own stories
@@ -63,6 +68,7 @@ Create an interactive storytelling website:
 - **Reader Reviews** - Community feedback and ratings
 
 **Advanced Features:**
+
 - Multimedia storytelling (audio narration, background music)
 - Branching story paths with different endings
 - Character customization tools
@@ -101,6 +107,7 @@ Build a digital cookbook combined with family history:
 4. **Sketch wireframes** - Draw rough layouts for each page
 
 #### **Day 3-4: Design System**
+
 1. **Choose your color palette** (3-5 colors maximum)
 2. **Select typography** (2-3 font families)
 3. **Plan your image strategy** - What photos/artwork will you use?
@@ -180,6 +187,7 @@ Build a digital cookbook combined with family history:
 ### **Create a Project Demo:**
 
 #### **Prepare a 5-minute presentation covering:**
+
 1. **Project Overview** - What did you build and why?
 2. **Design Decisions** - Why did you choose specific colors, fonts, layouts?
 3. **Technical Highlights** - What HTML/CSS techniques are you most proud of?
@@ -248,6 +256,7 @@ Document your project with:
 - **Community Showcase** - Present at local library or community center
 
 ### **Continuing Your Web Development Journey:**
+
 1. **Learn JavaScript** - Add interactivity and dynamic features
 2. **Explore Frameworks** - Try Bootstrap, React, or other tools
 3. **Study Design** - Learn more about user experience and visual design

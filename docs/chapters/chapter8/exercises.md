@@ -1,14 +1,45 @@
 # Chapter 8: CSS Layout & Design Patterns 🎨
 
+## Introduction
+
+**Hey Myra! Ready to become a CSS master and design wizard?**
+
+This chapter is where everything comes together! You'll learn the advanced techniques that professional web designers use every day. Think of this as your graduate course in making websites that are not just functional, but absolutely stunning.
+
+Your artistic eye will love learning about design principles, while your mathematical mind will appreciate the logical structure of advanced CSS. This is where you'll create layouts that would make professional designers proud!
+
 ## Learning Goals
-- Master CSS classes and IDs for reusable styles
-- Create external stylesheets for organized code
-- Use Flexbox for modern layouts
-- Apply design principles: contrast, alignment, repetition
-- Build responsive design patterns
+
+By the end of this chapter, you'll be able to:
+
+- Write clean, organized CSS like a professional developer
+- Create flexible layouts that work on any screen size
+- Apply real design principles to make your sites beautiful
+- Build reusable styles that save time and look consistent
+
+## What You'll Learn
+
+- **CSS Organization** - Master classes and IDs for clean, reusable styles
+- **External Stylesheets** - Organize your code like a pro
+- **Flexbox Magic** - Create modern, flexible layouts with ease
+- **Design Principles** - Apply contrast, alignment, and repetition like a designer
+- **Responsive Patterns** - Build sites that look perfect on phones, tablets, and computers
 
 ## Before We Start
-**Files needed:** `lesson8-starter.html`, `styles.css`, `project-template.html`
+
+**Setup Check**
+**First time coding?** Make sure you're ready:
+**See: [Setup Guide](../../setup-guide.md)** for detailed installation instructions
+
+**Chapter 8 Files**
+
+You'll need these files for this chapter:
+
+- **[`chapter8-starter.html`](../../assets/downloads/chapter8-starter.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter8-starter.html){:download="chapter8-starter.html"})</small> - Your CSS playground
+- **[`chapter8-project.html`](../../assets/downloads/chapter8-project.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter8-project.html){:download="chapter8-project.html"})</small> - Template for your design project
+
+**Ready to Begin**
+First, [view the source code](../../assets/downloads/chapter8-starter.txt) to see what we're working with, then [download the file](../../assets/downloads/chapter8-starter.html) and get ready to master CSS layouts!
 
 ---
 
@@ -146,11 +177,12 @@ Create a flexbox gallery layout for your artwork!
 
 ---
 
-## Chapter 8 Final Project: "Professional Portfolio Website" 💼
+## Final Project: "Professional Portfolio Website" 💼
 
-Create a complete professional portfolio using advanced CSS techniques:
+**Start with:** Open **[`chapter8-project.html`](../../assets/downloads/chapter8-project.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter8-project.html){:download="chapter8-project.html"})</small> - create a complete professional portfolio using advanced CSS techniques:
 
 **Required Components:**
+
 1. **External Stylesheet** - All styles in separate CSS file
 2. **Design System** - Consistent colors, fonts, and spacing
 3. **Flexbox Layouts** - Modern, responsive layout structure
@@ -158,6 +190,7 @@ Create a complete professional portfolio using advanced CSS techniques:
 5. **Professional Sections** - About, portfolio, contact, skills
 
 **Design Requirements:**
+
 - Consistent color palette (3-5 colors max)
 - Typography hierarchy with 2-3 font families
 - Responsive design that works on different screen sizes
@@ -165,6 +198,7 @@ Create a complete professional portfolio using advanced CSS techniques:
 - Smooth user experience with good navigation
 
 **Technical Requirements:**
+
 - At least 10 CSS classes
 - External stylesheet with organized sections
 - Flexbox used for main layout structure

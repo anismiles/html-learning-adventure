@@ -1,25 +1,46 @@
 # Chapter 3: Lists, Links & Navigation 🔗
 
+## Introduction
+
+**Hi Myra! Ready to connect your web pages and organize information like a pro?**
+
+You know how you love making lists for your art projects and organizing your supplies? In this chapter, you'll learn how to create beautiful, organized lists on web pages AND make them clickable! It's like creating a magical map that lets visitors jump from one page to another.
+
+Think of links as doorways between rooms in a huge digital art gallery. You're going to learn how to build these doorways and create organized paths for people to explore your creations!
+
 ## Learning Goals
-- Create ordered and unordered lists (`<ol>`, `<ul>`, `<li>`)
-- Make clickable links with `<a href>`
-- Build basic navigation between pages
-- Understand relative vs. absolute links
-- Combine lists and links for navigation menus
+
+By the end of this chapter, you'll be able to:
+
+- Create perfectly organized lists for any type of content
+- Build clickable links that take visitors anywhere on the internet
+- Connect multiple pages together into a complete website
+- Design navigation menus that are both beautiful and functional
+
+## What You'll Learn
+
+- **List Magic** - Create ordered and unordered lists (`<ol>`, `<ul>`, `<li>`)
+- **Link Power** - Make clickable connections with `<a href>`
+- **Page Navigation** - Build bridges between your web pages
+- **Link Types** - Understand relative vs. absolute links
+- **Menu Creation** - Combine lists and links for professional navigation
 
 ## Before We Start
 
-### **📋 Setup Check**
-**Need help with setup?** See: [Setup Guide](../../setup-guide.md)
+**Setup Check**
+**First time coding?** Make sure you're ready:
+**See: [Setup Guide](../../setup-guide.md)** for detailed installation instructions
 
-### **📁 Chapter 3 Files**
+**Chapter 3 Files**
+
 You'll need these files for this chapter:
-- **`lesson3-starter.html`** - Your lists and links playground
-- **`about.html`** - Second page for linking practice
-- **`project-template.html`** - Template for your multi-page website
 
-### **🚀 Ready to Begin**
-Open the `lesson3-starter.html` file in your text editor and browser!
+- **[`chapter3-starter.html`](../../assets/downloads/chapter3-starter.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter3-starter.html){:download="chapter3-starter.html"})</small> - Your lists and links playground
+- **[`chapter3-about.html`](../../assets/downloads/chapter3-about.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter3-about.html){:download="chapter3-about.html"})</small> - Second page for linking practice
+- **[`chapter3-project.html`](../../assets/downloads/chapter3-project.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter3-project.html){:download="chapter3-project.html"})</small> - Template for your multi-page website
+
+**Ready to Begin**
+First, [view the source code](../../assets/downloads/chapter3-starter.txt) to see what we're working with, then [download the file](../../assets/downloads/chapter3-starter.html) and open it in your text editor and browser!
 
 ---
 
@@ -39,6 +60,7 @@ Unordered lists are perfect for things where order doesn't matter - like your fa
 ```
 
 This creates:
+
 - Purple
 - Turquoise  
 - Gold
@@ -186,7 +208,7 @@ Links are like magic doorways that take you to other places on the internet!
 <a href="about.html">About Me</a>
 
 <!-- Link to an email -->
-<a href="mailto:parent@email.com">Email My Parent</a>
+<a href="mailto:myra@email.com">Email Me</a>
 ```
 
 ### Link Anatomy
@@ -329,9 +351,9 @@ Create a rainbow navigation menu:
 
 ---
 
-## Chapter 3 Final Project: "My Personal Website" 🌟
+## Final Project: "My Personal Website" 🌟
 
-**Start with:** Open `project-template.html` and `about.html` - you'll create a multi-page website!
+**Start with:** Open **[`chapter3-project.html`](../../assets/downloads/chapter3-project.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter3-project.html){:download="chapter3-project.html"})</small> and **[`chapter3-about.html`](../../assets/downloads/chapter3-about.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter3-about.html){:download="chapter3-about.html"})</small> - you'll create a multi-page website!
 
 ### Project Overview:
 Create a personal website with multiple pages that are connected with navigation!
@@ -339,6 +361,7 @@ Create a personal website with multiple pages that are connected with navigation
 ### Page 1: Home Page (project-template.html)
 
 **Required Elements:**
+
 1. **Navigation Menu** (links to your other pages)
 2. **Welcome Section** with your name and a greeting
 3. **Quick Jump Menu** (table of contents for this page)
@@ -349,6 +372,7 @@ Create a personal website with multiple pages that are connected with navigation
 ### Page 2: About Page (about.html)
 
 **Required Elements:**
+
 1. **Same Navigation Menu** (so people can get back to home)
 2. **About Me Section** with information about yourself
 3. **My Family** (list of family members)
@@ -356,6 +380,7 @@ Create a personal website with multiple pages that are connected with navigation
 5. **My Goals** (what you want to learn or do)
 
 ### Styling Requirements:
+
 - **Consistent navigation** on both pages
 - **At least 3 different list styles** (different colors, borders, backgrounds)
 - **Styled links** that look like buttons
@@ -445,47 +470,6 @@ Create a choose-your-own-adventure story with links:
 
 ---
 
-## Parent/Guardian Guide 👨‍👩‍👧‍👦
-
-### **How to Help with Chapter 3:**
-
-1. **File Organization:**
-   - Help create multiple HTML files
-   - Ensure files are in the same folder for links to work
-   - Test links together to make sure they work
-
-2. **Encourage Planning:**
-   - "What pages do you want on your website?"
-   - "What would you put in a navigation menu?"
-   - "How should these pages connect together?"
-
-3. **Link Testing:**
-   - Click all links together to ensure they work
-   - Explain why some links don't work (file not found, typos)
-   - Show how links create connections between ideas
-
-### **Common Chapter 3 Issues:**
-
-1. **File Path Problems:**
-   - Links must point to files that exist
-   - Files must be in the same folder (for now)
-   - Check spelling in href attributes
-
-2. **List Structure:**
-   - Every `<li>` must be inside `<ul>` or `<ol>`
-   - Don't forget closing tags: `</li>`, `</ul>`, `</ol>`
-
-3. **Link Formatting:**
-   - href must be in quotes: `href="page.html"`
-   - Don't forget the closing `</a>` tag
-
-### **Extension Activities:**
-- Plan a family website together
-- Look at real websites and identify navigation menus
-- Create a list of family favorite things
-- Make shopping lists or to-do lists using HTML
-
----
 
 ## What's Next Chapter? 📅
 

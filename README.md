@@ -1,6 +1,6 @@
-# 🎨 HTML Learning Adventure for Young Artists
+# 🎨 HTML Learning Adventure for Myra
 
-**A 10-chapter program designed for creative 10-year-olds with artistic interests and mathematical minds**
+**A 10-chapter program designed for Myra Kumar - a creative artist with mathematical interests**
 
 ---
 
@@ -90,7 +90,7 @@ Each chapter introduces just one new concept at a time.
 
 ## 📋 Prerequisites
 
-- **Age:** Designed for 10-year-olds (adaptable for 8-12)
+- **Age:** Designed for Myra (10 years old)
 - **Interests:** Art, creativity, some mathematical thinking
 - **Technical:** Computer access (Mac/Windows) or tablet with internet
 - **Support:** Parent/guardian available for 15-20 minutes per session

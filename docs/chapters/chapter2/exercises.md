@@ -1,24 +1,45 @@
 # Chapter 2: CSS Styling Fundamentals ✨
 
+## Introduction
+
+**Hey Myra! Ready to make your HTML pages absolutely beautiful?**
+
+Remember how in Chapter 1 you learned the structure of HTML? Now you're going to discover CSS - the makeup artist for websites! Just like how you carefully choose colors for your artwork, CSS lets you choose exactly how every element on your page should look.
+
+Think of HTML as the canvas and CSS as your palette of paints, brushes, and artistic tools. Your mathematical mind will love the precision of CSS measurements, while your artistic side will be thrilled by the endless creative possibilities!
+
 ## Learning Goals
-- Introduction to CSS styling
-- Inline styles vs. style attributes
-- Font properties: size, family, style, weight
-- Borders and decorative elements
-- Understanding pixels and measurements
+
+By the end of this chapter, you'll be able to:
+
+- Transform plain HTML into visually stunning pages
+- Control fonts, colors, and spacing with precision
+- Create beautiful borders and decorative elements
+- Understand how CSS works together with HTML
+
+## What You'll Learn
+
+- **CSS Basics** - How to add styles to make your pages gorgeous
+- **Font Magic** - Control size, family, style, and weight of text
+- **Color Mastery** - Apply your favorite teal, purple, and yellow colors everywhere
+- **Borders & Decorations** - Add beautiful frames and visual elements
+- **Measurements** - Understand pixels and sizing like a pro
 
 ## Before We Start
 
-### **📋 Setup Check**
-**Need help with setup?** See: [Setup Guide](../../setup-guide.md)
+**Setup Check**
+**First time coding?** Make sure you're ready:
+**See: [Setup Guide](../../setup-guide.md)** for detailed installation instructions
 
-### **📁 Chapter 2 Files**
+**Chapter 2 Files**
+
 You'll need these files for this chapter:
-- **`lesson2-starter.html`** - Your CSS styling playground
-- **`project-template.html`** - Template for your styled poem project
 
-### **🚀 Ready to Begin**
-Open the `lesson2-starter.html` file in your text editor and browser side by side!
+- **[`chapter2-starter.html`](../../assets/downloads/chapter2-starter.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter2-starter.html){:download="chapter2-starter.html"})</small> - Your CSS styling playground
+- **[`chapter2-project.html`](../../assets/downloads/chapter2-project.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter2-project.html){:download="chapter2-project.html"})</small> - Template for your styled poem project
+
+**Ready to Begin**
+First, [view the source code](../../assets/downloads/chapter2-starter.txt) to see what we're working with, then [download the file](../../assets/downloads/chapter2-starter.html) and open it in your text editor and browser side by side!
 
 ---
 
@@ -28,6 +49,7 @@ Open the `lesson2-starter.html` file in your text editor and browser side by sid
 If HTML is like building a house, CSS is like decorating it! CSS stands for "Cascading Style Sheets" and it makes everything beautiful.
 
 Think of CSS like this:
+
 - **HTML** = The structure (walls, rooms, doors)
 - **CSS** = The decoration (paint, wallpaper, furniture)
 
@@ -43,7 +65,8 @@ Look at this example:
 ```
 
 ### Your Turn! 
-1. Open `lesson2-starter.html` in your text editor
+
+1. [View the starter code](../../assets/downloads/chapter2-starter.txt), then [download](../../assets/downloads/chapter2-starter.html) and open it in your text editor
 2. Find the plain heading that says "Welcome to My Studio"
 3. Add this styling to make it fancy:
    ```html
@@ -59,6 +82,7 @@ Look at this example:
 
 ### What You'll Learn
 Different fonts give different feelings to your text:
+
 - `serif` = Traditional, like books (Times New Roman)
 - `sans-serif` = Modern, clean (Arial)
 - `cursive` = Handwriting style
@@ -163,6 +187,7 @@ You can add background colors to any element:
 
 ### Color Contrast Tips
 Some combinations work better than others:
+
 - ✅ **Good:** Dark text on light backgrounds
 - ✅ **Good:** Light text on dark backgrounds  
 - ❌ **Hard to read:** Yellow text on white background
@@ -244,9 +269,9 @@ Combine multiple properties for artistic effects:
 
 ---
 
-## Chapter 2 Final Project: "My Styled Poem" Art Page 🌟
+## Final Project: "My Styled Poem" Art Page 🌟
 
-**Start with:** Open `project-template.html` in your text editor - this template is ready for your creativity!
+**Start with:** Open **[`chapter2-project.html`](../../assets/downloads/chapter2-project.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter2-project.html){:download="chapter2-project.html"})</small> in your text editor - this template is ready for your creativity!
 
 ### Project Requirements:
 
@@ -344,46 +369,6 @@ Create a visual multiplication table with styling:
 
 ---
 
-## Parent/Guardian Guide 👨‍👩‍👧‍👦
-
-### **How to Help with Chapter 2:**
-
-1. **Encourage Experimentation:**
-   - "What happens if we make the font bigger?"
-   - "Can you find a color combination you like better?"
-   - "What if we try a different font family?"
-
-2. **Connect to Real Life:**
-   - Compare fonts to handwriting styles
-   - Relate colors to art supplies and painting
-   - Connect borders to picture frames
-
-3. **Math Connections:**
-   - Discuss pixel measurements
-   - Compare font sizes numerically
-   - Talk about proportions and visual balance
-
-### **Common Chapter 2 Issues:**
-
-1. **Forgetting Semicolons:**
-   - ❌ `style="color: red font-size: 20px"`
-   - ✅ `style="color: red; font-size: 20px;"`
-
-2. **Missing Quotes:**
-   - ❌ `style=color: red;`
-   - ✅ `style="color: red;"`
-
-3. **Color Names:**
-   - Some colors work: red, blue, green, purple, orange
-   - Some don't work: light red (use "lightcoral" instead)
-
-### **Extension Activities:**
-- Look at websites together and discuss fonts and colors
-- Visit Google Fonts to see different font families
-- Create a color palette together using online tools
-- Compare different website designs
-
----
 
 ## What's Next Chapter? 📅
 

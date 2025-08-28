@@ -1,26 +1,143 @@
 # Chapter 4: Images & Visual Elements 🖼️
 
+## Introduction
+
+**Hey Myra! Ready to bring your web pages to life with beautiful images?**
+
+As an artist, you know that visuals are everything! This chapter is where your web pages transform from text-only documents into stunning visual experiences. You'll learn how to add your artwork, photos, and any images you love to your websites.
+
+Think of this chapter as learning how to hang paintings in your digital art gallery. You'll control exactly where images appear, how big they are, and even make them interactive!
+
 ## Learning Goals
-- Add images with the `<img>` tag
-- Control image size with width and height
-- Use alt text for accessibility
-- Create image galleries and layouts
-- Add visual breaks with `<hr>` and spacing
-- Make images clickable links
+
+By the end of this chapter, you'll be able to:
+
+- Add any image to your web pages with perfect control
+- Resize and position images exactly where you want them
+- Create stunning image galleries to showcase your art
+- Make images clickable and interactive
+
+## What You'll Learn
+
+- **Image Integration** - Add images with the `<img>` tag
+- **Size Control** - Master width and height for perfect layouts
+- **Accessibility** - Use alt text to make your sites inclusive
+- **Gallery Creation** - Build beautiful image collections
+- **Visual Breaks** - Add spacing and horizontal rules with `<hr>`
+- **Interactive Images** - Make images clickable links
 
 ## Before We Start
 
-### **📋 Setup Check**
-**Need help with setup?** See: [Setup Guide](../../setup-guide.md)
+**Setup Check**
+**First time coding?** Make sure you're ready:
+**See: [Setup Guide](../../setup-guide.md)** for detailed installation instructions
 
-### **📁 Chapter 4 Files**
+**Chapter 4 Files**
+
 You'll need these files for this chapter:
-- **`lesson4-starter.html`** - Your image playground
-- **`project-template.html`** - Template for your photo gallery
-- **`sample-images/`** folder - Practice images to use
 
-### **🚀 Ready to Begin**
-Open the `lesson4-starter.html` file and get ready to make your pages visual!
+- **[`chapter4-starter.html`](../../assets/downloads/chapter4-starter.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter4-starter.html){:download="chapter4-starter.html"})</small> - Your image playground
+- **[`chapter4-project.html`](../../assets/downloads/chapter4-project.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter4-project.html){:download="chapter4-project.html"})</small> - Template for your photo gallery
+
+**Ready to Begin**
+First, [view the source code](../../assets/downloads/chapter4-starter.txt) to see what we're working with, then [download the file](../../assets/downloads/chapter4-starter.html) and get ready to make your pages visual!
+
+---
+
+## 📁 Organizing Your Photos Like a Pro
+
+**Hey Myra! Before we start adding images, let's learn how to organize your photos so HTML can find them easily!**
+
+### **Understanding File Organization**
+
+Think of your computer like a giant filing cabinet. Just like you organize your art supplies in different containers, we need to organize our photos in folders so HTML knows where to find them!
+
+**Your HTML Workspace Structure:**
+```
+📁 my-html-projects/
+├── 📄 chapter4-starter.html
+├── 📄 chapter4-project.html
+└── 📁 images/
+    ├── 🖼️ profile.jpg
+    ├── 🖼️ flower.jpg
+    ├── 🖼️ sunset.jpg
+    └── 📁 gallery/
+        ├── 🖼️ art1.jpg
+        ├── 🖼️ art2.jpg
+        └── 🖼️ art3.jpg
+```
+
+### **Step 1: Create Your Images Folder**
+
+1. **In your HTML project folder**, create a new folder called `images`
+2. **Inside the images folder**, you can create more folders like:
+   - `gallery` (for your artwork)
+   - `family` (for family photos)
+   - `nature` (for outdoor pictures)
+
+### **Step 2: Understanding Relative Paths (The HTML GPS System!)**
+
+**Relative paths are like giving directions from where you are right now!**
+
+**When your HTML file wants to find an image:**
+
+**Same Folder (Siblings):**
+```html
+<img src="photo.jpg" alt="My photo">
+```
+*"Look right next to me for photo.jpg"*
+
+**In a Subfolder (Going Down):**
+```html
+<img src="images/photo.jpg" alt="My photo">
+```
+*"Go into the images folder, then find photo.jpg"*
+
+**Deeper Subfolders (Going Deeper):**
+```html
+<img src="images/gallery/artwork.jpg" alt="My artwork">
+```
+*"Go into images folder, then into gallery folder, then find artwork.jpg"*
+
+**Going Up a Level (Parent Folder):**
+```html
+<img src="../photo.jpg" alt="My photo">
+```
+*"Go up one level, then find photo.jpg"*
+
+### **Real-World Example for Myra:**
+
+If your HTML file is `chapter4-starter.html` and you want to show a photo called `mycat.jpg` that's in the `images` folder:
+
+```html
+<img src="images/mycat.jpg" alt="My adorable cat Whiskers">
+```
+
+**Why This Works:**
+- Your HTML file is in the main folder
+- The `images` folder is also in the main folder
+- So from HTML's perspective: "Go into the images folder and find mycat.jpg"
+
+### **Pro Tip: File Naming for Success!**
+
+**✅ Good file names:**
+- `family-vacation.jpg`
+- `my-artwork-2024.jpg`
+- `sunset-photo.jpg`
+
+**❌ Avoid these:**
+- `My Family Vacation!.jpg` (spaces and special characters)
+- `DSC001234.jpg` (hard to remember)
+- `photo.jpg` (too generic)
+
+### **Quick Practice: Set Up Your Image Library**
+
+1. **Create an `images` folder** in your HTML project directory
+2. **Find 3-5 photos** you'd like to use (they can be photos you took, downloaded images, or sample photos)
+3. **Rename them** with descriptive names like `profile-photo.jpg`, `favorite-sunset.jpg`
+4. **Copy them** into your `images` folder
+
+**Ready?** Now you're organized like a professional web developer! 🎯
 
 ---
 
@@ -30,24 +147,44 @@ Open the `lesson4-starter.html` file and get ready to make your pages visual!
 Images make websites come alive! The `<img>` tag lets you add pictures to your pages.
 
 ```html
-<img src="flower.jpg" alt="A beautiful red rose">
+<img src="images/flower.jpg" alt="A beautiful red rose">
 ```
 
 ### Image Anatomy
 Every image needs two important parts:
-- **src** = source (where the image file is located)
+- **src** = source (where the image file is located using relative paths)
 - **alt** = alternative text (describes the image for people who can't see it)
 
 ### Your Turn!
-Add these images to your starter file:
+Add these images to your starter file (remember to put your photos in the `images` folder first!):
 
 ```html
 <h2>My Art Gallery</h2>
-<img src="sample-images/art1.jpg" alt="My first painting of a sunset">
-<img src="sample-images/art2.jpg" alt="A colorful abstract drawing">
+<img src="images/art1.jpg" alt="My first painting of a sunset">
+<img src="images/art2.jpg" alt="A colorful abstract drawing">
 ```
 
 **Math Connection:** Images are made of pixels - tiny colored squares arranged in a grid!
+
+### **🚨 Troubleshooting: When Images Don't Show Up**
+
+**If you see a broken image icon instead of your photo, here's your detective checklist:**
+
+1. **Check the file name spelling** - Is it exactly the same?
+   - ✅ `sunset.jpg` matches `<img src="images/sunset.jpg">`
+   - ❌ `Sunset.JPG` doesn't match `<img src="images/sunset.jpg"`
+
+2. **Check the folder path** - Is your image really in that folder?
+   - Look in your file explorer: `my-html-projects/images/sunset.jpg`
+
+3. **Check file extensions** - Is it really a `.jpg` file?
+   - Some files might be `.png`, `.jpeg`, or `.gif`
+
+4. **Check for spaces and special characters**
+   - ✅ `my-cat.jpg` 
+   - ❌ `my cat!.jpg`
+
+**Quick Test:** Right-click on your broken image in the browser and select "Open image in new tab" - it will show you the exact path it's looking for!
 
 ---
 
@@ -176,7 +313,7 @@ You can make images clickable by wrapping them in link tags:
 </a>
 
 <!-- Click image to open email -->
-<a href="mailto:parent@email.com">
+<a href="mailto:myra@email.com">
     <img src="contact.jpg" alt="Send us an email" width="100">
 </a>
 ```
@@ -242,7 +379,7 @@ Create different types of visual breaks:
 
 <!-- Decorative break with emojis -->
 <div style="text-align: center; font-size: 30px; margin: 20px 0;">
-    🌟 🎨 🌈 🎨 🌟
+    🎨 🌈 🎨 🌟
 </div>
 
 <h3>Section Three</h3>
@@ -291,14 +428,15 @@ Create captioned images for your artwork:
 
 ---
 
-## Chapter 4 Final Project: "My Visual Portfolio" 🌟
+## Final Project: "My Visual Portfolio" 🌟
 
-**Start with:** Open `project-template.html` - create a stunning visual showcase!
+**Start with:** Open **[`chapter4-project.html`](../../assets/downloads/chapter4-project.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter4-project.html){:download="chapter4-project.html"})</small> - create a stunning visual showcase!
 
 ### Project Overview:
 Create a multi-page visual portfolio with image galleries, clickable navigation, and professional presentation!
 
 ### Required Pages:
+
 1. **Home Page** - Welcome gallery with navigation images
 2. **Art Portfolio** - Gallery of your artwork with captions
 3. **Photo Album** - Personal photos with descriptions
@@ -307,6 +445,7 @@ Create a multi-page visual portfolio with image galleries, clickable navigation,
 ### Project Requirements:
 
 #### **Technical Requirements:**
+
 - **At least 12 images total** across all pages
 - **3 different image sizes** (small, medium, large)
 - **Image links** for navigation between pages
@@ -316,6 +455,7 @@ Create a multi-page visual portfolio with image galleries, clickable navigation,
 - **Consistent styling** across all pages
 
 #### **Design Requirements:**
+
 - **Color coordinated** backgrounds and borders
 - **Professional layout** with proper spacing
 - **Accessible alt text** for all images
@@ -409,50 +549,6 @@ Organize images by color families:
 
 ---
 
-## Parent/Guardian Guide 👨‍👩‍👧‍👦
-
-### **How to Help with Chapter 4:**
-
-1. **Image Collection:**
-   - Help gather appropriate photos and artwork
-   - Ensure image files are in correct folder
-   - Teach basic file organization
-
-2. **Technical Support:**
-   - Help with image sizing and file formats
-   - Assist with file path troubleshooting
-   - Check that images display correctly
-
-3. **Safety and Privacy:**
-   - Review which images are appropriate to use
-   - Discuss online privacy and image sharing
-   - Consider using artwork instead of personal photos for practice
-
-### **Common Chapter 4 Issues:**
-
-1. **Images Don't Show:**
-   - Check file path spelling
-   - Ensure image file exists in correct folder
-   - Verify file extension (.jpg, .png, .gif)
-
-2. **Images Too Large:**
-   - Add width attribute to control size
-   - Teach about reasonable web image sizes
-   - Show how large images slow down websites
-
-3. **Alt Text Forgotten:**
-   - Explain importance for accessibility
-   - Help create descriptive alt text
-   - Make it a habit to always include alt text
-
-### **Extension Activities:**
-- Take photos specifically for web projects
-- Scan artwork to use in digital galleries
-- Learn about different image file types
-- Explore online image editing tools
-- Visit museum websites to see professional galleries
-
----
 
 ## What's Next Chapter? 📅
 

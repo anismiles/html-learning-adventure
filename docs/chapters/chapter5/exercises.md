@@ -1,25 +1,226 @@
 # Chapter 5: Tables & Geometric Layouts 📊
 
+## Introduction
+
+**Hi Myra! Ready to organize information like a mathematical master?**
+
+Your love for mathematics is going to shine in this chapter! Tables in HTML are like creating perfect grids and charts - everything organized in neat rows and columns. It's the same logical thinking you use when organizing your art supplies or planning a project.
+
+Think of tables as creating spreadsheets that look beautiful on web pages. You'll build everything from simple data tables to complex calendars and grids!
+
 ## Learning Goals
-- Create tables with `<table>`, `<tr>`, `<td>`, `<th>`
-- Understand rows, columns, and table structure
-- Build mathematical tables and charts
-- Style tables with borders and colors
-- Use tables for organized data presentation
-- Create calendar and grid layouts
+
+By the end of this chapter, you'll be able to:
+
+- Create perfectly organized tables for any type of data
+- Build mathematical charts and reference tables
+- Design beautiful calendars and grid layouts
+- Style tables with your favorite colors and borders
+
+## What You'll Learn
+
+- **Table Structure** - Master `<table>`, `<tr>`, `<td>`, `<th>` elements
+- **Grid Organization** - Understand rows, columns, and table logic
+- **Mathematical Tables** - Build charts, formulas, and data displays
+- **Table Styling** - Add borders, colors, and visual appeal
+- **Data Presentation** - Organize information professionally
+- **Layout Creation** - Design calendars and geometric grids
 
 ## Before We Start
 
-### **📋 Setup Check**
-**Need help with setup?** See: [Setup Guide](../../setup-guide.md)
+**Setup Check**
+**First time coding?** Make sure you're ready:
+**See: [Setup Guide](../../setup-guide.md)** for detailed installation instructions
 
-### **📁 Chapter 5 Files**
+**Chapter 5 Files**
+
 You'll need these files for this chapter:
-- **`lesson5-starter.html`** - Your table playground
-- **`project-template.html`** - Template for your data organization project
 
-### **🚀 Ready to Begin**
-Open the `lesson5-starter.html` file and get ready to organize information like a pro!
+- **[`chapter5-starter.html`](../../assets/downloads/chapter5-starter.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter5-starter.html){:download="chapter5-starter.html"})</small> - Your table playground
+- **[`chapter5-project.html`](../../assets/downloads/chapter5-project.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter5-project.html){:download="chapter5-project.html"})</small> - Template for your data organization project
+
+**Ready to Begin**
+First, [view the source code](../../assets/downloads/chapter5-starter.txt) to see what we're working with, then [download the file](../../assets/downloads/chapter5-starter.html) and get ready to organize information like a pro!
+
+---
+
+## 🎨 Table Gallery - See What You'll Create!
+
+**Hey Myra! Before we start building, let's look at some beautiful examples of what tables can do. These will inspire your own creations!**
+
+### **Example 1: Family Information Table**
+
+<table style="border-collapse: collapse; width: 100%; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <thead>
+    <tr style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+      <th style="padding: 12px; border: 2px solid #5a67d8; text-align: left;">Family Member</th>
+      <th style="padding: 12px; border: 2px solid #5a67d8; text-align: left;">Age</th>
+      <th style="padding: 12px; border: 2px solid #5a67d8; text-align: left;">Favorite Color</th>
+      <th style="padding: 12px; border: 2px solid #5a67d8; text-align: left;">Hobby</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #f8f9ff;">
+      <td style="padding: 10px; border: 1px solid #e2e8f0; font-weight: bold;">Myra</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0;">10</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0; color: #2d7dd2;">Teal</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0;">Painting</td>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 10px; border: 1px solid #e2e8f0; font-weight: bold;">Dad</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0;">35</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0; color: #2b6cb0;">Blue</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0;">Reading</td>
+    </tr>
+    <tr style="background-color: #f8f9ff;">
+      <td style="padding: 10px; border: 1px solid #e2e8f0; font-weight: bold;">Mom</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0;">32</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0; color: #7c3aed;">Purple</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0;">Cooking</td>
+    </tr>
+  </tbody>
+</table>
+
+**Cool Features You'll Learn:**
+- Beautiful colored headers
+- Alternating row colors for easy reading
+- Organized information that's easy to scan
+
+### **Example 2: Math Multiplication Table**
+
+<table style="border-collapse: collapse; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <thead>
+    <tr>
+      <th style="padding: 10px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border: 2px solid #e53e3e;">×</th>
+      <th style="padding: 10px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border: 2px solid #e53e3e;">1</th>
+      <th style="padding: 10px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border: 2px solid #e53e3e;">2</th>
+      <th style="padding: 10px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border: 2px solid #e53e3e;">3</th>
+      <th style="padding: 10px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border: 2px solid #e53e3e;">4</th>
+      <th style="padding: 10px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; border: 2px solid #e53e3e;">5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="padding: 8px; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); font-weight: bold; border: 1px solid #ed8936;">3</td>
+      <td style="padding: 8px; background-color: #fffaf0; border: 1px solid #e2e8f0; text-align: center;">3</td>
+      <td style="padding: 8px; background-color: #f7fafc; border: 1px solid #e2e8f0; text-align: center;">6</td>
+      <td style="padding: 8px; background-color: #fffaf0; border: 1px solid #e2e8f0; text-align: center;">9</td>
+      <td style="padding: 8px; background-color: #f7fafc; border: 1px solid #e2e8f0; text-align: center;">12</td>
+      <td style="padding: 8px; background-color: #fffaf0; border: 1px solid #e2e8f0; text-align: center;">15</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); font-weight: bold; border: 1px solid #ed8936;">4</td>
+      <td style="padding: 8px; background-color: #f7fafc; border: 1px solid #e2e8f0; text-align: center;">4</td>
+      <td style="padding: 8px; background-color: #fffaf0; border: 1px solid #e2e8f0; text-align: center;">8</td>
+      <td style="padding: 8px; background-color: #f7fafc; border: 1px solid #e2e8f0; text-align: center;">12</td>
+      <td style="padding: 8px; background-color: #fffaf0; border: 1px solid #e2e8f0; text-align: center;">16</td>
+      <td style="padding: 8px; background-color: #f7fafc; border: 1px solid #e2e8f0; text-align: center;">20</td>
+    </tr>
+    <tr>
+      <td style="padding: 8px; background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%); font-weight: bold; border: 1px solid #ed8936;">5</td>
+      <td style="padding: 8px; background-color: #fffaf0; border: 1px solid #e2e8f0; text-align: center;">5</td>
+      <td style="padding: 8px; background-color: #f7fafc; border: 1px solid #e2e8f0; text-align: center;">10</td>
+      <td style="padding: 8px; background-color: #fffaf0; border: 1px solid #e2e8f0; text-align: center;">15</td>
+      <td style="padding: 8px; background-color: #f7fafc; border: 1px solid #e2e8f0; text-align: center;">20</td>
+      <td style="padding: 8px; background-color: #fffaf0; border: 1px solid #e2e8f0; text-align: center;">25</td>
+    </tr>
+  </tbody>
+</table>
+
+**Perfect for Your Mathematical Mind!**
+- Organized number patterns
+- Easy-to-spot relationships
+- Visual learning tool
+
+### **Example 3: Art Project Schedule Calendar**
+
+<table style="border-collapse: collapse; width: 100%; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <thead>
+    <tr style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+      <th style="padding: 12px; color: white; border: 2px solid #0ea5e9;">Day</th>
+      <th style="padding: 12px; color: white; border: 2px solid #0ea5e9;">Morning Activity</th>
+      <th style="padding: 12px; color: white; border: 2px solid #0ea5e9;">Afternoon Project</th>
+      <th style="padding: 12px; color: white; border: 2px solid #0ea5e9;">Materials Needed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #f0f9ff;">
+      <td style="padding: 10px; border: 1px solid #bae6fd; font-weight: bold; color: #0369a1;">Monday</td>
+      <td style="padding: 10px; border: 1px solid #bae6fd;">Sketching practice</td>
+      <td style="padding: 10px; border: 1px solid #bae6fd;">Watercolor landscape</td>
+      <td style="padding: 10px; border: 1px solid #bae6fd;">🎨 Paints, brushes, paper</td>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 10px; border: 1px solid #bae6fd; font-weight: bold; color: #0369a1;">Tuesday</td>
+      <td style="padding: 10px; border: 1px solid #bae6fd;">Color mixing</td>
+      <td style="padding: 10px; border: 1px solid #bae6fd;">Abstract patterns</td>
+      <td style="padding: 10px; border: 1px solid #bae6fd;">🖍️ Colored pencils, canvas</td>
+    </tr>
+    <tr style="background-color: #f0f9ff;">
+      <td style="padding: 10px; border: 1px solid #bae6fd; font-weight: bold; color: #0369a1;">Wednesday</td>
+      <td style="padding: 10px; border: 1px solid #bae6fd;">HTML coding</td>
+      <td style="padding: 10px; border: 1px solid #bae6fd;">Build art gallery website</td>
+      <td style="padding: 10px; border: 1px solid #bae6fd;">💻 Computer, photos</td>
+    </tr>
+  </tbody>
+</table>
+
+**Organization Meets Creativity!**
+- Weekly planning made visual
+- Combine your interests (art + HTML!)
+- Easy-to-read schedule format
+
+### **Example 4: Color Palette Comparison**
+
+<table style="border-collapse: collapse; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <thead>
+    <tr style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+      <th style="padding: 12px; border: 2px solid #5a67d8;">Palette Name</th>
+      <th style="padding: 12px; border: 2px solid #5a67d8;">Primary Color</th>
+      <th style="padding: 12px; border: 2px solid #5a67d8;">Secondary Color</th>
+      <th style="padding: 12px; border: 2px solid #5a67d8;">Accent Color</th>
+      <th style="padding: 12px; border: 2px solid #5a67d8;">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #f8f9ff;">
+      <td style="padding: 10px; border: 1px solid #e2e8f0; font-weight: bold;">Ocean Breeze</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0; background-color: #2dd4bf; color: white; text-align: center;">Teal</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0; background-color: #3b82f6; color: white; text-align: center;">Blue</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0; background-color: #06b6d4; color: white; text-align: center;">Cyan</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0;">Beach scenes</td>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 10px; border: 1px solid #e2e8f0; font-weight: bold;">Sunset Magic</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0; background-color: #f59e0b; color: white; text-align: center;">Orange</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0; background-color: #eab308; color: white; text-align: center;">Yellow</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0; background-color: #dc2626; color: white; text-align: center;">Red</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0;">Warm landscapes</td>
+    </tr>
+    <tr style="background-color: #f8f9ff;">
+      <td style="padding: 10px; border: 1px solid #e2e8f0; font-weight: bold;">Royal Garden</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0; background-color: #7c3aed; color: white; text-align: center;">Purple</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0; background-color: #059669; color: white; text-align: center;">Green</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0; background-color: #fbbf24; color: black; text-align: center;">Gold</td>
+      <td style="padding: 10px; border: 1px solid #e2e8f0;">Fantasy themes</td>
+    </tr>
+  </tbody>
+</table>
+
+**Perfect for Artists!**
+- Visual color relationships
+- Actual color swatches in the table
+- Inspiration for art projects
+
+### **What Makes These Tables Special?**
+
+- **Headers that stand out** with beautiful colors
+- **Organized information** that's easy to read
+- **Visual elements** like color swatches
+- **Practical purposes** for real life
+- **Your personal touch** - you'll customize them!
+
+**Ready to build your own amazing tables?** Let's start! 🚀
 
 ---
 
@@ -290,9 +491,9 @@ Create pattern tables for:
 
 ---
 
-## Chapter 5 Final Project: "My Data Dashboard" 📊
+## Final Project: "My Data Dashboard" 📊
 
-**Start with:** Open `project-template.html` - create an organized information center!
+**Start with:** Open **[`chapter5-project.html`](../../assets/downloads/chapter5-project.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter5-project.html){:download="chapter5-project.html"})</small> - create an organized information center!
 
 ### Project Overview:
 Create a multi-section dashboard that organizes different types of information using tables!
@@ -325,6 +526,7 @@ Create a multi-section dashboard that organizes different types of information u
 - Creative ideas organizer
 
 ### Styling Requirements:
+
 - **Consistent color scheme** across all tables
 - **Clear headers** with good contrast
 - **Alternating row colors** for easy reading
@@ -402,50 +604,6 @@ Organize colors by families, temperatures, or intensity:
 
 ---
 
-## Parent/Guardian Guide 👨‍👩‍👧‍👦
-
-### **How to Help with Chapter 5:**
-
-1. **Data Organization:**
-   - Help brainstorm what information to organize
-   - Discuss real-world examples of tables (calendars, charts, schedules)
-   - Connect to school subjects like math and science
-
-2. **Mathematical Connections:**
-   - Practice multiplication tables together
-   - Explore number patterns and sequences
-   - Use tables for homework organization
-
-3. **Planning and Structure:**
-   - Help design table layouts before coding
-   - Discuss rows vs. columns organization
-   - Plan color schemes for readability
-
-### **Common Chapter 5 Issues:**
-
-1. **Table Structure:**
-   - Every `<td>` must be inside a `<tr>`
-   - Every `<tr>` must be inside a `<table>`
-   - Equal number of cells in each row for proper alignment
-
-2. **Styling Confusion:**
-   - `border-collapse: collapse` makes borders look cleaner
-   - Padding adds space inside cells
-   - Text-align: center centers content in cells
-
-3. **Complex Layouts:**
-   - Start simple with basic tables
-   - Add styling gradually
-   - Test frequently to ensure it works
-
-### **Extension Activities:**
-- Create family chore charts using tables
-- Make shopping lists or meal planning tables
-- Design board games with table layouts
-- Track reading progress or goals
-- Organize collections (books, toys, cards) in table format
-
----
 
 ## What's Next Chapter? 📅
 

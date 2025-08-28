@@ -1,15 +1,16 @@
-# 🖥️ Setup Guide for Young HTML Artists
+# 🖥️ Hey Myra! Let's Set Up Your HTML Adventure
 
-**For 10-year-olds and their parents/guardians**
+**This guide will help you get everything ready for your amazing coding adventure!**
 
-This guide will help you set up everything needed to create beautiful HTML pages! We'll cover three ways to code:
-1. **On your computer** (Mac or Windows) - Best for saving your work
-2. **Online with CodePen** - Quick and easy for testing ideas
-3. **Backup options** - Simple alternatives that work anywhere
+Myra, we're going to set up three different ways for you to create beautiful HTML pages:
+
+1. **On your computer** (Mac or Windows) - Best for saving all your masterpieces
+2. **Online with CodePen** - Perfect for quick experiments and trying new ideas
+3. **Backup options** - Simple alternatives that work anywhere, anytime
 
 ---
 
-## 🍎 Setup for Mac Users
+## 🍎 Setup for Mac
 
 ### **Step 1: Choose Your Text Editor**
 
@@ -108,7 +109,7 @@ This guide will help you set up everything needed to create beautiful HTML pages
 
 ---
 
-## 🪟 Setup for Windows Users
+## 🪟 Setup for Windows
 
 ### **Step 1: Choose Your Text Editor**
 
@@ -137,7 +138,7 @@ This guide will help you set up everything needed to create beautiful HTML pages
 1. **Download VS Code:**
    - Go to [code.visualstudio.com](https://code.visualstudio.com)
    - Click "Download for Windows"
-   - Run the installer (get parent help if needed)
+   - Run the installer
    - Follow the setup wizard - default options are fine
 
 2. **First launch:**
@@ -155,7 +156,7 @@ This guide will help you set up everything needed to create beautiful HTML pages
 
 1. **Download:**
    - Go to [notepad-plus-plus.org](https://notepad-plus-plus.org)
-   - Download and install with parent help
+   - Download and install
 
 2. **It's ready to use right away!**
 
@@ -213,18 +214,18 @@ This guide will help you set up everything needed to create beautiful HTML pages
 
 ---
 
-## 🌐 CodePen.io - Online HTML Playground
+## 🌐 CodePen - Your Online HTML Playground
 
-**Perfect for quick experiments and sharing with friends!**
+**Hey Myra! This is perfect for your quick experiments and sharing your creations with friends and family!**
 
 ### **What is CodePen?**
-CodePen is like a digital art studio for web code. You can write HTML, see results instantly, and share your creations!
+[CodePen](https://codepen.io/pen/){:target="_blank"} is like a digital art studio for web code, Myra! You can write HTML, see results instantly, and share your creations with family and friends!
 
 ### **Getting Started with CodePen**
 
 1. **Visit the site:**
-   - Go to [codepen.io](https://codepen.io)
-   - Click "Start Coding" (no account needed to try!)
+   - Go to [codepen.io](https://codepen.io/pen/){:target="_blank"}
+   - Click "Start Coding" (no account needed to try it out, Myra!)
 
 2. **Understanding the interface:**
    ```
@@ -259,16 +260,16 @@ CodePen is like a digital art studio for web code. You can write HTML, see resul
 - ❌ **Can't save locally** - need account for permanent saves
 - ❌ **Limited file management** - can't organize like folders
 
-### **When to Use CodePen:**
+### **When Should You Use CodePen, Myra?**
 - 🔬 **Quick experiments** - "What if I try this color?"
-- 🎯 **Specific exercises** - testing one concept
-- 👥 **Sharing work** - showing family your progress
-- 💡 **Getting unstuck** - when your local setup has issues
+- 🎯 **Specific exercises** - testing one concept at a time
+- 👥 **Sharing your work** - showing family your amazing progress
+- 💡 **Getting unstuck** - when your computer setup has issues
 
 ### **Creating a Free Account (Optional):**
-1. Click "Sign Up" on CodePen
-2. Use parent's email
-3. Choose "Free" plan
+1. Click "Sign Up" on [CodePen](https://codepen.io/pen/){:target="_blank"}
+2. Use an email address
+3. Choose "Free" plan (perfect for your learning adventure!)
 4. Now you can save your work!
 
 ---
@@ -302,48 +303,13 @@ CodePen is like a digital art studio for web code. You can write HTML, see resul
 
 ---
 
-## 📚 Parent/Guardian Support Guide
-
-### **Technical Help Tips:**
-
-1. **File Extensions Matter:**
-   - Always save as `.html`
-   - If you see `.txt`, rename the file
-
-2. **Case Sensitivity:**
-   - HTML tags work in any case: `<H1>` = `<h1>`
-   - File names on Mac are case-sensitive
-
-3. **Common Beginner Mistakes:**
-   - Forgetting closing tags: `<h1>Hello</h1>` ✅ vs `<h1>Hello` ❌
-   - Missing quotes: `style="color: red"` ✅ vs `style=color: red` ❌
-
-### **Encouraging Learning:**
-
-1. **Let Them Experiment:**
-   - "What happens if we change red to blue?"
-   - "Can you make the text bigger?"
-
-2. **Celebrate Small Wins:**
-   - First file that opens correctly
-   - First color change
-   - First complete page
-
-3. **When Things Break:**
-   - "That's how we learn! Let's figure it out together"
-   - Compare with working examples
-   - Use CodePen to isolate problems
-
----
-
 ## 🎯 Quick Start Checklist
 
-### **Before First Chapter:**
+### **Before Your First Chapter:**
 - [ ] Text editor installed and tested
 - [ ] HTML folder created and organized
 - [ ] First test file opens in browser
 - [ ] CodePen account created (optional)
-- [ ] Parent knows where files are saved
 
 ### **For Each Coding Session:**
 - [ ] HTML folder bookmarked/easily accessible
@@ -356,33 +322,17 @@ CodePen is like a digital art studio for web code. You can write HTML, see resul
 - [ ] Can save with correct extension
 - [ ] Can open file in browser
 - [ ] Can make simple changes and see results
-- [ ] Knows where to find saved work
-
----
-
-## 🌟 Making it Special
-
-### **Personalization Ideas:**
-- **Custom folder names:** "Sophia's Web Studio" instead of "HTML Folder"
-- **Desktop shortcuts:** Put HTML folder on desktop with custom icon
-- **Bookmark organization:** Create "HTML Learning" bookmark folder
-- **Screenshots:** Take photos of first successful pages
-
-### **Sharing Her Work:**
-- **CodePen links:** Share with grandparents and friends
-- **Screenshots:** Save images of cool pages she creates
-- **Family showcase:** Set up a family "art gallery" viewing time
-- **Progress journal:** Keep screenshots showing improvement over time
+- [ ] Know where to find saved work
 
 ---
 
 ## 🆘 When Things Go Wrong
 
 ### **Emergency Backup Plan:**
-If local setup fails completely:
-1. Go straight to CodePen.io
-2. Continue learning online
-3. Fix local setup later
+If your local setup fails completely, don't worry Myra!
+1. Go straight to [CodePen.io](https://codepen.io/pen/){:target="_blank"}
+2. Continue your learning adventure online
+3. Fix the local setup later when you have help
 
 ### **Getting Help:**
 - **CodePen Community:** Very friendly and helpful

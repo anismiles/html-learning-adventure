@@ -1,5 +1,5 @@
 # HTML Learning Adventure - MkDocs Configuration
-site_name: Myra's HTML Art Studio
+site_name: Myra's HTML Adventure
 site_description: Myra Kumar's creative coding journey - learning HTML and CSS through art, math, and fun projects
 site_author: Myra Kumar
 site_url: https://anismiles.github.io/html-learning-adventure
@@ -12,6 +12,7 @@ edit_uri: edit/main/docs/
 # Configuration
 theme:
   name: material
+  custom_dir: overrides
   
   # Color palette - Myra's favorite colors: Teal, Purple, Yellow
   palette:
@@ -45,8 +46,8 @@ theme:
     - search.highlight         # Highlight search terms
     - search.share            # Share search results
     - content.code.copy       # Copy code blocks
-    - content.action.edit     # Edit page action
-    - content.action.view     # View source action
+    # - content.action.edit     # Edit page action
+    # - content.action.view     # View source action
     - toc.follow             # Sidebar follows scroll
 
   # Logo and favicon (comment out until we add them)
@@ -137,7 +138,7 @@ markdown_extensions:
 
 # Extra CSS and JavaScript
 extra_css:
-  - assets/css/custom.css
+  - stylesheets/extra.css
 
 # extra_javascript:
 #   - assets/js/custom.js

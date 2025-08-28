@@ -1,6 +1,6 @@
 # 🎨 HTML Learning Adventure: 10-Chapter Program for Myra
 
-## Hey Myra! 👋
+## Your Personal Learning Journey 👋
 
 Get ready for the most amazing creative adventure ever! I've designed this special HTML learning journey just for you - because I know you love making beautiful art and you have an incredible mathematical mind that's perfect for coding.
 
@@ -175,7 +175,7 @@ We'll take it nice and easy - each chapter has 2-3 fun sessions that last about 
 
 ---
 
-### **Chapter 8: CSS Layout & Design Patterns** 🎨
+### **Chapter 8: CSS Mastery & Advanced Design** 🎨
 **Theme:** "Advanced Design Techniques"
 
 **Learning Goals:**
@@ -286,7 +286,7 @@ This detailed guide covers:
 - [ ] Chapter 5: Creates organized tables
 - [ ] Chapter 6: Uses divs for layout
 - [ ] Chapter 7: Builds interactive forms
-- [ ] Chapter 8: Applies advanced CSS
+- [ ] Chapter 8: Masters advanced CSS design
 - [ ] Chapter 9: Incorporates multimedia
 - [ ] Chapter 10: Completes final project
 

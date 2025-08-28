@@ -1,4 +1,4 @@
-# Hey Myra! 🎨 Welcome to Your HTML Adventure! 
+# Welcome to Your HTML Adventure, Myra! 🎨 
 
 This is YOUR special place where art meets code! I've created this entire learning adventure just for you, Myra - a brilliant artist with an amazing mathematical mind. Get ready to paint with code using your favorite colors: teal, purple, and yellow!
 

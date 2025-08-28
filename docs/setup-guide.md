@@ -1,4 +1,4 @@
-# 🖥️ Hey Myra! Let's Set Up Your HTML Adventure
+# 🖥️ Time to Set Up Your HTML Adventure!
 
 **This guide will help you get everything ready for your amazing coding adventure!**
 
@@ -216,7 +216,7 @@ Myra, we're going to set up three different ways for you to create beautiful HTM
 
 ## 🌐 CodePen - Your Online HTML Playground
 
-**Hey Myra! This is perfect for your quick experiments and sharing your creations with friends and family!**
+**This is perfect for your quick experiments and sharing your creations with friends and family!**
 
 ### **What is CodePen?**
 [CodePen](https://codepen.io/pen/){:target="_blank"} is like a digital art studio for web code, Myra! You can write HTML, see results instantly, and share your creations with family and friends!

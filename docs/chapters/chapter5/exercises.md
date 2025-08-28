@@ -44,9 +44,213 @@ First, [view the source code](../../assets/downloads/chapter5-starter.txt) to se
 
 ---
 
+## 🧩 Meet the Table Elements Family!
+
+Time to become a data organization master! Before we start, let's meet the HTML elements you'll master in this chapter. Think of these as your digital spreadsheet and data organization tools - each one helps structure information clearly and beautifully!
+
+### **📊 Table - The Data Container**
+
+```html
+<table>
+    <!-- Table content goes here -->
+</table>
+```
+
+**What it's for:** Creating structured data displays with rows and columns
+**Why it's important:** Organizes complex information in an easy-to-read format
+**Real examples:** Art supply inventory, color mixing charts, project timelines, grade reports
+
+**👀 See it in action:**
+<div style="border: 2px solid #e2e8f0; padding: 15px; margin: 10px 0; border-radius: 8px; background-color: #f8f9ff;">
+  <h4 style="margin: 0 0 10px 0; color: #2d3748;">📊 Simple Table Structure</h4>
+  <div style="background-color: white; border: 1px solid #d1d5db; border-radius: 6px; overflow: hidden; display: inline-block;">
+    <table style="border-collapse: collapse; font-size: 12px;">
+      <tr style="background-color: #f3f4f6;">
+        <td style="padding: 8px; border: 1px solid #d1d5db; font-weight: bold;">Art Supply</td>
+        <td style="padding: 8px; border: 1px solid #d1d5db; font-weight: bold;">Quantity</td>
+      </tr>
+      <tr>
+        <td style="padding: 8px; border: 1px solid #d1d5db;">🎨 Paints</td>
+        <td style="padding: 8px; border: 1px solid #d1d5db;">12</td>
+      </tr>
+      <tr style="background-color: #f9fafb;">
+        <td style="padding: 8px; border: 1px solid #d1d5db;">🖌️ Brushes</td>
+        <td style="padding: 8px; border: 1px solid #d1d5db;">8</td>
+      </tr>
+    </table>
+  </div>
+  <small style="color: #718096; display: block; margin-top: 8px;">📊 Tables organize information in rows and columns!</small>
+</div>
+
+### **📝 Table Row (tr) - The Horizontal Organizer**
+
+```html
+<tr>
+    <td>Cell 1</td>
+    <td>Cell 2</td>
+</tr>
+```
+
+**What it's for:** Creating horizontal rows within your table
+**Why it's important:** Each row represents one complete record or item
+**Real examples:** One row per art project, one row per color, one row per student
+
+**👀 See it in action:**
+<div style="border: 2px solid #e2e8f0; padding: 15px; margin: 10px 0; border-radius: 8px; background-color: #f8f9ff;">
+  <h4 style="margin: 0 0 10px 0; color: #2d3748;">📝 Row Structure</h4>
+  <div style="background-color: white; padding: 15px; border-radius: 6px;">
+    <div style="background-color: #ccfbf1; padding: 8px; border-radius: 4px; margin-bottom: 4px; font-size: 12px; color: #0f766e; text-align: center;">
+      Row 1: 🌅 Sunrise Painting | Watercolor | Completed
+    </div>
+    <div style="background-color: #ddd6fe; padding: 8px; border-radius: 4px; margin-bottom: 4px; font-size: 12px; color: #5b21b6; text-align: center;">
+      Row 2: 🦋 Butterfly Sketch | Pencil | In Progress
+    </div>
+    <div style="background-color: #fef3c7; padding: 8px; border-radius: 4px; font-size: 12px; color: #92400e; text-align: center;">
+      Row 3: 🌸 Flower Study | Acrylic | Planning
+    </div>
+  </div>
+  <small style="color: #718096; display: block; margin-top: 8px;">📝 Each row holds one complete record!</small>
+</div>
+
+### **📦 Table Data (td) - The Information Cell**
+
+```html
+<td>Content goes here</td>
+```
+
+**What it's for:** Creating individual cells that hold your data
+**Why it's important:** Each cell contains one piece of information
+**Real examples:** A color name, a number, a date, a description
+
+**👀 See it in action:**
+<div style="border: 2px solid #e2e8f0; padding: 15px; margin: 10px 0; border-radius: 8px; background-color: #f8f9ff;">
+  <h4 style="margin: 0 0 10px 0; color: #2d3748;">📦 Individual Cells</h4>
+  <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px;">
+    <div style="background-color: #ccfbf1; padding: 12px; border-radius: 6px; text-align: center; border: 2px solid #2dd4bf;">
+      <div style="font-size: 16px; margin-bottom: 4px;">🎨</div>
+      <div style="font-size: 12px; color: #0f766e; font-weight: bold;">Cell: Art Type</div>
+    </div>
+    <div style="background-color: #ddd6fe; padding: 12px; border-radius: 6px; text-align: center; border: 2px solid #7c3aed;">
+      <div style="font-size: 16px; margin-bottom: 4px;">📅</div>
+      <div style="font-size: 12px; color: #5b21b6; font-weight: bold;">Cell: Date</div>
+    </div>
+    <div style="background-color: #fef3c7; padding: 12px; border-radius: 6px; text-align: center; border: 2px solid #f59e0b;">
+      <div style="font-size: 16px; margin-bottom: 4px;">⭐</div>
+      <div style="font-size: 12px; color: #92400e; font-weight: bold;">Cell: Rating</div>
+    </div>
+  </div>
+  <small style="color: #718096; display: block; margin-top: 8px;">📦 Each cell holds one piece of data!</small>
+</div>
+
+### **🏷️ Table Header (th) - The Column Label**
+
+```html
+<th>Column Title</th>
+```
+
+**What it's for:** Creating column headers that describe what data is in each column
+**Why it's important:** Helps people understand what each column contains
+**Real examples:** "Art Project", "Medium", "Date", "Status", "Rating"
+
+**👀 See it in action:**
+<div style="border: 2px solid #e2e8f0; padding: 15px; margin: 10px 0; border-radius: 8px; background-color: #f8f9ff;">
+  <h4 style="margin: 0 0 10px 0; color: #2d3748;">🏷️ Header Examples</h4>
+  <div style="background-color: white; border-radius: 6px; overflow: hidden; border: 1px solid #d1d5db;">
+    <div style="background: linear-gradient(135deg, #2dd4bf 0%, #7c3aed 100%); padding: 12px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;">
+      <div style="background-color: rgba(255,255,255,0.95); padding: 8px; text-align: center; border-radius: 4px;">
+        <div style="font-size: 14px; margin-bottom: 2px;">🎨</div>
+        <div style="font-size: 11px; color: #2d3748; font-weight: bold;">Project</div>
+      </div>
+      <div style="background-color: rgba(255,255,255,0.95); padding: 8px; text-align: center; border-radius: 4px;">
+        <div style="font-size: 14px; margin-bottom: 2px;">🖌️</div>
+        <div style="font-size: 11px; color: #2d3748; font-weight: bold;">Medium</div>
+      </div>
+      <div style="background-color: rgba(255,255,255,0.95); padding: 8px; text-align: center; border-radius: 4px;">
+        <div style="font-size: 14px; margin-bottom: 2px;">📅</div>
+        <div style="font-size: 11px; color: #2d3748; font-weight: bold;">Date</div>
+      </div>
+      <div style="background-color: rgba(255,255,255,0.95); padding: 8px; text-align: center; border-radius: 4px;">
+        <div style="font-size: 14px; margin-bottom: 2px;">✨</div>
+        <div style="font-size: 11px; color: #2d3748; font-weight: bold;">Status</div>
+      </div>
+    </div>
+  </div>
+  <small style="color: #718096; display: block; margin-top: 8px;">🏷️ Headers make your data easy to understand!</small>
+</div>
+
+### **📋 Table Head (thead) - The Header Section**
+
+```html
+<thead>
+    <tr>
+        <th>Header 1</th>
+        <th>Header 2</th>
+    </tr>
+</thead>
+```
+
+**What it's for:** Grouping all your header rows together
+**Why it's important:** Separates headers from data and helps with styling
+**Real examples:** Top section with column titles, repeating headers on long tables
+
+**👀 See it in action:**
+<div style="border: 2px solid #e2e8f0; padding: 15px; margin: 10px 0; border-radius: 8px; background-color: #f8f9ff;">
+  <h4 style="margin: 0 0 10px 0; color: #2d3748;">📋 Header Section</h4>
+  <div style="background-color: white; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <div style="background: linear-gradient(135deg, #374151 0%, #1f2937 100%); color: white; padding: 12px; text-align: center;">
+      <div style="font-size: 12px; font-weight: bold; margin-bottom: 4px;">&lt;thead&gt;</div>
+      <div style="font-size: 11px; opacity: 0.8;">Header Section</div>
+    </div>
+    <div style="background-color: #f9fafb; padding: 12px; text-align: center; border-bottom: 1px solid #e5e7eb;">
+      <div style="font-size: 11px; color: #6b7280;">🎨 Art Projects | 🖌️ Medium | 📅 Date | ⭐ Rating</div>
+    </div>
+    <div style="background-color: white; padding: 12px; text-align: center;">
+      <div style="font-size: 10px; color: #9ca3af;">&lt;tbody&gt; Data rows go here...</div>
+    </div>
+  </div>
+  <small style="color: #718096; display: block; margin-top: 8px;">📋 Thead keeps headers organized and styled!</small>
+</div>
+
+### **📄 Table Body (tbody) - The Data Section**
+
+```html
+<tbody>
+    <tr>
+        <td>Data 1</td>
+        <td>Data 2</td>
+    </tr>
+</tbody>
+```
+
+**What it's for:** Grouping all your data rows together
+**Why it's important:** Separates content from headers and makes tables more organized
+**Real examples:** All your art project records, all your color data, all your student information
+
+**👀 See it in action:**
+<div style="border: 2px solid #e2e8f0; padding: 15px; margin: 10px 0; border-radius: 8px; background-color: #f8f9ff;">
+  <h4 style="margin: 0 0 10px 0; color: #2d3748;">📄 Data Section</h4>
+  <div style="background-color: white; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    <div style="background-color: #f3f4f6; padding: 8px; text-align: center; border-bottom: 1px solid #e5e7eb;">
+      <div style="font-size: 10px; color: #6b7280;">&lt;thead&gt; Headers above...</div>
+    </div>
+    <div style="background: linear-gradient(135deg, #ddd6fe 0%, #c4b5fd 100%); color: #5b21b6; padding: 12px; text-align: center;">
+      <div style="font-size: 12px; font-weight: bold; margin-bottom: 4px;">&lt;tbody&gt;</div>
+      <div style="font-size: 11px; opacity: 0.8;">Data Section</div>
+    </div>
+    <div style="background-color: #faf5ff; padding: 8px; font-size: 10px; color: #7c3aed;">
+      <div style="margin-bottom: 4px;">🌅 Sunset Painting | Watercolor | Nov 15 | ⭐⭐⭐⭐⭐</div>
+      <div style="margin-bottom: 4px;">🦋 Butterfly Study | Pencil | Nov 18 | ⭐⭐⭐⭐</div>
+      <div>🌸 Flower Garden | Acrylic | Nov 20 | ⭐⭐⭐⭐⭐</div>
+    </div>
+  </div>
+  <small style="color: #718096; display: block; margin-top: 8px;">📄 Tbody contains all your actual data!</small>
+</div>
+
+---
+
 ## 🎨 Table Gallery - See What You'll Create!
 
-**Hey Myra! Before we start building, let's look at some beautiful examples of what tables can do. These will inspire your own creations!**
+**Get ready to be amazed! Let's look at some beautiful examples of what tables can do. These will inspire your own creations.**
 
 ### **Example 1: Family Information Table**
 
@@ -85,6 +289,115 @@ First, [view the source code](../../assets/downloads/chapter5-starter.txt) to se
 - Beautiful colored headers
 - Alternating row colors for easy reading
 - Organized information that's easy to scan
+
+#### **🔍 Inspect the Family Table Code**
+
+<details>
+<summary><strong>👨‍👩‍👧‍👦 Family Information Table Code - Click to Expand!</strong></summary>
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Information Table</title>
+    <style>
+        .family-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .family-table thead {
+            background: linear-gradient(135deg, #2dd4bf 0%, #7c3aed 100%);
+            color: white;
+        }
+        
+        .family-table th,
+        .family-table td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .family-table th {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        
+        .family-table tbody tr:nth-child(even) {
+            background-color: #f8f9ff;
+        }
+        
+        .family-table tbody tr:hover {
+            background-color: #e2e8f0;
+        }
+        
+        .family-table td {
+            color: #2d3748;
+            font-size: 13px;
+        }
+        
+        .age-cell {
+            text-align: center;
+            font-weight: bold;
+            color: #7c3aed;
+        }
+        
+        .hobby-cell {
+            color: #2dd4bf;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h2>Our Beautiful Family</h2>
+    
+    <table class="family-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Favorite Color</th>
+                <th>Hobby</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dad</td>
+                <td class="age-cell">45</td>
+                <td>Blue</td>
+                <td class="hobby-cell">Photography</td>
+            </tr>
+            <tr>
+                <td>Mom</td>
+                <td class="age-cell">42</td>
+                <td>Green</td>
+                <td class="hobby-cell">Gardening</td>
+            </tr>
+            <tr>
+                <td>Myra</td>
+                <td class="age-cell">10</td>
+                <td>Purple</td>
+                <td class="hobby-cell">Painting & HTML</td>
+            </tr>
+            <tr>
+                <td>Alex (Brother)</td>
+                <td class="age-cell">8</td>
+                <td>Red</td>
+                <td class="hobby-cell">Soccer</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+```
+
+</details>
 
 ### **Example 2: Math Multiplication Table**
 
@@ -132,6 +445,115 @@ First, [view the source code](../../assets/downloads/chapter5-starter.txt) to se
 - Easy-to-spot relationships
 - Visual learning tool
 
+#### **🔍 Inspect the Math Table Code**
+
+<details>
+<summary><strong>🔢 Math Multiplication Table Code - Click to Expand!</strong></summary>
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Multiplication Table</title>
+    <style>
+        .math-table {
+            border-collapse: collapse;
+            margin: 20px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .math-table th,
+        .math-table td {
+            padding: 10px;
+            text-align: center;
+            border: 2px solid #e53e3e;
+            min-width: 40px;
+        }
+        
+        .math-table th {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            font-weight: bold;
+        }
+        
+        .math-table .header-cell {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: bold;
+        }
+        
+        .math-table td {
+            background-color: #fff5f5;
+            color: #2d3748;
+            font-weight: bold;
+        }
+        
+        .math-table td:hover {
+            background-color: #fed7d7;
+            transform: scale(1.05);
+            transition: all 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <h2>Multiplication Magic Table</h2>
+    
+    <table class="math-table">
+        <thead>
+            <tr>
+                <th>×</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="header-cell">1</td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td class="header-cell">2</td>
+                <td>2</td>
+                <td>4</td>
+                <td>6</td>
+                <td>8</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td class="header-cell">3</td>
+                <td>3</td>
+                <td>6</td>
+                <td>9</td>
+                <td>12</td>
+                <td>15</td>
+            </tr>
+            <tr>
+                <td class="header-cell">4</td>
+                <td>4</td>
+                <td>8</td>
+                <td>12</td>
+                <td>16</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+```
+
+</details>
+
 ### **Example 3: Art Project Schedule Calendar**
 
 <table style="border-collapse: collapse; width: 100%; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
@@ -169,6 +591,119 @@ First, [view the source code](../../assets/downloads/chapter5-starter.txt) to se
 - Weekly planning made visual
 - Combine your interests (art + HTML!)
 - Easy-to-read schedule format
+
+#### **🔍 Inspect the Schedule Calendar Code**
+
+<details>
+<summary><strong>📅 Art Project Schedule Code - Click to Expand!</strong></summary>
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Project Schedule Calendar</title>
+    <style>
+        .schedule-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .schedule-table th {
+            background: linear-gradient(135deg, #2dd4bf 0%, #7c3aed 100%);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .schedule-table td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+            color: #2d3748;
+        }
+        
+        .day-header {
+            background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%) !important;
+            color: white !important;
+            font-weight: bold;
+        }
+        
+        .painting-cell {
+            background-color: #fef3c7;
+            color: #92400e;
+            font-weight: bold;
+        }
+        
+        .sketching-cell {
+            background-color: #e0e7ff;
+            color: #3730a3;
+            font-weight: bold;
+        }
+        
+        .html-cell {
+            background-color: #dcfce7;
+            color: #166534;
+            font-weight: bold;
+        }
+        
+        .rest-cell {
+            background-color: #f3f4f6;
+            color: #6b7280;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h2>Myra's Creative Week Schedule</h2>
+    
+    <table class="schedule-table">
+        <thead>
+            <tr>
+                <th>Day</th>
+                <th>Morning Activity</th>
+                <th>Afternoon Project</th>
+                <th>Evening Practice</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="day-header">Monday</td>
+                <td class="painting-cell">🎨 Watercolor Landscapes</td>
+                <td class="html-cell">💻 HTML Tables</td>
+                <td class="sketching-cell">✏️ Sketch Practice</td>
+            </tr>
+            <tr>
+                <td class="day-header">Tuesday</td>
+                <td class="sketching-cell">✏️ Portrait Drawing</td>
+                <td class="painting-cell">🎨 Color Mixing</td>
+                <td class="html-cell">💻 CSS Styling</td>
+            </tr>
+            <tr>
+                <td class="day-header">Wednesday</td>
+                <td class="html-cell">💻 Website Building</td>
+                <td class="rest-cell">📚 Reading Art Books</td>
+                <td class="painting-cell">🎨 Digital Art</td>
+            </tr>
+            <tr>
+                <td class="day-header">Thursday</td>
+                <td class="painting-cell">🎨 Acrylic Painting</td>
+                <td class="sketching-cell">✏️ Nature Studies</td>
+                <td class="html-cell">💻 Project Building</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+```
+
+</details>
 
 ### **Example 4: Color Palette Comparison**
 
@@ -219,6 +754,161 @@ First, [view the source code](../../assets/downloads/chapter5-starter.txt) to se
 - **Visual elements** like color swatches
 - **Practical purposes** for real life
 - **Your personal touch** - you'll customize them!
+
+#### **🔍 Inspect the Color Palette Code**
+
+<details>
+<summary><strong>🎨 Color Palette Comparison Code - Click to Expand!</strong></summary>
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Comparison</title>
+    <style>
+        .palette-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .palette-table th {
+            background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+        
+        .palette-table td {
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #e2e8f0;
+            font-weight: bold;
+            color: white;
+            position: relative;
+        }
+        
+        .teal-cell {
+            background-color: #2dd4bf;
+        }
+        
+        .purple-cell {
+            background-color: #7c3aed;
+        }
+        
+        .yellow-cell {
+            background-color: #f59e0b;
+        }
+        
+        .warm-category {
+            background: linear-gradient(135deg, #f59e0b 0%, #f97316 100%);
+        }
+        
+        .cool-category {
+            background: linear-gradient(135deg, #2dd4bf 0%, #7c3aed 100%);
+        }
+        
+        .hex-code {
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            background-color: rgba(0,0,0,0.2);
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-top: 8px;
+            display: inline-block;
+        }
+        
+        .emotion-text {
+            font-size: 11px;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Myra's Favorite Color Palette Comparison</h2>
+    
+    <table class="palette-table">
+        <thead>
+            <tr>
+                <th>Color</th>
+                <th>Hex Code</th>
+                <th>Temperature</th>
+                <th>Emotion</th>
+                <th>Best Used For</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="teal-cell">
+                    🌊 Teal
+                    <div class="hex-code">#2dd4bf</div>
+                </td>
+                <td class="teal-cell">
+                    #2dd4bf
+                </td>
+                <td class="cool-category">
+                    Cool
+                </td>
+                <td class="teal-cell">
+                    Calm & Peaceful
+                    <div class="emotion-text">Like ocean waves</div>
+                </td>
+                <td class="teal-cell">
+                    Backgrounds, Headers
+                </td>
+            </tr>
+            <tr>
+                <td class="purple-cell">
+                    💜 Purple
+                    <div class="hex-code">#7c3aed</div>
+                </td>
+                <td class="purple-cell">
+                    #7c3aed
+                </td>
+                <td class="cool-category">
+                    Cool
+                </td>
+                <td class="purple-cell">
+                    Creative & Magical
+                    <div class="emotion-text">Inspiring creativity</div>
+                </td>
+                <td class="purple-cell">
+                    Titles, Accents
+                </td>
+            </tr>
+            <tr>
+                <td class="yellow-cell">
+                    ☀️ Yellow
+                    <div class="hex-code">#f59e0b</div>
+                </td>
+                <td class="yellow-cell">
+                    #f59e0b
+                </td>
+                <td class="warm-category">
+                    Warm
+                </td>
+                <td class="yellow-cell">
+                    Happy & Energetic
+                    <div class="emotion-text">Like sunshine</div>
+                </td>
+                <td class="yellow-cell">
+                    Highlights, Buttons
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+```
+
+</details>
 
 **Ready to build your own amazing tables?** Let's start! 🚀
 

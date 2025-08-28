@@ -1,0 +1,178 @@
+# HTML Learning Adventure - MkDocs Configuration
+site_name: HTML Learning Adventure for Young Artists
+site_description: A comprehensive 10-chapter program teaching HTML and CSS to creative kids through hands-on projects and artistic exploration
+site_author: HTML Learning Adventure Team
+site_url: https://yourusername.github.io/html-learning-adventure
+
+# Repository
+repo_name: yourusername/html-learning-adventure
+repo_url: https://github.com/yourusername/html-learning-adventure
+edit_uri: edit/main/docs/
+
+# Configuration
+theme:
+  name: material
+  
+  # Color palette - kid-friendly but professional
+  palette:
+    # Light mode
+    - scheme: default
+      primary: purple
+      accent: pink
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    
+    # Dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  # Typography
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+  # Features
+  features:
+    - navigation.sections        # Group navigation sections
+    - navigation.expand         # Expand all sections by default
+    - navigation.top           # Back to top button
+    - navigation.footer        # Previous/next navigation in footer
+    - search.highlight         # Highlight search terms
+    - search.share            # Share search results
+    - content.code.copy       # Copy code blocks
+    - content.action.edit     # Edit page action
+    - content.action.view     # View source action
+    - toc.follow             # Sidebar follows scroll
+
+  # Logo and favicon (comment out until we add them)
+  # logo: assets/images/logo.png
+  # favicon: assets/images/favicon.ico
+
+# Navigation structure
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Setup Guide: setup-guide.md
+    - Program Overview: program-overview.md
+  
+  - Chapter 1 - HTML Structure & Color Magic: chapters/chapter1/exercises.md
+  - Chapter 2 - CSS Styling Fundamentals: chapters/chapter2/exercises.md
+  - Chapter 3 - Lists, Links & Navigation: chapters/chapter3/exercises.md
+  - Chapter 4 - Images & Visual Elements: chapters/chapter4/exercises.md
+  - Chapter 5 - Tables & Geometric Layouts: chapters/chapter5/exercises.md
+  - Chapter 6 - Divs & Layout Fundamentals: chapters/chapter6/exercises.md
+  - Chapter 7 - Forms & Interactive Elements: chapters/chapter7/exercises.md
+  - Chapter 8 - CSS Layout & Design Patterns: chapters/chapter8/exercises.md
+  - Chapter 9 - Multimedia & Advanced Elements: chapters/chapter9/exercises.md
+  - Chapter 10 - Final Project & Portfolio: chapters/chapter10/exercises.md
+
+# Plugins
+plugins:
+  - search:
+      lang: en
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: datetime
+      fallback_to_build_date: true
+  
+  - mermaid2:
+      arguments:
+        theme: base
+        themeVariables:
+          primaryColor: '#9c27b0'
+          primaryTextColor: '#ffffff'
+
+# Markdown extensions
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      title: On this page
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: yourusername
+      repo: html-learning-adventure
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Extra CSS and JavaScript (comment out until we create these files)
+# extra_css:
+#   - assets/css/custom.css
+#   - assets/css/chapter-styles.css
+
+# extra_javascript:
+#   - assets/js/custom.js
+#   - https://polyfill.io/v3/polyfill.min.js?features=es6
+#   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+# Extra configuration
+extra:
+  # Social links
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername/html-learning-adventure
+    - icon: fontawesome/solid/envelope
+      link: mailto:your-email@example.com
+  
+  # Version info
+  version:
+    provider: mike
+    default: latest
+  
+  # Analytics (optional)
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX  # Replace with your Google Analytics ID
+
+# Copyright
+copyright: |
+  Copyright &copy; 2024 HTML Learning Adventure Team<br>
+  <small>Built with ❤️ for young artists and developers</small>
+
+# Custom configuration for educational content
+strict: false  # Allow warnings for now
+
+# Watch files for live reload during development
+watch:
+  - docs/
+  - mkdocs.yml

@@ -1,0 +1,23 @@
+# HTML Learning Adventure - Python Dependencies
+# ================================================
+
+# Core MkDocs
+mkdocs==1.5.3
+
+# Material theme (gorgeous educational theme)
+mkdocs-material==9.4.8
+
+# Useful plugins for educational content
+mkdocs-mermaid2-plugin==1.1.1        # Diagrams and flowcharts
+mkdocs-git-revision-date-localized-plugin==1.2.1  # Last updated dates
+mkdocs-minify-plugin==0.7.1          # Optimize site performance
+mkdocs-redirects==1.2.1              # Handle URL redirects
+mkdocs-awesome-pages-plugin==2.9.2   # Advanced page organization
+
+# Development dependencies
+mkdocs-git-committers-plugin-2==1.2.0  # Show contributors
+mkdocs-print-site-plugin==2.3.4      # Print-friendly versions
+
+# Optional: Advanced features
+# mkdocs-jupyter==0.24.6              # Jupyter notebook integration
+# mkdocs-pdf-export-plugin==0.5.10    # PDF export functionality

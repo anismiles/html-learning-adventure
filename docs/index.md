@@ -7,17 +7,17 @@
 ## 🚀 Quick Start Guide
 
 ### **Step 1: Setup Your Coding Environment**
-👉 **Start here:** [`Setup-Guide-for-Young-HTML-Artists.md`](./Setup-Guide-for-Young-HTML-Artists.md)
+Start here: [Setup Guide](setup-guide.md)
 
 Complete setup for Mac, Windows, and CodePen.io before beginning Chapter 1.
 
 ### **Step 2: Read the Full Program Overview**
-👉 **Next:** [`10-Week-HTML-Learning-Program.md`](./10-Week-HTML-Learning-Program.md)
+Next: [Program Overview](program-overview.md)
 
 Understand the complete 10-chapter journey and learning philosophy.
 
 ### **Step 3: Begin Chapter 1**
-👉 **Start coding:** [`chapter1/lesson1-exercises.md`](./chapter1/lesson1-exercises.md)
+Start coding: [Chapter 1 - HTML Structure & Color Magic](chapters/chapter1/exercises.md)
 
 Your first adventure in HTML structure and color magic!
 
@@ -26,45 +26,23 @@ Your first adventure in HTML structure and color magic!
 ## 📚 Program Structure
 
 ```
-myra/
-├── README.md                              ← You are here!
-├── Setup-Guide-for-Young-HTML-Artists.md  ← Essential setup guide
-├── 10-Week-HTML-Learning-Program.md       ← Complete program overview
-├── chapter1/                              ← HTML Structure & Color Magic
-│   ├── lesson1-exercises.md               ← Chapter 1 instructions
-│   ├── lesson1-starter.html               ← Practice playground
-│   └── project-template.html              ← Final project template
-├── chapter2/                              ← CSS Styling Fundamentals
-│   ├── lesson2-exercises.md               ← Chapter 2 instructions
-│   ├── lesson2-starter.html               ← CSS playground
-│   └── project-template.html              ← Styled poem project
-├── chapter3/                              ← Lists, Links & Navigation
-│   ├── lesson3-exercises.md               ← Chapter 3 instructions
-│   ├── lesson3-starter.html               ← Lists and links playground
-│   ├── about.html                         ← Sample about page
-│   └── project-template.html              ← Multi-page website
-├── chapter4/                              ← Images & Visual Elements
-│   ├── lesson4-exercises.md               ← Chapter 4 instructions
-│   ├── lesson4-starter.html               ← Image playground
-│   ├── sample-images/                     ← Practice images folder
-│   └── project-template.html              ← Visual portfolio
-├── chapter5/                              ← Tables & Geometric Layouts
-│   ├── lesson5-exercises.md               ← Chapter 5 instructions
-│   └── project-template.html              ← Data dashboard
-├── chapter6/                              ← Divs & Layout Fundamentals
-│   ├── lesson6-exercises.md               ← Chapter 6 instructions
-│   └── project-template.html              ← Website layout
-├── chapter7/                              ← Forms & Interactive Elements
-│   ├── lesson7-exercises.md               ← Chapter 7 instructions
-│   └── project-template.html              ← Interactive feedback system
-├── chapter8/                              ← CSS Layout & Design Patterns
-│   ├── lesson8-exercises.md               ← Chapter 8 instructions
-│   └── project-template.html              ← Professional portfolio
-├── chapter9/                              ← Multimedia & Advanced Elements
-│   ├── lesson9-exercises.md               ← Chapter 9 instructions
-│   └── project-template.html              ← Multimedia showcase
-└── chapter10/                             ← Final Project & Portfolio
-    └── lesson10-exercises.md              ← Capstone project guide
+HTML Learning Adventure Website/
+├── Home (this page)                       ← You are here!
+├── Setup Guide                            ← Essential setup guide
+├── Program Overview                       ← Complete program overview
+├── Chapter 1 - HTML Structure & Color Magic
+├── Chapter 2 - CSS Styling Fundamentals
+├── Chapter 3 - Lists, Links & Navigation
+├── Chapter 4 - Images & Visual Elements
+├── Chapter 5 - Tables & Geometric Layouts
+├── Chapter 6 - Divs & Layout Fundamentals
+├── Chapter 7 - Forms & Interactive Elements
+├── Chapter 8 - CSS Layout & Design Patterns
+├── Chapter 9 - Multimedia & Advanced Elements
+└── Chapter 10 - Final Project & Portfolio
+
+All starter files and templates are available for download
+from each chapter page.
 ```
 
 ---

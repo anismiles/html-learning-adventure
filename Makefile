@@ -32,113 +32,113 @@ help: ## Show this help message
 	@echo "  3. make deploy    # Deploy to GitHub Pages"
 
 setup: ## Complete initial setup (virtual env + dependencies)
-	@echo "$(GREEN)🚀 Setting up MkDocs website...$(NC)"
+	@echo "$(GREEN)Setting up MkDocs website...$(NC)"
 	@$(MAKE) venv
 	@$(MAKE) install
-	@echo "$(GREEN)✅ Setup complete! Run 'make serve' to start the development server.$(NC)"
+	@echo "$(GREEN)Setup complete! Run 'make serve' to start the development server.$(NC)"
 
 venv: ## Create Python virtual environment
-	@echo "$(BLUE)📦 Creating Python virtual environment...$(NC)"
+	@echo "$(BLUE)Creating Python virtual environment...$(NC)"
 	@if [ ! -d "$(VENV)" ]; then \
 		$(PYTHON) -m venv $(VENV); \
-		echo "$(GREEN)✅ Virtual environment created$(NC)"; \
+		echo "$(GREEN)Virtual environment created$(NC)"; \
 	else \
-		echo "$(YELLOW)⚠️  Virtual environment already exists$(NC)"; \
+		echo "$(YELLOW)Virtual environment already exists$(NC)"; \
 	fi
 
 install: venv ## Install Python dependencies
-	@echo "$(BLUE)📥 Installing MkDocs and dependencies...$(NC)"
+	@echo "$(BLUE)Installing MkDocs and dependencies...$(NC)"
 	@$(PIP) install --upgrade pip
 	@$(PIP) install -r requirements.txt
-	@echo "$(GREEN)✅ Dependencies installed$(NC)"
+	@echo "$(GREEN)Dependencies installed$(NC)"
 
 serve: venv ## Start development server (with live reload)
-	@echo "$(GREEN)🌐 Starting MkDocs development server...$(NC)"
-	@echo "$(CYAN)📱 Your site will be available at: http://127.0.0.1:7171$(NC)"
-	@echo "$(YELLOW)💡 Press Ctrl+C to stop the server$(NC)"
+	@echo "$(GREEN)Starting MkDocs development server...$(NC)"
+	@echo "$(CYAN)Your site will be available at: http://127.0.0.1:7171$(NC)"
+	@echo "$(YELLOW)Press Ctrl+C to stop the server$(NC)"
 	@$(MKDOCS) serve --dev-addr 127.0.0.1:7171
 
 build: venv ## Build the static site
-	@echo "$(BLUE)🔨 Building static site...$(NC)"
+	@echo "$(BLUE)Building static site...$(NC)"
 	@$(MKDOCS) build
-	@echo "$(GREEN)✅ Site built successfully in ./site/$(NC)"
+	@echo "$(GREEN)Site built successfully in ./site/$(NC)"
 
 deploy: venv ## Deploy to GitHub Pages
-	@echo "$(BLUE)🚀 Deploying to GitHub Pages...$(NC)"
+	@echo "$(BLUE)Deploying to GitHub Pages...$(NC)"
 	@if [ ! -d ".git" ]; then \
-		echo "$(RED)❌ Not a git repository. Initialize git first:$(NC)"; \
+		echo "$(RED)Not a git repository. Initialize git first:$(NC)"; \
 		echo "$(CYAN)   git init$(NC)"; \
-		echo "$(CYAN)   git remote add origin https://github.com/yourusername/html-learning-adventure.git$(NC)"; \
+		echo "$(CYAN)   git remote add origin https://github.com/anismiles/html-learning-adventure.git$(NC)"; \
 		exit 1; \
 	fi
 	@$(MKDOCS) gh-deploy --force
-	@echo "$(GREEN)✅ Deployed to GitHub Pages!$(NC)"
+	@echo "$(GREEN)Deployed to GitHub Pages!$(NC)"
 
 clean: ## Clean up generated files
-	@echo "$(RED)🧹 Cleaning up...$(NC)"
+	@echo "$(RED)Cleaning up...$(NC)"
 	@rm -rf site/
-	@echo "$(GREEN)✅ Cleanup complete$(NC)"
+	@echo "$(GREEN)Cleanup complete$(NC)"
 
 status: ## Show project status
-	@echo "$(CYAN)📊 Project Status$(NC)"
+	@echo "$(CYAN)Project Status$(NC)"
 	@echo "=================="
 	@echo ""
 	@echo "$(BLUE)Virtual Environment:$(NC)"
 	@if [ -d "$(VENV)" ]; then \
-		echo "  ✅ Created at: $(VENV)"; \
-		echo "  📦 Python: $$($(PYTHON_VENV) --version)"; \
+		echo "  [OK] Created at: $(VENV)"; \
+		echo "  [OK] Python: $$($(PYTHON_VENV) --version)"; \
 		if [ -f "$(MKDOCS)" ]; then \
-			echo "  🔧 MkDocs: $$($(MKDOCS) --version)"; \
+			echo "  [OK] MkDocs: $$($(MKDOCS) --version)"; \
 		else \
-			echo "  ❌ MkDocs not installed - run 'make install'"; \
+			echo "  [ERROR] MkDocs not installed - run 'make install'"; \
 		fi; \
 	else \
-		echo "  ❌ Not created - run 'make setup'"; \
+		echo "  [ERROR] Not created - run 'make setup'"; \
 	fi
 	@echo ""
 	@echo "$(BLUE)Documentation:$(NC)"
 	@if [ -d "docs" ]; then \
-		echo "  ✅ Docs directory exists"; \
-		echo "  📄 Files: $$(find docs -name '*.md' | wc -l) markdown files"; \
-		echo "  📁 Chapters: $$(find docs/chapters -mindepth 1 -maxdepth 1 -type d | wc -l) chapters"; \
-		echo "  💾 Downloads: $$(find docs/assets/downloads -name '*.html' | wc -l) HTML files"; \
+		echo "  [OK] Docs directory exists"; \
+		echo "  [INFO] Files: $$(find docs -name '*.md' | wc -l) markdown files"; \
+		echo "  [INFO] Chapters: $$(find docs/chapters -mindepth 1 -maxdepth 1 -type d | wc -l) chapters"; \
+		echo "  [INFO] Downloads: $$(find docs/assets/downloads -name '*.html' | wc -l) HTML files"; \
 	else \
-		echo "  ❌ Docs directory not found"; \
+		echo "  [ERROR] Docs directory not found"; \
 	fi
 	@echo ""
 	@echo "$(BLUE)Site Configuration:$(NC)"
 	@if [ -f "mkdocs.yml" ]; then \
-		echo "  ✅ mkdocs.yml exists"; \
+		echo "  [OK] mkdocs.yml exists"; \
 	else \
-		echo "  ❌ mkdocs.yml not found"; \
+		echo "  [ERROR] mkdocs.yml not found"; \
 	fi
 	@echo ""
 	@echo "$(BLUE)Git Repository:$(NC)"
 	@if [ -d ".git" ]; then \
-		echo "  ✅ Git initialized"; \
+		echo "  [OK] Git initialized"; \
 		if git remote get-url origin >/dev/null 2>&1; then \
-			echo "  🔗 Remote: $$(git remote get-url origin)"; \
+			echo "  [INFO] Remote: $$(git remote get-url origin)"; \
 		else \
-			echo "  ⚠️  No remote origin set"; \
+			echo "  [WARN] No remote origin set"; \
 		fi; \
 	else \
-		echo "  ❌ Not a git repository"; \
+		echo "  [ERROR] Not a git repository"; \
 	fi
 
 dev: serve ## Alias for serve (start development server)
 
 fresh-start: ## Clean everything and start fresh
-	@echo "$(YELLOW)🔄 Starting fresh...$(NC)"
+	@echo "$(YELLOW)Starting fresh...$(NC)"
 	@rm -rf $(VENV) site/
 	@$(MAKE) setup
-	@echo "$(GREEN)✅ Fresh start complete!$(NC)"
+	@echo "$(GREEN)Fresh start complete!$(NC)"
 
 update: ## Update MkDocs and dependencies
-	@echo "$(BLUE)🔄 Updating dependencies...$(NC)"
+	@echo "$(BLUE)Updating dependencies...$(NC)"
 	@$(PIP) install --upgrade -r requirements.txt
-	@echo "$(GREEN)✅ Dependencies updated$(NC)"
+	@echo "$(GREEN)Dependencies updated$(NC)"
 
 check: ## Validate site configuration and build
-	@echo "$(BLUE)🔍 Checking site configuration...$(NC)"
+	@echo "$(BLUE)Checking site configuration...$(NC)"
 	@$(MKDOCS) build --strict
-	@echo "$(GREEN)✅ Site configuration is valid$(NC)"
+	@echo "$(GREEN)Site configuration is valid$(NC)"

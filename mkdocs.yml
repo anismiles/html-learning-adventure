@@ -2,11 +2,11 @@
 site_name: HTML Learning Adventure for Young Artists
 site_description: A comprehensive 10-chapter program teaching HTML and CSS to creative kids through hands-on projects and artistic exploration
 site_author: HTML Learning Adventure Team
-site_url: https://yourusername.github.io/html-learning-adventure
+site_url: https://anismiles.github.io/html-learning-adventure
 
 # Repository
-repo_name: yourusername/html-learning-adventure
-repo_url: https://github.com/yourusername/html-learning-adventure
+repo_name: anismiles/html-learning-adventure
+repo_url: https://github.com/anismiles/html-learning-adventure
 edit_uri: edit/main/docs/
 
 # Configuration
@@ -120,7 +120,7 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.magiclink:
       repo_url_shorthand: true
-      user: yourusername
+      user: anismiles
       repo: html-learning-adventure
   - pymdownx.mark
   - pymdownx.smartsymbols
@@ -150,9 +150,7 @@ extra:
   # Social links
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/yourusername/html-learning-adventure
-    - icon: fontawesome/solid/envelope
-      link: mailto:your-email@example.com
+      link: https://github.com/anismiles/html-learning-adventure
   
   # Version info
   version:

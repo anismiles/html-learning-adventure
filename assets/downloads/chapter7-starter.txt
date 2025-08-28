@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms and Interactive Elements Playground</title>
+    </head>
+    <body bgcolor="lightsteelblue" text="darkslateblue">
+        
+        <h1 style="text-align: center; color: navy;">Interactive Forms Playground</h1>
+        
+        <!-- Exercise 1: Basic Form Elements -->
+        <section style="background-color: white; padding: 20px; margin: 20px; border-radius: 10px;">
+            <h2>Exercise 1: Basic Form Inputs</h2>
+            
+            <form style="background-color: lightblue; padding: 20px; border-radius: 10px;">
+                <h3>Tell Me About Yourself</h3>
+                
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" placeholder="Enter your name" style="width: 300px; padding: 8px; margin: 5px 0;"><br><br>
+                
+                <label for="age">Your Age:</label><br>
+                <input type="number" id="age" min="1" max="100" style="width: 100px; padding: 8px; margin: 5px 0;"><br><br>
+                
+                <label for="email">Email (Parent's):</label><br>
+                <input type="email" id="email" placeholder="parent@email.com" style="width: 300px; padding: 8px; margin: 5px 0;"><br><br>
+                
+                <button type="button" style="background-color: purple; color: white; padding: 10px 20px; border: none; border-radius: 5px;">
+                    Submit Info
+                </button>
+            </form>
+        </section>
+        
+        <!-- Exercise 2: Different Input Types -->
+        <section style="background-color: white; padding: 20px; margin: 20px; border-radius: 10px;">
+            <h2>Exercise 2: Input Type Exploration</h2>
+            
+            <form style="background-color: lightyellow; padding: 20px; border-radius: 10px;">
+                <h3>Art Preferences Survey</h3>
+                
+                <label for="color-picker">Favorite Color:</label><br>
+                <input type="color" id="color-picker" value="#ff0000" style="width: 50px; height: 30px; margin: 5px 0;"><br><br>
+                
+                <label for="creativity-level">Creativity Level (1-10):</label><br>
+                <input type="range" id="creativity-level" min="1" max="10" value="5" style="width: 300px; margin: 5px 0;"><br><br>
+                
+                <label for="birthday">Your Birthday:</label><br>
+                <input type="date" id="birthday" style="padding: 8px; margin: 5px 0;"><br><br>
+                
+                <label for="art-time">Best Time for Art:</label><br>
+                <input type="time" id="art-time" style="padding: 8px; margin: 5px 0;"><br><br>
+                
+                <input type="checkbox" id="newsletter" style="margin: 5px;">
+                <label for="newsletter">Send me art tips!</label><br><br>
+                
+                <p>Favorite Art Medium:</p>
+                <input type="radio" id="pencil" name="medium" value="pencil" style="margin: 5px;">
+                <label for="pencil">Colored Pencils</label><br>
+                <input type="radio" id="paint" name="medium" value="paint" style="margin: 5px;">
+                <label for="paint">Paint</label><br>
+                <input type="radio" id="digital" name="medium" value="digital" style="margin: 5px;">
+                <label for="digital">Digital Art</label><br><br>
+                
+                <button type="button" style="background-color: orange; color: white; padding: 10px 20px; border: none; border-radius: 5px;">
+                    Submit Preferences
+                </button>
+            </form>
+        </section>
+        
+        <!-- Exercise 3: Dropdown and Text Areas -->
+        <section style="background-color: white; padding: 20px; margin: 20px; border-radius: 10px;">
+            <h2>Exercise 3: More Form Elements</h2>
+            
+            <form style="background-color: lightgreen; padding: 20px; border-radius: 10px;">
+                <h3>Project Feedback Form</h3>
+                
+                <label for="project-type">Project Type:</label><br>
+                <select id="project-type" style="width: 200px; padding: 8px; margin: 5px 0;">
+                    <option value="">Choose a project...</option>
+                    <option value="drawing">Drawing</option>
+                    <option value="painting">Painting</option>
+                    <option value="website">Website</option>
+                    <option value="craft">Craft Project</option>
+                </select><br><br>
+                
+                <label for="feedback">Your Feedback:</label><br>
+                <textarea id="feedback" rows="4" cols="50" placeholder="Tell us what you think..." 
+                          style="padding: 8px; margin: 5px 0; border-radius: 5px; font-family: Arial, sans-serif;"></textarea><br><br>
+                
+                <label for="rating">Overall Rating:</label><br>
+                <select id="rating" style="width: 150px; padding: 8px; margin: 5px 0;">
+                    <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                    <option value="4">⭐⭐⭐⭐ Good</option>
+                    <option value="3">⭐⭐⭐ Okay</option>
+                    <option value="2">⭐⭐ Needs Work</option>
+                    <option value="1">⭐ Poor</option>
+                </select><br><br>
+                
+                <button type="button" style="background-color: green; color: white; padding: 10px 20px; border: none; border-radius: 5px;">
+                    Send Feedback
+                </button>
+            </form>
+        </section>
+        
+        <!-- Exercise 4: Styled Form -->
+        <section style="background-color: white; padding: 20px; margin: 20px; border-radius: 10px;">
+            <h2>Exercise 4: Beautiful Form Design</h2>
+            
+            <form style="background: linear-gradient(45deg, pink, lightblue); padding: 30px; border-radius: 15px; max-width: 500px; margin: 0 auto;">
+                <h3 style="text-align: center; color: darkblue; margin-bottom: 25px;">Art Class Registration</h3>
+                
+                <div style="margin: 15px 0;">
+                    <label style="display: block; font-weight: bold; color: darkblue; margin-bottom: 5px;">Student Name:</label>
+                    <input type="text" style="width: 100%; padding: 12px; border: 2px solid blue; border-radius: 8px; font-size: 16px; box-sizing: border-box;">
+                </div>
+                
+                <div style="margin: 15px 0;">
+                    <label style="display: block; font-weight: bold; color: darkblue; margin-bottom: 5px;">Grade Level:</label>
+                    <select style="width: 100%; padding: 12px; border: 2px solid blue; border-radius: 8px; font-size: 16px; box-sizing: border-box;">
+                        <option>3rd Grade</option>
+                        <option>4th Grade</option>
+                        <option>5th Grade</option>
+                        <option>6th Grade</option>
+                    </select>
+                </div>
+                
+                <div style="margin: 15px 0;">
+                    <label style="display: block; font-weight: bold; color: darkblue; margin-bottom: 5px;">Skill Level:</label>
+                    <input type="range" min="1" max="5" value="3" style="width: 100%; margin: 10px 0;">
+                    <div style="display: flex; justify-content: space-between; font-size: 12px; color: darkblue;">
+                        <span>Beginner</span>
+                        <span>Intermediate</span>
+                        <span>Advanced</span>
+                    </div>
+                </div>
+                
+                <div style="margin: 15px 0;">
+                    <label style="display: block; font-weight: bold; color: darkblue; margin-bottom: 5px;">Special Requests:</label>
+                    <textarea rows="3" style="width: 100%; padding: 12px; border: 2px solid blue; border-radius: 8px; font-size: 16px; font-family: Arial, sans-serif; box-sizing: border-box;" placeholder="Any special accommodations or requests..."></textarea>
+                </div>
+                
+                <button style="background-color: purple; color: white; padding: 15px 30px; border: none; border-radius: 25px; font-size: 16px; cursor: pointer; width: 100%; margin-top: 10px;">
+                    Register for Class
+                </button>
+            </form>
+        </section>
+        
+        <!-- Exercise 5: Multi-Step Form -->
+        <section style="background-color: white; padding: 20px; margin: 20px; border-radius: 10px;">
+            <h2>Exercise 5: Step-by-Step Form</h2>
+            
+            <div style="background-color: lightcoral; padding: 25px; border-radius: 10px;">
+                <h3>Create Your Art Profile - Step 1 of 3</h3>
+                
+                <div style="background-color: white; padding: 20px; border-radius: 8px; margin: 15px 0;">
+                    <h4>Basic Information</h4>
+                    
+                    <label>Artist Name:</label><br>
+                    <input type="text" placeholder="What should we call you?" style="width: 100%; padding: 10px; margin: 5px 0; border-radius: 5px; border: 1px solid gray; box-sizing: border-box;"><br>
+                    
+                    <label>Years Creating Art:</label><br>
+                    <input type="number" min="0" max="20" style="width: 80px; padding: 10px; margin: 5px 0; border-radius: 5px; border: 1px solid gray;"><br>
+                    
+                    <label>Favorite Art Quote or Motto:</label><br>
+                    <input type="text" placeholder="Something that inspires you..." style="width: 100%; padding: 10px; margin: 5px 0; border-radius: 5px; border: 1px solid gray; box-sizing: border-box;">
+                </div>
+                
+                <button style="background-color: darkred; color: white; padding: 12px 25px; border: none; border-radius: 8px; float: right;">
+                    Next Step →
+                </button>
+                <div style="clear: both;"></div>
+            </div>
+        </section>
+        
+        <!-- Experiment Zone -->
+        <hr style="border: 3px solid navy; margin: 30px 20px;">
+        <section style="background-color: white; padding: 30px; margin: 20px; border: 2px dashed navy; border-radius: 10px;">
+            <h2 style="text-align: center; color: navy;">Form Experiment Zone</h2>
+            <p style="text-align: center; color: gray; font-size: 18px;">
+                Create your own custom forms here! Try different input types, styling, and layouts.
+            </p>
+            <!-- Your form experiments go here -->
+        </section>
+        
+    </body>
+</html>

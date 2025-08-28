@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myra's Learning Dashboard - Layout Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 50%, #4facfe 100%);
+            min-height: 100vh;
+        }
+        
+        .dashboard-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px 30px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        .level-badge {
+            background-color: rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            backdrop-filter: blur(10px);
+        }
+        
+        .dashboard-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 500px;
+        }
+        
+        .left-panel {
+            padding: 30px;
+            background-color: #f8f9ff;
+        }
+        
+        .right-panel {
+            padding: 30px;
+            background-color: white;
+            border-left: 2px solid #e2e8f0;
+        }
+        
+        .section-title {
+            color: #2d3748;
+            margin-top: 0;
+            margin-bottom: 25px;
+            font-size: 20px;
+        }
+        
+        .progress-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .progress-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .progress-label {
+            color: #2d3748;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .progress-value {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .progress-bar {
+            background-color: #e2e8f0;
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            border-radius: 5px;
+            transition: width 1s ease;
+        }
+        
+        .html-progress {
+            background: linear-gradient(to right, #2dd4bf, #06b6d4);
+        }
+        
+        .art-progress {
+            background: linear-gradient(to right, #7c3aed, #a855f7);
+        }
+        
+        .coding-progress {
+            background: linear-gradient(to right, #f59e0b, #fbbf24);
+        }
+        
+        .progress-subtitle {
+            color: #718096;
+            font-size: 14px;
+            margin-top: 8px;
+        }
+        
+        .task-item {
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            border-left: 4px solid;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .task-item:hover {
+            transform: translateX(5px);
+        }
+        
+        .task-completed {
+            background-color: #f0f9ff;
+            border-color: #2dd4bf;
+        }
+        
+        .task-in-progress {
+            background-color: #fffbeb;
+            border-color: #f59e0b;
+        }
+        
+        .task-pending {
+            background-color: #faf5ff;
+            border-color: #7c3aed;
+        }
+        
+        .task-title {
+            color: #2d3748;
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .task-description {
+            color: #718096;
+            font-size: 12px;
+        }
+        
+        .achievements-section {
+            margin-top: 25px;
+        }
+        
+        .achievements-grid {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .achievement-badge {
+            padding: 8px 15px;
+            border-radius: 25px;
+            font-size: 12px;
+            font-weight: bold;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .achievement-badge:hover {
+            transform: scale(1.05);
+        }
+        
+        .badge-html {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            color: #744210;
+        }
+        
+        .badge-color {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            color: #2c7a7b;
+        }
+        
+        .badge-creative {
+            background: linear-gradient(135deg, #d299c2 0%, #fef9d7 100%);
+            color: #553c9a;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 28px;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            opacity: 0.9;
+            margin-top: 5px;
+        }
+        
+        .motivational-quote {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+            color: #744210;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 20px;
+            font-style: italic;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .dashboard-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .right-panel {
+                border-left: none;
+                border-top: 2px solid #e2e8f0;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            
+            .left-panel, .right-panel {
+                padding: 20px;
+            }
+        }
+        
+        /* Animations */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .slide-in {
+            animation: slideIn 0.5s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="header-content">
+                <h1>🎯 My Learning Dashboard</h1>
+                <div class="level-badge pulse">Level 5 Artist</div>
+            </div>
+        </div>
+        
+        <!-- Dashboard Content -->
+        <div class="dashboard-content">
+            <!-- Left Panel - Stats and Progress -->
+            <div class="left-panel">
+                <h2 class="section-title">📊 My Progress</h2>
+                
+                <!-- Quick Stats -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">85</span>
+                        <div class="stat-label">HTML Knowledge %</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">7</span>
+                        <div class="stat-label">Day Streak 🔥</div>
+                    </div>
+                </div>
+                
+                <!-- Progress Cards -->
+                <div class="progress-card slide-in">
+                    <div class="progress-header">
+                        <span class="progress-label">HTML Skills</span>
+                        <span class="progress-value" style="color: #2dd4bf;">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill html-progress" style="width: 85%;"></div>
+                    </div>
+                    <div class="progress-subtitle">6 chapters completed! Almost done! 🚀</div>
+                </div>
+                
+                <div class="progress-card slide-in">
+                    <div class="progress-header">
+                        <span class="progress-label">Art Projects</span>
+                        <span class="progress-value" style="color: #7c3aed;">12 Complete</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill art-progress" style="width: 75%;"></div>
+                    </div>
+                    <div class="progress-subtitle">3 in progress • Portfolio growing! 🎨</div>
+                </div>
+                
+                <div class="progress-card slide-in">
+                    <div class="progress-header">
+                        <span class="progress-label">Coding Practice</span>
+                        <span class="progress-value" style="color: #f59e0b;">45 Hours</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill coding-progress" style="width: 90%;"></div>
+                    </div>
+                    <div class="progress-subtitle">So close to 50 hours! Keep it up! ⭐</div>
+                </div>
+                
+                <!-- Motivational Quote -->
+                <div class="motivational-quote">
+                    <strong>"Every expert was once a beginner!"</strong><br>
+                    <small>- You're doing amazing, Myra! 💪</small>
+                </div>
+            </div>
+            
+            <!-- Right Panel - Tasks and Activities -->
+            <div class="right-panel">
+                <h2 class="section-title">📅 Today's Adventures</h2>
+                
+                <!-- Task List -->
+                <div class="task-item task-completed" onclick="completeTask(this)">
+                    <div class="task-title">✅ Complete Chapter 6 exercises</div>
+                    <div class="task-description">HTML & CSS layouts - Finished! Great job! 🎉</div>
+                </div>
+                
+                <div class="task-item task-in-progress" onclick="completeTask(this)">
+                    <div class="task-title">🎨 Paint morning landscape</div>
+                    <div class="task-description">Watercolor practice - In progress... almost done!</div>
+                </div>
+                
+                <div class="task-item task-pending" onclick="completeTask(this)">
+                    <div class="task-title">📚 Math homework</div>
+                    <div class="task-description">Multiplication tables - Starting soon!</div>
+                </div>
+                
+                <div class="task-item task-pending" onclick="completeTask(this)">
+                    <div class="task-title">💻 Build portfolio page</div>
+                    <div class="task-description">Use today's layout skills - Exciting!</div>
+                </div>
+                
+                <div class="task-item task-pending" onclick="completeTask(this)">
+                    <div class="task-title">🌟 Share artwork online</div>
+                    <div class="task-description">Post butterfly painting - Can't wait!</div>
+                </div>
+                
+                <!-- Achievements Section -->
+                <div class="achievements-section">
+                    <h3 style="color: #2d3748; margin-bottom: 15px;">🏆 Recent Achievements</h3>
+                    <div class="achievements-grid">
+                        <div class="achievement-badge badge-html" onclick="showAchievement('HTML Master')">HTML Master</div>
+                        <div class="achievement-badge badge-color" onclick="showAchievement('Color Expert')">Color Expert</div>
+                        <div class="achievement-badge badge-creative" onclick="showAchievement('Creative Coder')">Creative Coder</div>
+                    </div>
+                </div>
+                
+                <!-- Weekly Goals -->
+                <div style="margin-top: 25px; background-color: #f8f9ff; padding: 20px; border-radius: 10px; border: 2px solid #e2e8f0;">
+                    <h4 style="color: #2d3748; margin-top: 0;">🎯 This Week's Goals</h4>
+                    <ul style="color: #4a5568; font-size: 14px; line-height: 1.6;">
+                        <li>Finish HTML Chapter 6 ✅</li>
+                        <li>Create 2 new paintings 🎨</li>
+                        <li>Build first portfolio webpage 💻</li>
+                        <li>Learn about CSS grids 📚</li>
+                        <li>Share art with friends 🌟</li>
+                    </ul>
+                    <div style="background-color: #e6fffa; padding: 10px; border-radius: 5px; margin-top: 15px;">
+                        <strong style="color: #2d7dd2;">💡 This Week's Tip:</strong> 
+                        <em style="color: #2c7a7b;">Remember, every website you visit uses HTML layouts just like the ones you're learning!</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Interactive dashboard features for Myra!
+        
+        function completeTask(taskElement) {
+            if (taskElement.classList.contains('task-pending')) {
+                taskElement.classList.remove('task-pending');
+                taskElement.classList.add('task-in-progress');
+                taskElement.querySelector('.task-title').innerHTML = '⏳ ' + taskElement.querySelector('.task-title').textContent.replace('📚 ', '').replace('💻 ', '').replace('🌟 ', '');
+                taskElement.querySelector('.task-description').textContent += ' - Starting now!';
+                showCelebration('Task started! You\'re doing great! 🚀');
+            } else if (taskElement.classList.contains('task-in-progress')) {
+                taskElement.classList.remove('task-in-progress');
+                taskElement.classList.add('task-completed');
+                taskElement.querySelector('.task-title').innerHTML = '✅ ' + taskElement.querySelector('.task-title').textContent.replace('⏳ ', '');
+                taskElement.querySelector('.task-description').textContent = taskElement.querySelector('.task-description').textContent.replace(' - Starting now!', '') + ' - Completed! Amazing! 🎉';
+                showCelebration('Task completed! You\'re on fire! 🔥');
+                updateStats();
+            }
+        }
+        
+        function showAchievement(achievementName) {
+            const achievements = {
+                'HTML Master': 'You\'ve mastered the basics of HTML! You can create headings, paragraphs, lists, and links like a pro! 🏆',
+                'Color Expert': 'You understand how colors work in HTML and can create beautiful color schemes! Your artistic eye is amazing! 🎨',
+                'Creative Coder': 'You\'re combining creativity with coding skills. You\'re going to build incredible things! 💻✨'
+            };
+            
+            showCelebration('🏆 ' + achievementName + '\n\n' + achievements[achievementName]);
+        }
+        
+        function showCelebration(message) {
+            // Create a fun celebration popup
+            alert('🎉 ' + message);
+            
+            // Add sparkle effect to the page
+            createSparkles();
+        }
+        
+        function createSparkles() {
+            for (let i = 0; i < 5; i++) {
+                setTimeout(() => {
+                    const sparkle = document.createElement('div');
+                    sparkle.innerHTML = '✨';
+                    sparkle.style.position = 'fixed';
+                    sparkle.style.left = Math.random() * window.innerWidth + 'px';
+                    sparkle.style.top = Math.random() * window.innerHeight + 'px';
+                    sparkle.style.fontSize = '24px';
+                    sparkle.style.pointerEvents = 'none';
+                    sparkle.style.zIndex = '9999';
+                    sparkle.style.animation = 'sparkle 2s ease forwards';
+                    
+                    document.body.appendChild(sparkle);
+                    
+                    setTimeout(() => {
+                        sparkle.remove();
+                    }, 2000);
+                }, i * 200);
+            }
+        }
+        
+        function updateStats() {
+            // Update completion percentage
+            const completedTasks = document.querySelectorAll('.task-completed').length;
+            const totalTasks = document.querySelectorAll('.task-item').length;
+            const percentage = Math.round((completedTasks / totalTasks) * 100);
+            
+            // Fun messages based on progress
+            if (percentage === 100) {
+                setTimeout(() => {
+                    alert('🎊 WOW! You completed ALL your tasks today! You\'re absolutely incredible, Myra! Time to celebrate! 🎉');
+                }, 500);
+            } else if (percentage >= 80) {
+                setTimeout(() => {
+                    showCelebration('You\'re almost done with everything! So close! 🌟');
+                }, 500);
+            }
+        }
+        
+        // Add sparkle animation CSS
+        const sparkleCSS = `
+            @keyframes sparkle {
+                0% { opacity: 1; transform: scale(0) rotate(0deg); }
+                50% { opacity: 1; transform: scale(1) rotate(180deg); }
+                100% { opacity: 0; transform: scale(0) rotate(360deg); }
+            }
+        `;
+        const style = document.createElement('style');
+        style.textContent = sparkleCSS;
+        document.head.appendChild(style);
+        
+        // Animate progress bars on page load
+        window.addEventListener('load', function() {
+            const progressBars = document.querySelectorAll('.progress-fill');
+            progressBars.forEach((bar, index) => {
+                setTimeout(() => {
+                    bar.style.width = bar.style.width || '0%';
+                }, index * 300);
+            });
+        });
+        
+        // Fun console messages
+        console.log('🎯 Welcome to your dashboard, Myra!');
+        console.log('💡 Try clicking on tasks to mark them as completed!');
+        console.log('🏆 Click on achievement badges to see what you\'ve accomplished!');
+        console.log('✨ Keep up the amazing work - you\'re learning so fast!');
+        
+        // Secret konami code easter egg (up, up, down, down, left, right, left, right)
+        let konamiCode = [];
+        const konamiSequence = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight'];
+        
+        document.addEventListener('keydown', function(e) {
+            konamiCode.push(e.code);
+            if (konamiCode.length > konamiSequence.length) {
+                konamiCode.shift();
+            }
+            
+            if (konamiCode.join(',') === konamiSequence.join(',')) {
+                document.body.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%)';
+                alert('🎮 Secret code activated! You found the hidden developer mode! You\'re going to be an amazing programmer! 🚀');
+                konamiCode = [];
+            }
+        });
+        
+        // Add current time and date
+        function updateClock() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            const dateString = now.toLocaleDateString();
+            
+            if (!document.querySelector('.clock')) {
+                const clock = document.createElement('div');
+                clock.className = 'clock';
+                clock.style.cssText = 'position: fixed; top: 10px; right: 10px; background: rgba(255,255,255,0.9); padding: 10px; border-radius: 8px; font-size: 12px; color: #2d3748; box-shadow: 0 2px 8px rgba(0,0,0,0.1);';
+                document.body.appendChild(clock);
+            }
+            
+            document.querySelector('.clock').innerHTML = `📅 ${dateString}<br>🕐 ${timeString}`;
+        }
+        
+        updateClock();
+        setInterval(updateClock, 1000);
+    </script>
+</body>
+</html>

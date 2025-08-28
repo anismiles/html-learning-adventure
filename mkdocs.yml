@@ -135,10 +135,9 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
 
-# Extra CSS and JavaScript (comment out until we create these files)
-# extra_css:
-#   - assets/css/custom.css
-#   - assets/css/chapter-styles.css
+# Extra CSS and JavaScript
+extra_css:
+  - assets/css/custom.css
 
 # extra_javascript:
 #   - assets/js/custom.js

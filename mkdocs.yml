@@ -1,7 +1,7 @@
 # HTML Learning Adventure - MkDocs Configuration
-site_name: HTML Learning Adventure for Young Artists
-site_description: A comprehensive 10-chapter program teaching HTML and CSS to creative kids through hands-on projects and artistic exploration
-site_author: HTML Learning Adventure Team
+site_name: Myra's HTML Art Studio
+site_description: Myra Kumar's creative coding journey - learning HTML and CSS through art, math, and fun projects
+site_author: Myra Kumar
 site_url: https://anismiles.github.io/html-learning-adventure
 
 # Repository
@@ -13,20 +13,20 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   
-  # Color palette - kid-friendly but professional
+  # Color palette - Myra's favorite colors: Teal, Purple, Yellow
   palette:
-    # Light mode
+    # Light mode - Teal & Yellow
     - scheme: default
-      primary: purple
-      accent: pink
+      primary: teal
+      accent: amber
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     
-    # Dark mode
+    # Dark mode - Deep Purple & Teal
     - scheme: slate
       primary: deep purple
-      accent: purple
+      accent: teal
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -60,16 +60,16 @@ nav:
     - Setup Guide: setup-guide.md
     - Program Overview: program-overview.md
   
-  - Chapter 1 - HTML Structure & Color Magic: chapters/chapter1/exercises.md
-  - Chapter 2 - CSS Styling Fundamentals: chapters/chapter2/exercises.md
-  - Chapter 3 - Lists, Links & Navigation: chapters/chapter3/exercises.md
-  - Chapter 4 - Images & Visual Elements: chapters/chapter4/exercises.md
-  - Chapter 5 - Tables & Geometric Layouts: chapters/chapter5/exercises.md
-  - Chapter 6 - Divs & Layout Fundamentals: chapters/chapter6/exercises.md
-  - Chapter 7 - Forms & Interactive Elements: chapters/chapter7/exercises.md
-  - Chapter 8 - CSS Layout & Design Patterns: chapters/chapter8/exercises.md
-  - Chapter 9 - Multimedia & Advanced Elements: chapters/chapter9/exercises.md
-  - Chapter 10 - Final Project & Portfolio: chapters/chapter10/exercises.md
+  - Chapter 1 - Myra's Color Magic Laboratory: chapters/chapter1/exercises.md
+  - Chapter 2 - Style Your Digital Art Canvas: chapters/chapter2/exercises.md
+  - Chapter 3 - Build Your Artist Network: chapters/chapter3/exercises.md
+  - Chapter 4 - Create Your Photo Gallery: chapters/chapter4/exercises.md
+  - Chapter 5 - Design Math Art Patterns: chapters/chapter5/exercises.md
+  - Chapter 6 - Layout Your Creative Space: chapters/chapter6/exercises.md
+  - Chapter 7 - Make Interactive Art Forms: chapters/chapter7/exercises.md
+  - Chapter 8 - Professional Artist Website: chapters/chapter8/exercises.md
+  - Chapter 9 - Multimedia Art Showcase: chapters/chapter9/exercises.md
+  - Chapter 10 - Myra Kumar Artist & Developer Portfolio: chapters/chapter10/exercises.md
 
 # Plugins
 plugins:
@@ -164,8 +164,8 @@ extra:
 
 # Copyright
 copyright: |
-  Copyright &copy; 2024 HTML Learning Adventure Team<br>
-  <small>Built with ❤️ for young artists and developers</small>
+  Copyright &copy; 2024 Myra Kumar<br>
+  <small>Built with teal, purple, and yellow love by a young artist-developer</small>
 
 # Custom configuration for educational content
 strict: false  # Allow warnings for now

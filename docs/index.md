@@ -1,47 +1,47 @@
-# 🎨 HTML Learning Adventure for Young Artists
+# 🎨 Welcome to Myra's HTML Art Studio!
 
-**A 10-chapter program designed for creative 10-year-olds with artistic interests and mathematical minds**
+**Hi Myra! This is your personal coding journey where you'll learn HTML and CSS while creating amazing art projects with your favorite colors: teal, purple, and yellow!**
 
 ---
 
-## 🚀 Quick Start Guide
+## 🚀 Myra's Coding Adventure Starts Here!
 
-### **Step 1: Setup Your Coding Environment**
+### **Step 1: Set Up Your Art Studio**
 Start here: [Setup Guide](setup-guide.md)
 
-Complete setup for Mac, Windows, and CodePen.io before beginning Chapter 1.
+Get your computer ready for creating beautiful websites! We'll help you set up everything you need.
 
-### **Step 2: Read the Full Program Overview**
+### **Step 2: See Your Amazing Journey**
 Next: [Program Overview](program-overview.md)
 
-Understand the complete 10-chapter journey and learning philosophy.
+Discover all the cool projects you'll build - from color experiments to your own artist portfolio!
 
-### **Step 3: Begin Chapter 1**
-Start coding: [Chapter 1 - HTML Structure & Color Magic](chapters/chapter1/exercises.md)
+### **Step 3: Create Your First Masterpiece**
+Start coding: [Chapter 1 - Myra's Color Magic Laboratory](chapters/chapter1/exercises.md)
 
-Your first adventure in HTML structure and color magic!
+Let's start with your favorite colors and learn how websites work!
 
 ---
 
-## 📚 Program Structure
+## 📚 Myra's Creative Coding Journey
 
 ```
-HTML Learning Adventure Website/
-├── Home (this page)                       ← You are here!
-├── Setup Guide                            ← Essential setup guide
-├── Program Overview                       ← Complete program overview
-├── Chapter 1 - HTML Structure & Color Magic
-├── Chapter 2 - CSS Styling Fundamentals
-├── Chapter 3 - Lists, Links & Navigation
-├── Chapter 4 - Images & Visual Elements
-├── Chapter 5 - Tables & Geometric Layouts
-├── Chapter 6 - Divs & Layout Fundamentals
-├── Chapter 7 - Forms & Interactive Elements
-├── Chapter 8 - CSS Layout & Design Patterns
-├── Chapter 9 - Multimedia & Advanced Elements
-└── Chapter 10 - Final Project & Portfolio
+Myra's HTML Art Studio/
+├── Home (this page)                       ← You are here, Myra!
+├── Setup Guide                            ← Get your art studio ready
+├── Program Overview                       ← See your amazing journey
+├── Chapter 1 - Myra's Color Magic Laboratory
+├── Chapter 2 - Style Your Digital Art Canvas
+├── Chapter 3 - Build Your Artist Network
+├── Chapter 4 - Create Your Photo Gallery
+├── Chapter 5 - Design Math Art Patterns
+├── Chapter 6 - Layout Your Creative Space
+├── Chapter 7 - Make Interactive Art Forms
+├── Chapter 8 - Professional Artist Website
+├── Chapter 9 - Multimedia Art Showcase
+└── Chapter 10 - Myra Kumar: Artist & Developer Portfolio
 
-All starter files and templates are available for download
+All your creative tools and templates are ready for download
 from each chapter page.
 ```
 
@@ -76,15 +76,15 @@ Each chapter introduces just one new concept at a time.
 
 ---
 
-## 🌟 What She'll Create
+## 🌟 What Myra Will Create
 
-By the end of the program, your daughter will have built:
+By the end of this journey, Myra will have built:
 
-- **Personal art gallery website**
-- **Interactive color experiments**
-- **Math games and tools**
-- **Multimedia story pages**
-- **Complete portfolio of web projects**
+- **Personal art gallery featuring her favorite colors**
+- **Interactive teal, purple & yellow color experiments**
+- **Math art pattern generators**
+- **Multimedia showcase of her creations**
+- **Professional "Myra Kumar: Artist & Developer" portfolio**
 
 ---
 

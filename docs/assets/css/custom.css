@@ -2,59 +2,59 @@
 /* ============================================= */
 
 :root {
-  /* Reduce sidebar navigation font size */
-  --md-nav-link-font-size: 0.85rem;
+  /* Reduce sidebar navigation font size further */
+  --md-nav-link-font-size: 0.8rem;
   
   /* Reduce main content font size for better density */
-  --md-typeset-font-size: 0.9rem;
+  --md-typeset-font-size: 0.85rem;
   
   /* Reduce sidebar section headers */
-  --md-nav-title-font-size: 0.8rem;
+  --md-nav-title-font-size: 0.75rem;
   
   /* Adjust table of contents */
-  --md-toc-font-size: 0.8rem;
+  --md-toc-font-size: 0.75rem;
 }
 
 /* Sidebar navigation links */
 .md-nav__link {
-  font-size: 0.85rem !important;
+  font-size: 0.8rem !important;
   line-height: 1.4;
 }
 
 /* Main content area */
 .md-content {
-  font-size: 0.9rem !important;
+  font-size: 0.85rem !important;
 }
 
 /* Sidebar primary navigation (main chapters) */
 .md-sidebar--primary .md-nav__link {
-  font-size: 0.85rem !important;
+  font-size: 0.8rem !important;
 }
 
 /* Sidebar secondary navigation (table of contents) */
 .md-sidebar--secondary .md-nav__link {
-  font-size: 0.8rem !important;
+  font-size: 0.75rem !important;
 }
 
 /* Navigation titles (chapter headers in sidebar) */
 .md-nav__title {
-  font-size: 0.8rem !important;
+  font-size: 0.75rem !important;
   font-weight: 600;
 }
 
 /* Content inner wrapper */
 .md-content__inner {
-  font-size: 0.9rem !important;
+  font-size: 0.85rem !important;
 }
 
 /* Table of contents */
 .md-nav--secondary .md-nav__link {
-  font-size: 0.8rem !important;
+  font-size: 0.75rem !important;
 }
 
 /* Code blocks - keep readable for learning */
 .md-typeset code {
-  font-size: 0.85rem !important;
+  font-size: 0.8rem !important;
 }
 
 /* Ensure headers maintain good hierarchy */
@@ -66,11 +66,11 @@
 /* Keep navigation readable on mobile */
 @media (max-width: 768px) {
   .md-nav__link {
-    font-size: 0.85rem !important;
+    font-size: 0.8rem !important;
   }
   
   .md-content {
-    font-size: 0.9rem !important;
+    font-size: 0.85rem !important;
   }
 }
 
@@ -86,10 +86,10 @@
 
 /* Adjust search box font size */
 .md-search__input {
-  font-size: 0.85rem !important;
+  font-size: 0.8rem !important;
 }
 
 /* Footer text */
 .md-footer-meta {
-  font-size: 0.8rem !important;
+  font-size: 0.75rem !important;
 }

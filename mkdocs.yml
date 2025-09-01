@@ -97,7 +97,7 @@ plugins:
       arguments:
         theme: base
         themeVariables:
-          primaryColor: '#9c27b0'
+          primaryColor: '#2dd4bf'
           primaryTextColor: '#ffffff'
 
 # Markdown extensions

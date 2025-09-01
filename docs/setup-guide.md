@@ -137,7 +137,7 @@ Myra, we're going to set up two perfect ways for you to create beautiful HTML pa
       - Type:
       ```html
       <h1>My CodePen Art!</h1>
-      <p style="color: blue;">This is so cool!</p>
+      <p style="color: #2dd4bf;">This is so cool!</p>
       <h2 style="background-color: yellow;">I can see changes instantly!</h2>
       ```
       - Watch it appear in the preview below!

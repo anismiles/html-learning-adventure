@@ -97,19 +97,23 @@ Before we dive deeper into HTML elements, let's learn some simple habits that ma
     These small practices make a huge difference for all your visitors:
     
     **🎯 One Main Heading Per Page**
+
     - Use only one `<h1>` on each page (like a book title)
     - Then use `<h2>`, `<h3>`, etc. in logical order (like chapter headings)
     
     **🖼️ Describe Your Images**
+
     - Always add `alt="description"` to every image
     - Describe what's important about the image, not just what it looks like
     - Example: `<img src="cat.jpg" alt="Orange tabby cat sleeping on a blue cushion">`
     
     **🔗 Clear Link Text**
+
     - Instead of "click here", use descriptive text like "view my art gallery"
     - Help people understand where the link goes before they click
     
     **🎨 Good Color Contrast**
+
     - Use dark text on light backgrounds (or light text on dark backgrounds)
     - Make sure your text is easy to read for everyone
     
@@ -1117,16 +1121,16 @@ Here are the most useful CSS properties to get you started:
 
 **How it looks:**
 <div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
-<p style="margin: 20px; padding: 10px; background-color: #e6f3ff; border: 1px dashed #007acc;">Text with space around it</p>
+<p style="margin: 20px; padding: 10px; background-color: #e6fffa; border: 1px dashed #2dd4bf;">Text with space around it</p>
 </div>
 
 ### Your Favorite Colors
 
 Let's use your beautiful favorite colors in your projects:
 
-- **Teal:** <span style="color: #2dd4bf; font-weight: normal;"><code>#2dd4bf</code></span> - calm like ocean waves
-- **Purple:** <span style="color: #7c3aed; font-weight: normal;"><code>#7c3aed</code></span> - creative and magical  
-- **Yellow:** <span style="color: #f59e0b; font-weight: normal;"><code>#f59e0b</code></span> - bright and cheerful
+- <span style="color: #2dd4bf; font-weight: normal;">**Teal:** #2dd4bf - calm like ocean waves</span>
+- <span style="color: #7c3aed; font-weight: normal;">**Purple:** #7c3aed - creative and magical</span>  
+- <span style="color: #f59e0b; font-weight: normal;">**Yellow:** #f59e0b - bright and cheerful</span>
 
 Now that you know the building blocks of HTML and how to style them with CSS, it's time to put everything together! Let's practice with some hands-on exercises that will prepare you for your final project.
 
@@ -1166,6 +1170,7 @@ You've mastered inline CSS with the `style=""` attribute - fantastic! Once you'r
     ```
     
     **Why do this?**
+    
     - ✨ **Cleaner HTML code** - easier to read and maintain
     - 🔄 **Reuse styles** across multiple pages
     - ⚡ **Faster websites** - browsers can cache your CSS file

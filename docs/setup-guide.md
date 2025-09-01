@@ -173,4 +173,17 @@ Myra, we're going to set up two perfect ways for you to create beautiful HTML pa
 
 ---
 
+## 🚀 Quick Start - Your First HTML File
+
+Once you have either setup working, here's the simple 4-step process to create any HTML file:
+
+1. **Create a new file** in your text editor (or new pen in CodePen)
+2. **Add the basic HTML structure** (DOCTYPE, html, head, body tags)
+3. **Add your content** - start simple with "Hello World!"
+4. **Open in browser** to see your creation come to life!
+
+**Pro Tip:** Start every coding session with a simple "Hello World!" page to make sure everything is working perfectly, then build from there!
+
+---
+
 *Remember: The goal is to make coding feel like art, not work. Every challenge is a chance to problem-solve together, and every success is worth celebrating! 🎨✨*

@@ -179,7 +179,7 @@ extra:
 # Copyright
 copyright: |
   Copyright &copy; 2024 Myra Kumar<br>
-  <small>Built with teal, purple, and yellow love by a young artist-developer</small>
+  <small>Built with teal, purple, and yellow love for a young artist-developer, Myra!</small>
 
 # Custom configuration for educational content
 strict: false  # Allow warnings for now

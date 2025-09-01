@@ -18,7 +18,7 @@ And here's something absolutely amazing - **the very first website is STILL onli
 
 But here's the most incredible part of all: Tim Berners-Lee could have become the richest person on Earth by putting a patent on his invention. Think about it - every time someone used the web, they would have had to pay him money! But instead, he gave it away completely FREE to the entire world because he believed everyone should have access to information and knowledge. That decision changed everything for billions of people, including you and me.
 
-Want to know just how explosive the web's growth has been? Let's look at some mind-blowing numbers:
+Want to know just how remarkable the web's growth has been? Let's look at some impressive numbers:
 
 <div style="margin: 20px 0; padding: 15px; background-color: #f8f9fa; border-radius: 8px;">
 <h4 style="margin-top: 0;">Website Growth Over Time</h4>
@@ -44,17 +44,19 @@ graph LR
 
 ---
 
+Now that you understand how the web exploded from Tim's single idea into this massive digital universe, let's explore why HTML is the perfect creative medium for someone with your unique talents.
+
 ### Why HTML is Perfect for Creative Minds Like Yours
 
 You know how you love creating art with your favorite colors - teal, purple, and yellow? Well, Myra, HTML is like having an infinite digital art canvas that never runs out of paint, never tears, and can be shared with people all around the world instantly! But what makes HTML truly special is how it combines the two things you love most: math and art.
 
 #### HTML + Your Math Brain = Pure Magic!
 
-Here's something that will blow your mind: colors in HTML are actually secret mathematical recipes! Your favorite teal color? It's `#2dd4bf` - which is actually a mathematical formula telling the computer to mix specific amounts of red, green, and blue light. It's like being a scientist in a color laboratory! Web pages use coordinate systems just like the graphs you love in math class, where every element has an exact position measured in [pixels](https://en.wikipedia.org/wiki/Pixel){:target="_blank"}. Everything on a webpage has precise proportions, measurements, and mathematical relationships. Your mathematical mind will start seeing patterns everywhere - in the spacing between elements, in the golden ratio used for beautiful layouts, even in how [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout){:target="_blank"} uses mathematical principles to organize content!
+Here's something that will connect to your love of math, Myra: colors in HTML are actually mathematical formulas! Your favorite teal color? It's `#2dd4bf` - which is actually a mathematical recipe telling the computer to mix specific amounts of red, green, and blue light. It's like being a scientist in a color laboratory! Web pages use coordinate systems just like the graphs you love in math class, where every element has an exact position measured in [pixels](https://en.wikipedia.org/wiki/Pixel){:target="_blank"}. Everything on a webpage has precise proportions, measurements, and mathematical relationships. Your mathematical mind will start seeing patterns everywhere - in the spacing between elements, in the golden ratio used for beautiful layouts, even in how [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout){:target="_blank"} uses mathematical principles to organize content!
 
 #### HTML + Your Artistic Soul = Beautiful Digital Masterpieces!
 
-Imagine being able to paint with code using any of the 16.7 million colors that computers can display! You can create layouts more flexible than any physical canvas, design interactive art that responds to people's mouse movements and clicks, build digital galleries to showcase your real artwork, and even create animations that bring your creations to life. Famous digital artists like [Rafael Lozano-Hemmer](https://www.lozano-hemmer.com/){:target="_blank"} and [Casey Reas](https://reas.com/){:target="_blank"} use code to create installations in major museums around the world!
+Imagine being able to paint with code using any of the 16.7 million colors that computers can display, Myra! You can create layouts more flexible than any physical canvas, design interactive art that responds to people's mouse movements and clicks, build digital galleries to showcase your real artwork, and even create animations that bring your creations to life. Famous digital artists like [Rafael Lozano-Hemmer](https://www.lozano-hemmer.com/){:target="_blank"} and [Casey Reas](https://reas.com/){:target="_blank"} use code to create installations in major museums around the world!
 
 ---
 
@@ -64,7 +66,7 @@ Every time you open a browser, Myra, you're using one of the most incredible inv
 
 #### The 1990s - When Everything Changed
 
-Back in 1993, a group of students at the University of Illinois created something revolutionary called [Mosaic](https://en.wikipedia.org/wiki/Mosaic_(web_browser)){:target="_blank"}. It was the first browser that could actually show pictures! Can you imagine using the internet without any images? Before Mosaic, the web was just black text on gray backgrounds - no photos, no colors, no fun graphics at all.
+Back in 1993, a group of students at the University of Illinois created something revolutionary called [Mosaic](https://en.wikipedia.org/wiki/Mosaic_(web_browser)){:target="_blank"}. It was the first browser that could actually show pictures! Can you imagine using the internet without any images, Myra? Before Mosaic, the web was just black text on gray backgrounds - no photos, no colors, no fun graphics at all.
 
 Then in 1994, [Netscape Navigator](https://en.wikipedia.org/wiki/Netscape_Navigator){:target="_blank"} burst onto the scene and changed everything. It made the web colorful, fast, and actually fun to use! Netscape became so popular that by 1995, almost everyone was using it. But then the giant Microsoft decided they wanted a piece of the action, so they created [Internet Explorer](https://en.wikipedia.org/wiki/Internet_Explorer){:target="_blank"} and started what people called "the Browser Wars" - companies fighting to make the best browser!
 
@@ -74,11 +76,11 @@ In 2003, Apple surprised everyone by releasing [Safari](https://www.apple.com/sa
 
 But the biggest shock came in 2008 when Google - a search company! - released [Chrome](https://www.google.com/chrome/){:target="_blank"}. Everyone thought Google was crazy to compete with established browsers, but Chrome was so incredibly fast and simple that it quickly became the most popular browser in the world!
 
-#### Browser Trivia That Will Absolutely Amaze You
+#### Interesting Browser Facts
 
 The very first [banner advertisement](https://en.wikipedia.org/wiki/Web_banner){:target="_blank"} on the internet was just a simple rectangle that said "Have you ever clicked your mouse right HERE? YOU WILL" - and guess what? It got a 44% click rate! Today, if an ad gets even 1% of people to click it, that's considered successful.
 
-Here's something cool about [Google Chrome's logo](https://design.google/library/google-chrome-logo/){:target="_blank"}: those colors aren't random! They're actually based on the mathematical color theory you love studying. The blue, red, yellow, and green represent the [RGB color model](https://en.wikipedia.org/wiki/RGB_color_model){:target="_blank"} that computers use to create all colors on screen.
+Here's something cool about [Google Chrome's logo](https://design.google/library/google-chrome-logo/){:target="_blank"}, Myra: those colors aren't random! They're actually based on the mathematical color theory you love studying. The blue, red, yellow, and green represent the [RGB color model](https://en.wikipedia.org/wiki/RGB_color_model){:target="_blank"} that computers use to create all colors on screen.
 
 [Safari](https://www.apple.com/safari/){:target="_blank"} got its name because Apple wanted people to think of "going on a safari" to explore the internet jungle - discovering new and exciting websites like an adventure! And the word "browser" itself was chosen because you "browse" through information, just like browsing through books in a library or clothes in a store.
 
@@ -86,9 +88,11 @@ Want to see something really cool? There's a website called [Can I Use](https://
 
 ---
 
+Speaking of the tools that power the web, let's dive deeper into HTML itself and discover some fascinating secrets about the language you're about to master.
+
 ### Incredible HTML Secrets That Most People Don't Know
 
-Ready for some seriously mind-blowing facts, Myra? These are the kinds of secrets that even many adults who use the internet every day don't know!
+Ready for some fascinating facts, Myra? These are the kinds of insights that even many adults who use the internet every day don't know!
 
 #### The Magic Story of the First HTML Tags
 
@@ -100,13 +104,13 @@ And here's something that will connect to your love of math: the `<TABLE>` tag w
 
 #### Mathematical Marvels Hidden in Web Design
 
-Remember the [Golden Ratio](https://www.mathsisfun.com/numbers/golden-ratio.html){:target="_blank"} (1.618) that you see in sunflower spirals, seashells, and famous art masterpieces? Well, web designers use this same mathematical principle to create layouts that feel naturally beautiful to the human eye! Many of the world's most gorgeous websites use golden ratio proportions without most people even realizing it.
+Remember the [Golden Ratio](https://www.mathsisfun.com/numbers/golden-ratio.html){:target="_blank"} - a special number (1.618) that appears in sunflower spirals, seashells, and famous art? Web designers use this same principle to create layouts that feel naturally beautiful to look at! Many gorgeous websites use these proportions without most people even realizing it.
 
-[Fibonacci sequences](https://kids.kiddle.co/Fibonacci_sequence){:target="_blank"} (you know, 1, 1, 2, 3, 5, 8, 13...) actually appear in something called responsive design breakpoints - the points where websites change their layout to fit different screen sizes. It's math hidden in plain sight! Did you know that when you count the petals on flowers, they often follow Fibonacci numbers? [Check out this fun explanation](https://www.scienceforkidsclub.com/projects/the-fibonacci-sequence-where-is-it-in-nature.html){:target="_blank"} of how nature uses this same pattern!
+[Fibonacci sequences](https://kids.kiddle.co/Fibonacci_sequence){:target="_blank"} - a number pattern like 1, 1, 2, 3, 5, 8, 13... - sometimes appear in website design, especially in how sites adapt to different screen sizes. It's the same pattern you find when counting flower petals! [Check out this fun explanation](https://www.scienceforkidsclub.com/projects/the-fibonacci-sequence-where-is-it-in-nature.html){:target="_blank"} of how nature uses this pattern.
 
-And all those beautiful color combinations you see on websites? They're based on [color theory mathematics](https://en.wikipedia.org/wiki/Color_theory){:target="_blank"} that determines which colors work harmoniously together - like your favorite teal, purple, and yellow combination!
+And all those beautiful color combinations you see on websites? They're based on [color theory principles](https://en.wikipedia.org/wiki/Color_theory){:target="_blank"} that help determine which colors work well together - like your favorite teal, purple, and yellow combination!
 
-#### HTML Trivia That Will Absolutely Blow Your Mind
+#### HTML Trivia That You'll Find Remarkable
 
 There used to be an HTML tag called `<BLINK>` that made text flash on and off like a neon sign. It became SO annoying that web developers everywhere complained, and browsers eventually stopped supporting it entirely! It's like the internet's equivalent of a fashion trend that was so bad it had to be banned.
 
@@ -128,6 +132,8 @@ But more than the money, think about the creative possibilities: you could build
 
 ---
 
+With all these amazing possibilities in mind, let's talk about why your specific combination of interests and talents makes you perfectly suited for web development success.
+
 ### Why YOU, Myra, Are Going to Excel at This
 
 Here's something incredible that most people don't realize: your unique combination of artistic talent and mathematical thinking is EXACTLY what makes the most successful web developers in the world! You're not just learning to code - you're developing a superpower.
@@ -146,11 +152,13 @@ Your love of math means you'll understand [CSS layouts](https://developer.mozill
 
 ---
 
+As you develop these skills, you'll start noticing fascinating connections between web development and the world around you.
+
 ### The Amazing Things You'll Discover Along the Way
 
 As you learn HTML, Myra, you'll start uncovering incredible secrets about how the digital world really works! You'll understand how [Netflix](https://www.netflix.com/){:target="_blank"} decides what shows to recommend to you (hint: it's partly based on web data and algorithms), why some websites load instantly while others take forever (you'll learn to make lightning-fast sites), how your favorite artists sell their work online through platforms like [Etsy](https://www.etsy.com/){:target="_blank"} and [DeviantArt](https://www.deviantart.com/){:target="_blank"} (you'll even build your own art marketplace), and why certain color combinations make people feel happy, excited, or calm ([color psychology](https://en.wikipedia.org/wiki/Color_psychology){:target="_blank"} meets code!).
 
-But here's the most exciting part of all: Every single website you visit - from [YouTube](https://www.youtube.com/){:target="_blank"} to [Instagram](https://www.instagram.com/){:target="_blank"} to your school's website to [NASA's space exploration site](https://www.nasa.gov/){:target="_blank"} - is built with the exact same HTML you're about to learn. You're not just learning a skill; you're learning the universal language that connects our entire digital world!
+But here's the particularly interesting aspect: Every single website you visit - from [YouTube](https://www.youtube.com/){:target="_blank"} to [Instagram](https://www.instagram.com/){:target="_blank"} to your school's website to [NASA's space exploration site](https://www.nasa.gov/){:target="_blank"} - is built with the exact same HTML you're about to learn. You're not just learning a skill; you're learning the universal language that connects our entire digital world!
 
 ---
 
@@ -174,9 +182,9 @@ First things first - let's make sure your digital art studio is ready to create 
 
 ---
 
-#### One Final Amazing Fact to Inspire You
+#### An Interesting Historical Note
 
-The very first [emoticon](https://en.wikipedia.org/wiki/Emoticon){:target="_blank"} :-) was created in 1982 by computer scientist [Scott Fahlman](https://en.wikipedia.org/wiki/Scott_Fahlman){:target="_blank"} at Carnegie Mellon University. He had no idea that this simple combination of characters would eventually lead to the billions of emojis we use today! Now, over 40 years later, you can create websites with animated emojis, interactive graphics, and digital art that moves, dances, and responds to users in real-time.
+The very first [emoticon](https://en.wikipedia.org/wiki/Emoticon){:target="_blank"} 🙂 was created in 1982 by computer scientist [Scott Fahlman](https://en.wikipedia.org/wiki/Scott_Fahlman){:target="_blank"} at Carnegie Mellon University. He had no idea that this simple combination of characters would eventually lead to the billions of emojis we use today! Now, over 40 years later, you can create websites with animated emojis, interactive graphics, and digital art that moves, dances, and responds to users in real-time.
 
 #### Get Inspired by What's Possible
 

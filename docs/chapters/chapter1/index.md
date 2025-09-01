@@ -1,10 +1,10 @@
-# Chapter 1: HTML Essentials 🌐
+# Chapter 1: HTML Essentials
 
 ## Introduction
 
 Welcome to your web development adventure, Myra! HTML is the foundation language that creates every website you've ever visited. Think of it like learning the alphabet before writing stories - once you know these building blocks, you can create amazing things on the web. Your mathematical mind will love how logical HTML is, while your artistic soul will be excited by all the beautiful pages you'll build.
 
-## Behind the Scenes - How Websites Really Work 🎭
+## Behind the Scenes - How Websites Really Work
 
 Before we start writing code, let's take a peek behind the curtain to understand what's really happening when you visit a website!
 
@@ -40,7 +40,7 @@ Understanding this "behind the scenes" process is like knowing how a magic trick
 
 ---
 
-## What You'll Master 🎯
+## What You'll Master
 
 By the end of this chapter, Myra, you'll be able to:
 
@@ -49,6 +49,8 @@ By the end of this chapter, Myra, you'll be able to:
 - Add colors and basic styling with CSS
 - Organize your projects like a professional web developer
 - Create a complete personal webpage using everything you've learned
+
+---
 
 ## HTML Document Foundation
 
@@ -83,7 +85,102 @@ Every HTML page needs the same basic structure, like how every house needs walls
 - `<body>` - All the content people will see and read
 - `<!-- comments -->` - Notes for yourself that browsers ignore completely
 
-### Understanding HTML Tags - The Building Blocks 🧱
+Now that you understand the basic structure of HTML documents, let's put your new knowledge to work! Did you know you can peek behind the scenes of ANY website to see the actual HTML code?
+
+---
+
+## HTML Detective Challenge
+
+Before we dive deeper into HTML elements, let's become HTML detectives and explore how real websites use the same basic structure you just learned!
+
+### Your First Investigation Mission
+
+1. **Open any website** you like (maybe Google, YouTube, or your school's website)
+2. **Right-click anywhere** on the page
+3. **Select "View Page Source"** from the menu that appears
+4. **Wow!** You'll see all the HTML code that creates that entire webpage!
+
+**What you'll discover:**
+
+- Every website uses the same HTML tags you're learning
+- Even huge websites like Google use simple `<h1>`, `<p>`, and basic document structure
+- The URL changes to start with "view-source:" - that's your detective mode!
+
+**Try this challenge:** Find these elements on any website you investigate:
+
+- `<title>` - What appears in the browser tab
+- `<h1>` or `<h2>` - The main headings
+- `<p>` - Paragraphs of text
+- The basic `<html>`, `<head>`, and `<body>` structure you just learned
+
+**Fun fact:** Professional web developers use "View Page Source" all the time to learn from other websites and debug their code!
+
+Now that you've seen HTML in action on real websites, let's learn about the secret that makes all web design possible - the Box Model!
+
+---
+
+## The Box Model Foundation
+
+Now that you understand the basic structure of HTML documents, here's the most important secret about how websites work: **Every single HTML element is actually a rectangular box!** This is called the "Box Model" and understanding it will give you superpowers in web design.
+
+### How Browsers See Everything
+
+When a browser displays your webpage, it doesn't see text and images the way you do. Instead, it sees a collection of invisible rectangular boxes stacked and arranged on the page. Think of it like a digital version of organizing artwork on a wall!
+
+### Visualizing the Box Model
+
+Every HTML element is like a **framed painting** with four distinct parts:
+
+```
+┌─────────────────────────────────────┐ ← Margin (space from other boxes)
+│ ┌─────────────────────────────────┐ │ ← Border (the frame around content)
+│ │ ┌─────────────────────────────┐ │ │ ← Padding (space inside the frame)
+│ │ │        CONTENT              │ │ │ ← Content (your text, images, etc.)
+│ │ │    (Text, images, etc.)     │ │ │
+│ │ └─────────────────────────────┘ │ │
+│ └─────────────────────────────────┘ │
+└─────────────────────────────────────┘
+```
+
+### The Four Parts Explained
+
+1. **Content** - Your actual text, images, or other elements
+2. **Padding** - Empty space between your content and the border (like matting around a photo)
+3. **Border** - A line around the padding (like the frame around a photo)  
+4. **Margin** - Empty space between this box and other boxes (like space between frames on a wall)
+
+### See the Box Model in Action
+
+Here's a simple example where we can actually see all four parts:
+
+```html
+<p style="
+    margin: 20px;              /* Purple space outside */
+    border: 3px solid purple;  /* Purple frame */
+    padding: 15px;             /* Yellow space inside */
+    background-color: yellow;  /* Makes padding visible */
+">This paragraph shows all four parts of the box model!</p>
+```
+
+**How it looks:**
+<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
+<p style="margin: 20px; border: 3px solid purple; padding: 15px; background-color: yellow;">This paragraph shows all four parts of the box model!</p>
+</div>
+
+### Why This Foundation Matters
+
+Understanding the box model is like having X-ray vision for websites! Once you know this secret:
+
+- **Every HTML tag** you learn (like `<h1>`, `<p>`, `<img>`) creates one of these boxes
+- **CSS styling** controls how each part of the box looks and behaves
+- **Page layouts** are just boxes arranged in creative ways
+- **Professional design** is really about organizing boxes beautifully
+
+This concept will make everything else in HTML and CSS make perfect sense! Now let's learn about the actual HTML tags that create these boxes.
+
+---
+
+### Understanding HTML Tags - The Building Blocks
 
 **Think Like a Math Formula!**
 Remember how in math class you learn formulas like `y = mx + b`? HTML works exactly the same way! Just like math formulas have constants (like `=` and `+`) and variables (like `x` and `y`), HTML has constant parts (like `<` and `>`) and variable parts (like the tag names and content).
@@ -94,6 +191,8 @@ HTML code has **2 distinct parts** that work together: **Tags** and **Attributes
 
 #### Part 1: Tags (The Structure Commands)
 Tags are like giving directions to the browser. They go at the beginning and end of content and tell the browser what type of element you're creating.
+
+**Remember:** Each HTML tag you create becomes one of those rectangular boxes you just learned about in The Box Model Foundation! The tag determines what type of box it is.
 
 **Opening and Closing Tags:**
 Most HTML tags come in pairs - they have an opening tag and a closing tag:
@@ -169,7 +268,7 @@ Comments are super helpful for:
 - Leaving notes for yourself
 - Temporarily hiding code without deleting it
 
-### The Two Essential Parts of HTML 🧩
+### The Two Essential Parts of HTML
 
 Every webpage has exactly **2 parts** working together:
 
@@ -191,13 +290,16 @@ This is the actual text, images, and information:
 
 **The Magic:** When you combine code + content, the browser creates a beautiful webpage! The code tells the browser HOW to display things, and the content tells it WHAT to display.
 
+Perfect! Now you understand how HTML tags work as instructions to the browser. Let's start building with the most common elements you'll use - text content elements.
+
+--- 
 ## Text Content Elements
 
 These elements help you organize and style your text content.
 
 ### Headings
 
-Use headings like chapter titles in a book:
+Use headings like chapter titles in a book. Each heading creates its own box (remember the Box Model Foundation!) that you can style individually:
 
 ```html
 <h1>My Art Portfolio</h1>
@@ -227,8 +329,6 @@ Every paragraph gets wrapped in `<p>` tags:
 <p>My favorite colors are teal, purple, and yellow.</p>
 ```
 
-
-
 ### Text Formatting
 
 Make words **bold** or *italic* for emphasis:
@@ -237,8 +337,6 @@ Make words **bold** or *italic* for emphasis:
 <p>I am <strong>really excited</strong> about learning HTML!</p>
 <p>Art is <em>absolutely amazing</em>.</p>
 ```
-
-
 
 ### Line Breaks and Horizontal Lines
 
@@ -334,6 +432,8 @@ I love art and math</p>
 </div>
 </details>
 
+---
+
 ## Lists
 
 Lists help you organize information clearly.
@@ -406,7 +506,10 @@ Lists help you organize information clearly.
 
 </details>
 
-## Links - Connecting Pages 🔗
+Lists are perfect for organizing information clearly. Now let's learn how to connect your pages to the rest of the web with links!
+
+--- 
+## Links
 
 Links let you connect to other pages or websites.
 
@@ -415,6 +518,100 @@ Links let you connect to other pages or websites.
 <p>Visit my <a href="about.html">About Me</a> page.</p>
 <p>Send me an <a href="mailto:myra@email.com">email</a>!</p>
 ```
+
+### Understanding Different Link Types
+
+**External Links** - Connect to other websites:
+```html
+<a href="https://www.google.com" target="_blank">Google</a>
+```
+
+- Always use `target="_blank"` to open in new tab
+- Users stay on your site while exploring links
+
+**Internal Links** - Connect to other pages on your site:
+```html
+<a href="about.html">About Me</a>
+<a href="gallery.html">My Art Gallery</a>
+```
+
+- No `http://` needed for your own pages
+- Keep users navigating within your website
+
+**Email Links** - Let visitors contact you:
+```html
+<a href="mailto:myra@email.com">Send me an email!</a>
+```
+
+- Opens user's email program automatically
+- Great for contact information
+
+**Phone Links** - For mobile-friendly contact:
+```html
+<a href="tel:+1234567890">Call me!</a>
+```
+
+- Clickable on mobile devices
+- Opens phone app automatically
+
+### Styling Your Links
+
+Make your links match your website's personality:
+
+```html
+<a href="https://example.com" style="color: #7c3aed; text-decoration: none;">
+  Purple link without underline
+</a>
+
+<a href="gallery.html" style="color: #2dd4bf; font-weight: bold;">
+  Bold teal link
+</a>
+```
+
+**How it looks:**
+<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
+<a href="https://youtube.com" style="color: #7c3aed; text-decoration: none;">
+  Purple link without underline
+</a>
+<br><br>
+<a href="https://youtube.com" style="color: #2dd4bf; font-weight: bold;">
+  Bold teal link
+</a>
+</div>
+
+**Link styling properties:**
+
+- `color` - Changes link color
+- `text-decoration: none` - Removes underline
+- `font-weight: bold` - Makes links bold
+- `background-color` - Adds background color
+
+### Creating Navigation Menus
+
+Group related links together:
+
+```html
+<h3>Navigation</h3>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About Me</a></li>
+  <li><a href="gallery.html">My Art</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+```
+
+**How it looks:**
+<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
+<h3>Navigation</h3>
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="about.html">About Me</a></li>
+  <li><a href="gallery.html">My Art</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+
+This creates a simple menu structure that's easy to understand and use!
 
 <details>
 <summary>Try it yourself - click to expand</summary>
@@ -433,11 +630,10 @@ Links let you connect to other pages or websites.
 </div>
 </details>
 
-**Link types:**
 
-- External links (to other websites)
-- Internal links (to other pages on your site)
-- Email links (opens email program)
+Links connect your pages to the world. Now let's make your pages visually stunning by adding images!
+
+---
 
 ## Images
 
@@ -446,12 +642,12 @@ Images make your pages more interesting and beautiful. Let's learn how to add pi
 ### Basic Image
 
 ```html
-<img src="art-supplies.jpg" alt="Bright colorful art supplies">
+<img src="unicorn.jpg" alt="Magical colorful unicorn">
 ```
 
 **How it looks:**
-<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
-<img src="../../../assets/images/art-supplies.jpg" alt="Bright colorful art supplies" style="max-width: 100%; height: auto; border-radius: 8px;">
+<div>
+<img src="https://as1.ftcdn.net/v2/jpg/15/75/84/84/1000_F_1575848432_FAEUpTn8ia7q3wBZwafBEWoDByUA2OeU.jpg" alt="Magical colorful unicorn" style="max-width: 50%; height: auto; border-radius: 8px;">
 </div>
 
 **Important parts:**
@@ -462,22 +658,23 @@ Images make your pages more interesting and beautiful. Let's learn how to add pi
 **Where can images come from?**
 
 - **Local files:** Images saved on your computer (`my-drawing.jpg`, `unicorn.png`)
-- **Downloaded images:** Pictures you save from websites to use in your projects
+- **Downloaded images:** Pictures you save from [Adobe Stock](https://stock.adobe.com/sg/search?k=rainbow) or other image sites
+- **Stock photo websites:** Professional images for your projects
 
 ### Image with Caption
 
 ```html
 <figure>
-  <img src="rainbow-painting.jpg" alt="Beautiful rainbow painting with bright colors">
-  <figcaption>My favorite rainbow artwork!</figcaption>
+  <img src="rainbow.jpg" alt="Beautiful colorful rainbow in the sky">
+  <figcaption>A stunning rainbow after the rain!</figcaption>
 </figure>
 ```
 
 **How it looks:**
 <div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
 <figure style="margin: 0; text-align: center;">
-    <img src="../../../assets/images/rainbow-painting.jpg" alt="Beautiful rainbow painting with bright colors" style="max-width: 100%; height: auto; border-radius: 8px;">
-    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">My favorite rainbow artwork!</figcaption>
+    <img src="https://as1.ftcdn.net/v2/jpg/15/75/84/84/1000_F_1575848432_FAEUpTn8ia7q3wBZwafBEWoDByUA2OeU.jpg" alt="Beautiful colorful rainbow in the sky" style="max-width: 100%; height: auto; border-radius: 8px;">
+    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">A stunning rainbow after the rain!</figcaption>
 </figure>
 </div>
 
@@ -486,54 +683,88 @@ Images make your pages more interesting and beautiful. Let's learn how to add pi
 You can control how big your images appear:
 
 ```html
-<img src="unicorn-toy.jpg" alt="Cute unicorn toy" style="width: 150px;">
-<img src="colorful-toys.jpg" alt="Fun colorful toys" style="width: 300px;">
+<img src="camera.jpg" alt="Digital camera" style="width: 200px;">
+<img src="ai.jpg" alt="AI robot illustration" style="width: 300px;">
 ```
 
 **How it looks:**
 <div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
-<img src="../../../assets/images/unicorn-toy.jpg" alt="Cute unicorn toy" style="width: 150px; height: auto; border-radius: 8px; margin-right: 15px;">
-<img src="../../../assets/images/colorful-toys.jpg" alt="Fun colorful toys" style="width: 300px; height: auto; border-radius: 8px;">
+<img src="https://as2.ftcdn.net/v2/jpg/02/72/97/35/1000_F_272973564_amxAEdDLztjh7PkaSXifOyD1rF1LJeyk.jpg" alt="Digital camera" style="width: 200px;">
+<br><br>
+<img src="https://as1.ftcdn.net/v2/jpg/13/40/86/52/1000_F_1340865250_Wq0sWuc0IDuicCuTavhRjimAlWw8uSSz.jpg" alt="AI robot illustration" style="width: 300px;">
+
 </div>
 
 ### Understanding Image Sources
 
-**In these examples above:**
+**Where to find amazing images:**
 
-- The images are saved locally in our project folder
-- They're stored in the `assets/images/` folder for organization
-- Simple filenames like `unicorn-toy.jpg` and `colorful-toys.jpg`
+- **[Adobe Stock](https://stock.adobe.com/sg/search?k=rainbow):** Professional photos and illustrations with keywords like:
+    - `unicorn` - Magical creatures and fantasy art
+    - `rainbow` - Colorful nature photography  
+    - `camera` - Technology and photography equipment
+    - `AI` - Futuristic technology and robot illustrations
+- **Local files:** Your own photos and drawings saved on your computer
+- **Free image sites:** Many websites offer free images for student projects
 
-**For your own projects, you'll use:**
+**For your own projects, you'll organize images like:**
 
-- **Downloaded images:** `unicorn.png`, `peppa-pig.jpg`, `rainbow.png`
-- **Your drawings:** `my-artwork.jpg`, `my-painting.png`
-- **Images in folders:** `images/my-photo.jpg`, `pictures/vacation.png`
+- **Downloaded images:** `unicorn.png`, `rainbow-sky.jpg`, `my-camera.png`
+- **Your creations:** `my-artwork.jpg`, `my-painting.png`, `family-photo.jpg`
+- **In folders:** `images/unicorn.jpg`, `pictures/rainbow.png`
 
 **File organization tip:** Create an `images` folder in your project and put all your pictures there!
+
+### Local Image Example
+
+Here's how you'd use a simple local image in your own projects:
+
+```html
+<img src="art-supplies.jpg" alt="Bright colorful art supplies">
+```
+
+**How it looks:**
+<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
+<img src="../../assets/images/art-supplies.jpg" alt="Bright colorful art supplies" style="max-width: 100%; height: auto; border-radius: 8px;">
+</div>
 
 <details>
 <summary>Try it yourself - click to expand</summary>
 <div style="padding: 15px; margin: 10px 0;">
 <label style="font-weight: bold; color: #7c3aed;">Edit the HTML code:</label><br>
-<textarea id="imagesEditor" style="width: 100%; height: 120px; margin: 10px 0; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-family: monospace;" oninput="updateImages()"><img src="../../../assets/images/art-supplies.jpg" alt="Bright colorful art supplies">
-
+<textarea id="imagesEditor" style="width: 100%; height: 180px; margin: 10px 0; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-family: monospace;" oninput="updateImages()">
 <figure>
-  <img src="../../../assets/images/unicorn-toy.jpg" alt="Cute unicorn toy">
-  <figcaption>My magical unicorn friend!</figcaption>
-</figure></textarea>
+
+  <img 
+  src="https://as2.ftcdn.net/v2/jpg/12/29/62/41/1000_F_1229624197_TR0Q1u0fDAqnfXFun7wcLpYAUhG9bZcH.jpg" alt="Magical unicorn" 
+  style="width: 150px;">
+  
+  <figcaption>My favorite unicorn image!</figcaption>
+
+</figure>
+
+</textarea>
 
 <strong>How it looks:</strong>
 <div id="imagesPreview" style="border: 1px solid #ddd; padding: 15px; margin: 10px 0;">
-<img src="../../../assets/images/art-supplies.jpg" alt="Bright colorful art supplies" style="max-width: 100%; height: auto; border-radius: 8px;">
 
-<figure style="margin: 15px 0 0 0; text-align: center;">
-    <img src="../../../assets/images/unicorn-toy.jpg" alt="Cute unicorn toy" style="max-width: 100%; height: auto; border-radius: 8px;">
-    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">My magical unicorn friend!</figcaption>
+<figure>
+
+  <img 
+  src="https://as2.ftcdn.net/v2/jpg/12/29/62/41/1000_F_1229624197_TR0Q1u0fDAqnfXFun7wcLpYAUhG9bZcH.jpg" alt="Magical unicorn" 
+  style="width: 150px;">
+  
+  <figcaption>My favorite unicorn image!</figcaption>
+
 </figure>
+
 </div>
 </div>
 </details>
+
+Images bring your pages to life! For organizing data and information in a structured way, we need tables.
+
+--- 
 
 ## Tables
 
@@ -604,6 +835,128 @@ Tables help you organize information in rows and columns.
 - `<th>` - Table header (bold)
 - `<td>` - Table data (regular text)
 
+### More Complex Table
+
+Tables can hold lots of information organized clearly:
+
+```html
+<table>
+  <tr>
+    <th>Day</th>
+    <th>Subject</th>
+    <th>Time</th>
+    <th>Grade</th>
+  </tr>
+  <tr>
+    <td>Monday</td>
+    <td>Math</td>
+    <td>9:00 AM</td>
+    <td>A+</td>
+  </tr>
+  <tr>
+    <td>Tuesday</td>
+    <td>Art</td>
+    <td>10:00 AM</td>
+    <td>A+</td>
+  </tr>
+  <tr>
+    <td>Wednesday</td>
+    <td>Science</td>
+    <td>11:00 AM</td>
+    <td>A</td>
+  </tr>
+</table>
+```
+
+**How it looks:**
+<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
+<table style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">Day</th>
+    <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">Subject</th>
+    <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">Time</th>
+    <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">Grade</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ddd; padding: 8px;">Monday</td>
+    <td style="border: 1px solid #ddd; padding: 8px;">Math</td>
+    <td style="border: 1px solid #ddd; padding: 8px;">9:00 AM</td>
+    <td style="border: 1px solid #ddd; padding: 8px;">A+</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ddd; padding: 8px;">Tuesday</td>
+    <td style="border: 1px solid #ddd; padding: 8px;">Art</td>
+    <td style="border: 1px solid #ddd; padding: 8px;">10:00 AM</td>
+    <td style="border: 1px solid #ddd; padding: 8px;">A+</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ddd; padding: 8px;">Wednesday</td>
+    <td style="border: 1px solid #ddd; padding: 8px;">Science</td>
+    <td style="border: 1px solid #ddd; padding: 8px;">11:00 AM</td>
+    <td style="border: 1px solid #ddd; padding: 8px;">A</td>
+  </tr>
+</table>
+</div>
+
+### Making Tables Look Professional
+
+Add styling to make your tables beautiful:
+
+```html
+<table style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <th style="background-color: #7c3aed; color: white; padding: 10px;">Subject</th>
+    <th style="background-color: #7c3aed; color: white; padding: 10px;">Grade</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ddd; padding: 8px;">Math</td>
+    <td style="border: 1px solid #ddd; padding: 8px;">A+</td>
+  </tr>
+</table>
+```
+
+**How it looks:**
+<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
+<table style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <th style="background-color: #7c3aed; color: white; padding: 10px;">Subject</th>
+    <th style="background-color: #7c3aed; color: white; padding: 10px;">Grade</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ddd; padding: 8px;">Math</td>
+    <td style="border: 1px solid #ddd; padding: 8px;">A+</td>
+  </tr>
+</table>
+</div>
+
+**Table styling tips:**
+
+- `border-collapse: collapse` - Makes borders look clean
+- `padding` - Adds space inside cells
+- `background-color` - Colors headers or cells
+- `border` - Adds lines around cells
+
+### When Should You Use Tables?
+
+**Perfect for tables:**
+
+- School schedules
+- Grade reports  
+- Comparison charts
+- Data with rows and columns
+
+**Don't use tables for:**
+
+- Page layout (use CSS instead)
+- Lists (use `<ul>` or `<ol>`)
+- Single pieces of information
+
+Tables are specifically for data that belongs in rows and columns!
+
+Tables help organize information perfectly. Now it's time to make everything beautiful with CSS styling!
+
+---
+
 ## Your First CSS Styling
 
 ### What is CSS?
@@ -639,7 +992,7 @@ CSS connects to HTML through the `style` attribute. It's like giving instruction
 <h1 style="color: purple;">This heading will be purple!</h1>
 ```
 
-Think of it as whispering styling secrets to each HTML tag! 
+Think of it as whispering styling secrets to each HTML tag! **Remember our Box Model Foundation?** CSS is how you control every part of each box - the content, padding, border, and margin. 
 
 ### CSS Properties - Your Styling Toolbox
 
@@ -743,167 +1096,228 @@ Let's use your beautiful favorite colors in your projects:
 - **Purple:** <span style="color: #7c3aed; font-weight: normal;"><code>#7c3aed</code></span> - creative and magical  
 - **Yellow:** <span style="color: #f59e0b; font-weight: normal;"><code>#f59e0b</code></span> - bright and cheerful
 
-## The Box Model - How Browsers See HTML 📦
-
-Here's an amazing secret about how browsers work: **Every HTML element is actually a rectangle (box) on the page!** This is called the "Box Model" and understanding it will give you superpowers in web design.
-
-### Visualizing the Box Model
-
-Think of every HTML element like a painting in a frame hanging on a wall:
-
-```
-┌─────────────────────────────────────┐ ← Margin (space from other elements)
-│ ┌─────────────────────────────────┐ │ ← Border (the frame around content)
-│ │ ┌─────────────────────────────┐ │ │ ← Padding (space inside the frame)
-│ │ │        CONTENT              │ │ │ ← Content (your text, images, etc.)
-│ │ │    (Text, images, etc.)     │ │ │
-│ │ └─────────────────────────────┘ │ │
-│ └─────────────────────────────────┘ │
-└─────────────────────────────────────┘
-```
-
-### The Box Model Parts
-
-Every HTML element has these four parts:
-
-1. **Content** - Your text, images, or other elements
-2. **Padding** - Space between the content and the border (like the mat around a photo)
-3. **Border** - A line around the padding (like the frame around a photo)  
-4. **Margin** - Space between this element and other elements (like space between frames on a wall)
-
-### Box Model in Action
-
-```html
-<p style="
-    padding: 20px;           /* Space inside the box */
-    border: 2px solid purple;  /* Purple frame around the box */
-    margin: 15px;            /* Space outside the box */
-    background-color: #f0f8ff;  /* Light blue background */
-">This paragraph demonstrates the box model!</p>
-```
-
-**How it looks:**
-<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
-<p style="padding: 20px; border: 2px solid purple; margin: 15px; background-color: #f0f8ff;">This paragraph demonstrates the box model!</p>
-</div>
-
-### Why This Matters for Your Designs
-
-Understanding the box model helps you:
-- **Control spacing** - Create breathing room around your content
-- **Align elements** - Position things exactly where you want them
-- **Create layouts** - Build professional-looking page designs
-- **Think like a designer** - Understand how to organize visual elements
-
-This concept will become super important when we dive deeper into CSS in Chapter 2!
-
-## HTML Detective Challenge 🔍
-
-Before we start building, let's become HTML detectives! Did you know that you can peek behind the scenes of ANY website to see the actual HTML code that creates it?
-
-### Your First Investigation Mission
-
-1. **Open any website** you like (maybe Google, YouTube, or your school's website)
-2. **Right-click anywhere** on the page
-3. **Select "View Page Source"** from the menu that appears
-4. **Wow!** You'll see all the HTML code that creates that entire webpage!
-
-**What you'll discover:**
-- Every website uses the same HTML tags you're learning
-- Even huge websites like Google use simple `<h1>`, `<p>`, and `<div>` tags
-- The URL changes to start with "view-source:" - that's your detective mode!
-
-**Try this challenge:** Find these tags on any website you investigate:
-- `<title>` - What appears in the browser tab
-- `<h1>` or `<h2>` - The main headings
-- `<p>` - Paragraphs of text
-- `<img>` - Images on the page
-
-**Fun fact:** Professional web developers use "View Page Source" all the time to learn from other websites and debug their code!
+Now that you know the building blocks of HTML and how to style them with CSS, it's time to put everything together! Let's practice with some hands-on exercises that will prepare you for your final project.
 
 ---
 
-## Before We Start 🚀
+## Exercises & Practice
 
-**Setup Check**
-
-First time coding? Make sure you're ready:
-**See: [Setup Guide](../../setup-guide.md)** for detailed installation instructions
-
-**Chapter 1 Files**
-
-You'll need these files for this chapter:
-
-- **[`chapter1-starter.html`](../../assets/downloads/chapter1-starter.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter1-starter.html){:download="chapter1-starter.html"})</small> - Your HTML practice playground
-- **[`chapter1-template.html`](../../assets/downloads/chapter1-template.txt){:target="_blank"}** <small>([download](../../assets/downloads/chapter1-template.html){:download="chapter1-template.html"})</small> - Template for your personal introduction project
-
-**Ready to Begin**
-
-Download the starter file and open it in your text editor and browser side by side!
-
-**File Organization Tips**
-
-- Create a folder called `myra-html-projects`
-- Name files clearly: `about-me.html` not `page1.html`
-- Always use `.html` extension for web pages
-- Keep images in a folder called `images`
-
-## Exercises & Practice 💪
+These exercises build on each other - complete them in order for the best learning experience!
 
 ### Exercise 1: HTML Structure Builder
 
-Create a complete HTML document with:
-- Proper DOCTYPE and basic structure
-- A meaningful title for the browser tab
-- One h1 heading with your name
-- Two paragraphs about yourself
+**Goal**: Create your first complete HTML page from scratch!
 
-### Exercise 2: Text Content Master
+**What you'll learn**: Document structure, headings, paragraphs
 
-Take your document from Exercise 1 and add:
-- Three different heading levels (h1, h2, h3)
-- Text formatting (bold and italic words)
-- A line break within a paragraph
-- A horizontal line to separate sections
+**Step-by-step instructions:**
+
+1. **Create a new file** called `exercise1.html`
+
+2. **Start with this template**:
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Replace this with your name</title>
+</head>
+<body>
+    <!-- Your content goes here -->
+</body>
+</html>
+```
+
+3. **Replace the title** with your actual name (like "Myra Kumar's Page")
+
+4. **Add your main heading** inside the `<body>`:
+```html
+<h1>Welcome! I'm [Your Name]</h1>
+```
+
+5. **Write two paragraphs** about yourself:
+```html
+<p>Hi! I'm [Your Name] and I'm [age] years old. I love [your interests].</p>
+<p>This is my first HTML webpage, and I'm excited to learn more!</p>
+```
+
+**When you're done:**
+
+- Your browser tab should show your name
+- The page should have a big heading with your name
+- Two readable paragraphs should appear below
+
+**Need help?** Review the "HTML Document Foundation" section!
+
+---
+
+### Exercise 2: Text Formatting Master
+
+**Goal**: Add variety and emphasis to your text!
+
+**What you'll learn**: Headings, bold, italic, line breaks
+
+**Building on Exercise 1:**
+
+1. **Add section headings** using `<h2>`:
+```html
+<h2>About Me</h2>
+<p>Your first paragraph here...</p>
+
+<h2>My Interests</h2>
+<p>Your second paragraph here...</p>
+
+<h2>Fun Facts</h2>
+```
+
+2. **Make some words bold** using `<strong>`:
+```html
+<p>I am <strong>really excited</strong> about learning HTML!</p>
+```
+
+3. **Make some words italic** using `<em>`:
+```html
+<p>My favorite subject is <em>definitely</em> art.</p>
+```
+
+4. **Add line breaks** within a paragraph:
+```html
+<p>My name is [Your Name]<br>
+I am [age] years old<br>
+I live in [your city]</p>
+```
+
+5. **Add a horizontal line** to separate sections:
+```html
+<hr>
+```
+
+**Expected result**: Your page now has multiple heading levels, emphasized text, and clear sections.
+
+---
 
 ### Exercise 3: Lists and Links Explorer
 
-Add to your growing webpage:
-- An unordered list of your hobbies
-- An ordered list of your daily routine
-- One external link to your favorite website
-- One email link to contact you
+**Goal**: Organize information and connect to the web!
+
+**What you'll learn**: Unordered lists, ordered lists, links
+
+**Add to your growing page:**
+
+1. **Create a hobbies list** using `<ul>`:
+```html
+<h2>My Hobbies</h2>
+<ul>
+  <li>Drawing and painting</li>
+  <li>Reading books</li>
+  <li>Playing games</li>
+  <li>Learning new things</li>
+</ul>
+```
+
+2. **Create a daily routine** using `<ol>`:
+```html
+<h2>My Daily Routine</h2>
+<ol>
+  <li>Wake up and have breakfast</li>
+  <li>Go to school</li>
+  <li>Do homework</li>
+  <li>Practice my hobbies</li>
+  <li>Spend time with family</li>
+</ol>
+```
+
+3. **Add external links**:
+```html
+<h2>My Favorite Websites</h2>
+<p>I love to visit <a href="https://www.google.com" target="_blank">Google</a> for research.</p>
+<p>Check out <a href="https://www.youtube.com" target="_blank">YouTube</a> for fun videos!</p>
+```
+
+4. **Add an email link**:
+```html
+<h2>Contact Me</h2>
+<p>Send me an <a href="mailto:your-email@example.com">email</a> to say hello!</p>
+```
+
+**Expected result**: Your page now has organized lists and clickable links that work!
+
+---
 
 ### Exercise 4: Complete Page Creator
 
-Now make your webpage complete by adding:
-- One simple image (can be any photo you like)
-- A small table with information about yourself
-- CSS styling with your favorite colors
-- Proper spacing and formatting
+**Goal**: Add images, tables, and styling to complete your page!
 
-## HTML Showcase - See What You'll Build! 🖼️
+**What you'll learn**: Images, tables, CSS styling
 
-By the end of this chapter, you'll create a complete personal webpage that includes all the HTML elements you've learned. It will have proper structure, beautiful colors, and everything organized professionally!
+**Final additions:**
 
-## Final Project: My Complete Introduction Page 🌟
+1. **Add an image** (you can use any image file you have):
+```html
+<h2>My Photo</h2>
+<img src="your-photo.jpg" alt="A photo of me" style="width: 200px;">
+```
 
-Time to create your masterpiece, Myra! This project brings together everything you've learned.
+2. **Create an information table**:
+```html
+<h2>About Me - Quick Facts</h2>
+<table style="border-collapse: collapse; width: 100%;">
+  <tr>
+    <th style="border: 1px solid #ddd; padding: 8px;">Category</th>
+    <th style="border: 1px solid #ddd; padding: 8px;">Details</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ddd; padding: 8px;">Age</td>
+    <td style="border: 1px solid #ddd; padding: 8px;">[Your age]</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ddd; padding: 8px;">Favorite Color</td>
+    <td style="border: 1px solid #ddd; padding: 8px;">[Your favorite color]</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid #ddd; padding: 8px;">Favorite Subject</td>
+    <td style="border: 1px solid #ddd; padding: 8px;">[Your favorite subject]</td>
+  </tr>
+</table>
+```
 
-### What You'll Build
+3. **Add CSS styling** to make it colorful:
+```html
+<h1 style="color: #7c3aed; text-align: center;">Welcome! I'm [Your Name]</h1>
+<h2 style="color: #2dd4bf;">About Me</h2>
+```
 
-Create a complete personal webpage about yourself using ALL the HTML elements and CSS styling from this chapter.
+**Final check**: Your complete page should have:
 
-### Project Requirements
+- ✅ Proper HTML structure
+- ✅ Multiple heading levels
+- ✅ Formatted text with bold and italic
+- ✅ Both ordered and unordered lists
+- ✅ Working external and email links
+- ✅ At least one image
+- ✅ A data table
+- ✅ Colorful CSS styling
 
-Your webpage must include:
+**Congratulations!** You've built a complete webpage using all major HTML elements!
+
+Excellent work on those practice exercises! You've now mastered all the individual HTML elements and CSS basics. It's time to combine everything you've learned into one amazing project that showcases your new skills.
+
+---
+
+## Final Project: My Complete Introduction Page
+
+Time to create your masterpiece, Myra! This comprehensive project brings together everything you've learned in this chapter.
+
+You'll build a complete **personal introduction webpage** that serves as your digital portfolio. This exciting final project will showcase your HTML skills and CSS styling abilities as you create a professional webpage all about yourself. Think of it as your personal corner of the internet where visitors can learn about who you are, what you enjoy, and how to connect with you. Your webpage must include:
 
 **HTML Structure:**
+
 - Complete HTML document (DOCTYPE, html, head, body)
 - Meaningful title in the browser tab
 - Well-organized content with multiple sections
 
 **Content Sections:**
+
 - **Main heading** with your name
 - **About Me** section with 2-3 paragraphs
 - **My Hobbies** list (unordered)
@@ -914,12 +1328,14 @@ Your webpage must include:
 - **My Photo** with proper alt text
 
 **CSS Styling:**
+
 - Use your favorite colors (teal, purple, yellow)
 - Style headings and text appropriately
 - Add proper spacing with margin and padding
 - Make text bold or italic where appropriate
 
 **Code Quality:**
+
 - Clean, well-organized HTML
 - Proper nesting of all elements
 - Consistent styling throughout
@@ -956,50 +1372,42 @@ Your webpage must include:
 </html>
 ```
 
-### Project Files
+[Download HTML Template](../../assets/downloads/chapter1-final-template.html "Download"){:download="chapter1-final-template.html"}
 
-[chapter1-final-template.html](../../assets/downloads/chapter1-final-template.txt){:target="_blank"} [(💾)](../../assets/downloads/chapter1-final-template.html "Download"){:download="chapter1-final-template.html"} - Get started with this template
+---
 
-### Success Criteria
+**Congratulations, Myra!** You've just completed your first complete HTML webpage - what an incredible achievement!
 
-When you're finished, your webpage should:
-- Display correctly in any web browser
-- Include all required HTML elements
-- Use colors that make you happy
-- Be organized and easy to read
-- Show your personality clearly
+You started this chapter knowing nothing about HTML, and now you can create structured documents, add beautiful styling, organize information with lists and tables, connect to other websites with links, and make everything visually appealing with images and CSS. These are the exact same skills that professional web developers use every day.
 
-### Celebration Moment
+Every website you've ever visited - from Google to YouTube to your school's site - is built using these same HTML elements you've just mastered. You're now part of the community of web creators who shape how information and creativity are shared across the world.
 
-Once you complete this project, take a moment to celebrate! You've just:
-- Written your first complete HTML document using ALL major elements
-- Applied CSS styling to make it beautiful
-- Created something you can share with family and friends
-- Learned the foundation of web development
+But this is just the beginning of your web development journey! Let's explore how you can use these same skills to create websites that solve real problems and share your passions with the world.
 
-**You should feel incredibly proud, Myra! You now know the essentials of HTML and are ready for more advanced techniques.** 
+## Real-World Project Planning
 
-## Real-World Project Planning 🌍
-
-Now that you understand the basics of HTML, let's think about how websites can help you in your daily life! The CodeWizardsHQ approach emphasizes building projects that actually matter to you.
+Your journey with HTML has just begun, and the possibilities are endless! Now that you've mastered the fundamentals, it's time to let your imagination run wild. Think of HTML as your paintbrush and the web as your canvas - what amazing creations will you bring to life? Let's explore some exciting project ideas that can make your daily life more fun, organized, and creative.
 
 ### Your Personal Website Ideas
 
 **Think about how a website could help YOU:**
 
 **For Your Art:**
+
 - Create an online art gallery to showcase your paintings and drawings
 - Build a portfolio website for art competitions or college applications
 - Share tutorials of your favorite art techniques with other young artists
 - Document your artistic journey with before/after photos
 
 **For Your Academic Life:**
+
 - Build a study guide website with your math solutions and explanations
 - Create a homework tracking system
 - Make flashcard websites for memorizing vocabulary or math formulas
 - Share your favorite educational resources with classmates
 
 **For Your Hobbies and Interests:**
+
 - Design a book review website for all the books you read
 - Create a game review site for your favorite games
 - Build a recipe collection site for cooking experiments
@@ -1010,19 +1418,19 @@ Now that you understand the basics of HTML, let's think about how websites can h
 **Choose ONE idea from above (or create your own) and plan it out:**
 
 1. **What's the main purpose of your website?**
-   - Example: "Help other kids learn art techniques"
+    - Example: "Help other kids learn art techniques"
 
 2. **Who would visit your website?**
-   - Example: "Other 11-year-olds who love art"
+    - Example: "Other 11-year-olds who love art"
 
 3. **What pages would you need?**
-   - Example: "Home page, Art Gallery, Tutorials, About Me"
+    - Example: "Home page, Art Gallery, Tutorials, About Me"
 
 4. **What content would each page have?**
-   - Example: "Tutorials page would have step-by-step photos and explanations"
+    - Example: "Tutorials page would have step-by-step photos and explanations"
 
 5. **How would you organize everything?**
-   - Example: "Art Gallery organized by type: paintings, drawings, sketches"
+    - Example: "Art Gallery organized by type: paintings, drawings, sketches"
 
 ### The Professional Planning Process
 
@@ -1039,14 +1447,6 @@ This is exactly how real web developers plan websites! They:
 As you continue learning HTML (and later CSS and JavaScript), you can turn any of these ideas into real websites! Start thinking about which project excites you most - that will be your motivation to keep learning and building.
 
 **Remember:** Every major website started as someone's idea to solve a real problem or share something they cared about. Your ideas could become the next big thing on the internet!
-
----
-
-## 🎉 Congratulations, Myra!
-
-You've completed Chapter 1! Take a moment to celebrate your progress - you now know the fundamentals of HTML structure, text formatting, lists, links, images, tables, and basic CSS styling.
-
-**Keep practicing and exploring!** The more you experiment with these concepts, the more confident you'll become. You're building the foundation for creating amazing websites! 🌟
 
 <script>
 // Individual update functions for each "Try it yourself" editor
@@ -1151,13 +1551,7 @@ function updateImages() {
     
     if (editor && preview) {
         try {
-            let htmlContent = editor.value;
-            
-            // Add basic styling to images for better presentation
-            htmlContent = htmlContent.replace(/<img /g, '<img style="max-width: 100%; height: auto; border-radius: 8px;" ');
-            htmlContent = htmlContent.replace(/<figure>/g, '<figure style="margin: 15px 0 0 0; text-align: center;">');
-            htmlContent = htmlContent.replace(/<figcaption>/g, '<figcaption style="margin-top: 10px; font-style: italic; color: #666;">');
-            
+            let htmlContent = editor.value;            
             preview.innerHTML = htmlContent;
         } catch (error) {
             preview.innerHTML = '<p style="color: red; font-style: italic;">Invalid HTML - keep editing!</p>';

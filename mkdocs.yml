@@ -87,10 +87,11 @@ plugins:
       lang: en
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   
-  - git-revision-date-localized:
-      enable_creation_date: true
-      type: datetime
-      fallback_to_build_date: true
+  # -- For timestamps
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  #     type: datetime
+  #     fallback_to_build_date: true
   
   - mermaid2:
       arguments:
@@ -151,8 +152,8 @@ markdown_extensions:
   - pymdownx.blocks.tab
 
 # Extra CSS and JavaScript
-extra_css:
-  - stylesheets/extra.css
+# extra_css:
+#   - stylesheets/extra.css
 
 # extra_javascript:
 #   - assets/js/custom.js

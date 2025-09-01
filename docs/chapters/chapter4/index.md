@@ -1,7 +1,8 @@
 # Chapter 4: Working with Files & Folders 📁
 
----
-**COMING SOON - WORK IN PROGRESS! 🚧**
+<div style="background-color: #ff4444; color: white; padding: 15px; border-radius: 8px; text-align: center; margin: 20px 0; font-weight: bold;">
+COMING SOON - WORK IN PROGRESS!
+</div>
 
 ---
 

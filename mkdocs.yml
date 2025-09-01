@@ -34,21 +34,30 @@ theme:
 
   # Typography
   font:
-    text: Roboto
+    text: Arimo
     code: Roboto Mono
 
   # Features
   features:
-    - navigation.sections        # Group navigation sections
+    - navigation.instant        # Single-page app experience
+    - navigation.instant.prefetch  # Prefetch pages for faster loading
+    - navigation.tracking       # Update URL with current section
+    - navigation.tabs           # Top-level tabs
+    - navigation.tabs.sticky    # Sticky navigation tabs
+    - navigation.sections       # Group navigation sections
     - navigation.expand         # Expand all sections by default
-    - navigation.top           # Back to top button
-    - navigation.footer        # Previous/next navigation in footer
+    - navigation.path           # Show navigation path
+    - navigation.top            # Back to top button
+    - navigation.footer         # Previous/next navigation in footer
+    - toc.follow               # Sidebar follows scroll
+    - toc.integrate            # Integrate TOC with navigation
     - search.highlight         # Highlight search terms
-    - search.share            # Share search results
-    - content.code.copy       # Copy code blocks
-    # - content.action.edit     # Edit page action
-    # - content.action.view     # View source action
-    - toc.follow             # Sidebar follows scroll
+    - search.share             # Share search results
+    - search.suggest           # Search suggestions
+    - content.code.copy        # Copy code blocks
+    - content.code.annotate    # Code annotations
+    - content.tabs.link        # Link content tabs
+    - header.autohide          # Auto-hide header on scroll
 
   # Logo and favicon (comment out until we add them)
   # logo: assets/images/logo.png
@@ -59,18 +68,18 @@ nav:
   - Home: index.md
   - Getting Started:
     - Setup Guide: setup-guide.md
-    - Program Overview: program-overview.md
-  
-  - Chapter 1 - Myra's Color Magic Laboratory: chapters/chapter1/exercises.md
-  - Chapter 2 - Style Your Digital Art Canvas: chapters/chapter2/exercises.md
-  - Chapter 3 - Build Your Artist Network: chapters/chapter3/exercises.md
-  - Chapter 4 - Create Your Photo Gallery: chapters/chapter4/exercises.md
-  - Chapter 5 - Design Math Art Patterns: chapters/chapter5/exercises.md
-  - Chapter 6 - Layout Your Creative Space: chapters/chapter6/exercises.md
-  - Chapter 7 - Make Interactive Art Forms: chapters/chapter7/exercises.md
-  - Chapter 8 - CSS Mastery & Advanced Design: chapters/chapter8/exercises.md
-  - Chapter 9 - Multimedia Art Showcase: chapters/chapter9/exercises.md
-  - Chapter 10 - Myra Kumar Artist & Developer Portfolio: chapters/chapter10/exercises.md
+
+  - HTML Fundamentals:
+    - Chapter 1 - HTML Essentials: chapters/chapter1/index.md
+    - Chapter 2 - CSS Styling Fundamentals: chapters/chapter2/index.md
+  - Building Projects:
+    - Chapter 3 - Page Layout & Organization: chapters/chapter3/index.md
+    - Chapter 4 - Working with Files & Folders: chapters/chapter4/index.md
+    - Chapter 5 - Tables & Data Organization: chapters/chapter5/index.md
+  - Advanced Design:
+    - Chapter 6 - Advanced Layout & Design: chapters/chapter6/index.md
+    - Chapter 7 - Forms & User Interaction: chapters/chapter7/index.md
+    - Chapter 8 - CSS Mastery & Advanced Design: chapters/chapter8/index.md
 
 # Plugins
 plugins:
@@ -135,6 +144,11 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+  - pymdownx.blocks.admonition
+  - pymdownx.blocks.definition
+  - pymdownx.blocks.details
+  - pymdownx.blocks.html
+  - pymdownx.blocks.tab
 
 # Extra CSS and JavaScript
 extra_css:
@@ -158,9 +172,9 @@ extra:
     default: latest
   
   # Analytics (optional)
-  analytics:
-    provider: google
-    property: G-XXXXXXXXXX  # Replace with your Google Analytics ID
+  # analytics:
+  #   provider: google
+  #   property: G-XXXXXXXXXX  # Replace with your Google Analytics ID
 
 # Copyright
 copyright: |

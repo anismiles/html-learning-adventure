@@ -71,7 +71,7 @@ deploy: venv ## Deploy to GitHub Pages
 		echo "$(CYAN)   git remote add origin https://github.com/anismiles/html-learning-adventure.git$(NC)"; \
 		exit 1; \
 	fi
-	@$(MKDOCS) gh-deploy --force
+	@$(MKDOCS) gh-deploy --force --ignore-version
 	@echo "$(GREEN)Deployed to GitHub Pages!$(NC)"
 
 clean: ## Clean up generated files

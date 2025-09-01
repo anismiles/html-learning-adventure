@@ -96,7 +96,7 @@ Ready for some fascinating facts, Myra? These are the kinds of insights that eve
 
 #### The Magic Story of the First HTML Tags
 
-Here's something amazing: the very first [HTML tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Element){:target="_blank"} ever created was `<TITLE>` - because even Tim Berners-Lee knew that every website needed a name! It's like how every story needs a title, or every painting needs to be signed by the artist.
+Here's something amazing: one of the earliest and most important [HTML tags](https://developer.mozilla.org/en-US/docs/Web/HTML/Element){:target="_blank"} ever created was `<title>` - because even Tim Berners-Lee knew that every website needed a name! It's like how every story needs a title, or every painting needs to be signed by the artist.
 
 But get this - the `<IMG>` tag (which lets us put pictures on websites) wasn't invented until 1993! That means the web existed for 2 whole years with absolutely NO IMAGES. Can you imagine [Instagram](https://www.instagram.com/){:target="_blank"} or [YouTube](https://www.youtube.com/){:target="_blank"} without any pictures or videos? It would be impossible!
 
@@ -114,7 +114,7 @@ And all those beautiful color combinations you see on websites? They're based on
 
 There used to be an HTML tag called `<BLINK>` that made text flash on and off like a neon sign. It became SO annoying that web developers everywhere complained, and browsers eventually stopped supporting it entirely! It's like the internet's equivalent of a fashion trend that was so bad it had to be banned.
 
-When HTML was first created, it had only 18 different tags. Today, there are over 100 different [HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element){:target="_blank"} you can use - it's like having a massive box of digital art supplies! The longest valid HTML tag name is `<figcaption>` at 10 characters, and here's something incredible: you can actually create a complete website with just 7 words of HTML: `<html><body>Hello World</body></html>`.
+When HTML was first created, it had only 18 different tags. Today, there are over 100 different [HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element){:target="_blank"} you can use - it's like having a massive box of digital art supplies! Among the longer common HTML tag names are `<figcaption>` and `<blockquote>`, and here's something incredible: you can actually create a complete website with just 7 words of HTML: `<html><body>Hello World</body></html>`.
 
 #### Your Future Possibilities Are Absolutely Endless
 

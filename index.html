@@ -1,1098 +1,647 @@
 
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1">
-      
-        <meta name="description" content="Myra Kumar's creative coding journey - learning HTML and CSS through art, math, and fun projects">
-      
-      
-        <meta name="author" content="Myra Kumar">
-      
-      
-        <link rel="canonical" href="https://anismiles.github.io/html-learning-adventure/">
-      
-      
-      
-        <link rel="next" href="setup-guide/">
-      
-      
-      <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
-    
-    
-      
-        <title>Myra's HTML Adventure</title>
-      
-    
-    
-      <link rel="stylesheet" href="assets/stylesheets/main.4b4a2bd9.min.css">
-      
-        
-        <link rel="stylesheet" href="assets/stylesheets/palette.356b1318.min.css">
-      
-      
+<!DOCTYPE html>
 
-
-    
-    
-      
-    
-    
-      
-        
-        
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-      
-    
-    
-      <link rel="stylesheet" href="stylesheets/extra.css">
-    
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-    
-      
-  
-
-
-  
-  
-
-<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-XXXXXXXXXX",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
-  
-    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
-  
-
-    
-    
-    
-  </head>
-  
-  
-    
-    
-      
-    
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber">
-  
-    
-    
-      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-    
-    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
-    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#welcome-to-your-html-adventure-myra" class="md-skip">
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="Myra Kumar's creative coding journey - learning HTML and CSS through art, math, and fun projects" name="description"/>
+<meta content="Myra Kumar" name="author"/>
+<link href="https://anismiles.github.io/html-learning-adventure/" rel="canonical"/>
+<link href="setup-guide/" rel="next"/>
+<link href="assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.5.3, mkdocs-material-9.4.8" name="generator"/>
+<title>Myra's HTML Adventure</title>
+<link href="assets/stylesheets/main.4b4a2bd9.min.css" rel="stylesheet"/>
+<link href="assets/stylesheets/palette.356b1318.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Arimo:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Arimo";--md-code-font:"Roboto Mono"}</style>
+<link href="stylesheets/extra.css" rel="stylesheet"/>
+<script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="amber" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#hey-myra-welcome-to-your-amazing-html-adventure">
           Skip to content
         </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
-    
-      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
-        
-      </div>
-    
-    
-      
-
-  
-
-<header class="md-header md-header--shadow" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Myra&#39;s HTML Adventure" class="md-header__button md-logo" aria-label="Myra's HTML Adventure" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-
-    </a>
-    <label class="md-header__button md-icon" for="__drawer">
-      
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
-    </label>
-    <div class="md-header__title" data-md-component="header-title">
-      <div class="md-header__ellipsis">
-        <div class="md-header__topic">
-          <span class="md-ellipsis">
+</div>
+<div data-md-component="announce">
+</div>
+<div data-md-color-scheme="default" data-md-component="outdated" hidden="">
+</div>
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="Myra's HTML Adventure" class="md-header__button md-logo" data-md-component="logo" href="." title="Myra's HTML Adventure">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
             Myra's HTML Adventure
           </span>
-        </div>
-        <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
             
               Home
             
           </span>
-        </div>
-      </div>
-    </div>
-    
-      
-        <form class="md-header__option" data-md-component="palette">
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
-    
-      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-      </label>
-    
-  
-    
-    
-    
-    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
-    
-      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
-      </label>
-    
-  
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="amber" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="default" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="teal" data-md-color-media="" data-md-color-primary="deep-purple" data-md-color-scheme="slate" id="__palette_2" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"></path></svg>
+</label>
 </form>
-      
-    
-    
-    
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
-            
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
-          </a>
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
-        </button>
-      </nav>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<a aria-label="Share" class="md-search__icon md-icon" data-clipboard="" data-clipboard-text="" data-md-component="search-share" href="javascript:void(0)" tabindex="-1" title="Share">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"></path></svg>
+</a>
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
             Initializing search
           </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+<ol class="md-search-result__list" role="presentation"></ol>
 </div>
-    
-    
-      <div class="md-header__source">
-        <a href="https://github.com/anismiles/html-learning-adventure" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
-  </div>
-  <div class="md-source__repository">
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/anismiles/html-learning-adventure" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
     anismiles/html-learning-adventure
   </div>
 </a>
-      </div>
-    
-  </nav>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href=".">
+        
   
+    
+  
+  Home
+
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="setup-guide/">
+          
+  
+  Getting Started
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="chapters/chapter1/">
+          
+  
+  HTML Fundamentals
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="chapters/chapter3/">
+          
+  
+  Building Projects
+
+        </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="chapters/chapter6/">
+          
+  
+  Advanced Design
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
 </header>
-    
-    <div class="md-container" data-md-component="container">
-      
-      
-        
-          
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
-          
-            
-              
-              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-
-
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="." title="Myra&#39;s HTML Adventure" class="md-nav__button md-logo" aria-label="Myra's HTML Adventure" data-md-component="logo">
-      
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
-
-    </a>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="Myra's HTML Adventure" class="md-nav__button md-logo" data-md-component="logo" href="." title="Myra's HTML Adventure">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
+</a>
     Myra's HTML Adventure
   </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/anismiles/html-learning-adventure" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
-  </div>
-  <div class="md-source__repository">
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/anismiles/html-learning-adventure" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
+</div>
+<div class="md-source__repository">
     anismiles/html-learning-adventure
   </div>
 </a>
-    </div>
-  
-  <ul class="md-nav__list" data-md-scrollfix>
-    
-      
-      
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
     Home
   </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="." class="md-nav__link md-nav__link--active">
-        
-  
-  <span class="md-ellipsis">
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href=".">
+<span class="md-ellipsis">
     Home
   </span>
-  
-
-      </a>
-      
-        
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
+</a>
+<nav aria-label="On this page" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
       On this page
     </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#your-creative-coding-adventure-awaits" class="md-nav__link">
-    🚀 Your Creative Coding Adventure Awaits!
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-incredible-story-of-how-the-web-was-born">
+    The Incredible Story of How the Web Was Born
   </a>
-  
-    <nav class="md-nav" aria-label="🚀 Your Creative Coding Adventure Awaits!">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-set-up-your-adventure-space" class="md-nav__link">
-    Step 1: Set Up Your Adventure Space
+<nav aria-label="The Incredible Story of How the Web Was Born" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#amazing-web-trivia-just-for-you">
+    Amazing Web Trivia Just for You
   </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-see-all-the-amazing-things-youll-build" class="md-nav__link">
-    Step 2: See All the Amazing Things You'll Build
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-start-creating-magic" class="md-nav__link">
-    Step 3: Start Creating Magic
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#your-amazing-learning-adventure-map" class="md-nav__link">
-    📚 Your Amazing Learning Adventure Map
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-youll-learn-the-fun-way" class="md-nav__link">
-    🎯 How You'll Learn (The Fun Way!)
-  </a>
-  
-    <nav class="md-nav" aria-label="🎯 How You'll Learn (The Fun Way!)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#art-comes-first" class="md-nav__link">
-    Art Comes First!
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#your-math-brain-will-love-this" class="md-nav__link">
-    Your Math Brain Will Love This
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build-real-things-you-can-show-off" class="md-nav__link">
-    Build Real Things You Can Show Off
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#one-step-at-a-time" class="md-nav__link">
-    One Step at a Time
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#all-the-amazing-things-youll-create" class="md-nav__link">
-    🌟 All the Amazing Things You'll Create
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#if-you-ever-get-stuck-dont-worry-it-happens" class="md-nav__link">
-    🆘 If You Ever Get Stuck (Don't Worry, It Happens!)
-  </a>
-  
-    <nav class="md-nav" aria-label="🆘 If You Ever Get Stuck (Don't Worry, It Happens!)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#computer-acting-weird" class="md-nav__link">
-    Computer Acting Weird?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#feeling-confused-about-something" class="md-nav__link">
-    Feeling Confused About Something?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ready-to-start-your-creative-adventure" class="md-nav__link">
-    🎉 Ready to Start Your Creative Adventure?
-  </a>
-  
-</li>
-      
-    </ul>
-  
+</ul>
 </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    
-    
-    
-    
-    
-      
-      
-    
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
-  
-  <span class="md-ellipsis">
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why-html-is-perfect-for-creative-minds-like-yours">
+    Why HTML is Perfect for Creative Minds Like Yours
+  </a>
+<nav aria-label="Why HTML is Perfect for Creative Minds Like Yours" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#html-your-math-brain-pure-magic">
+    HTML + Your Math Brain = Pure Magic!
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#html-your-artistic-soul-beautiful-digital-masterpieces">
+    HTML + Your Artistic Soul = Beautiful Digital Masterpieces!
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-amazing-journey-of-web-browsers">
+    The Amazing Journey of Web Browsers
+  </a>
+<nav aria-label="The Amazing Journey of Web Browsers" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-1990s-when-everything-changed">
+    The 1990s - When Everything Changed
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-2000s-the-revolution-begins">
+    The 2000s - The Revolution Begins
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#browser-trivia-that-will-absolutely-amaze-you">
+    Browser Trivia That Will Absolutely Amaze You
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#incredible-html-secrets-that-most-people-dont-know">
+    Incredible HTML Secrets That Most People Don't Know
+  </a>
+<nav aria-label="Incredible HTML Secrets That Most People Don't Know" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-magic-story-of-the-first-html-tags">
+    The Magic Story of the First HTML Tags
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mathematical-marvels-hidden-in-web-design">
+    Mathematical Marvels Hidden in Web Design
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#html-trivia-that-will-absolutely-blow-your-mind">
+    HTML Trivia That Will Absolutely Blow Your Mind
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#your-future-possibilities-are-absolutely-endless">
+    Your Future Possibilities Are Absolutely Endless
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#why-you-myra-are-going-to-excel-at-this">
+    Why YOU, Myra, Are Going to Excel at This
+  </a>
+<nav aria-label="Why YOU, Myra, Are Going to Excel at This" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#famous-web-designers-who-started-as-artists-just-like-you">
+    Famous Web Designers Who Started as Artists Just Like You
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#your-secret-superpowers-in-web-development">
+    Your Secret Superpowers in Web Development
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#the-amazing-things-youll-discover-along-the-way">
+    The Amazing Things You'll Discover Along the Way
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ready-to-start-your-epic-journey">
+    Ready to Start Your Epic Journey?
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#lets-get-you-started-on-this-amazing-adventure">
+    Let's Get You Started on This Amazing Adventure!
+  </a>
+<nav aria-label="Let's Get You Started on This Amazing Adventure!" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#one-final-amazing-fact-to-inspire-you">
+    One Final Amazing Fact to Inspire You
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#get-inspired-by-whats-possible">
+    Get Inspired by What's Possible
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<span class="md-ellipsis">
     Getting Started
   </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
             Getting Started
           </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="setup-guide/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="setup-guide/">
+<span class="md-ellipsis">
     Setup Guide
   </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="program-overview/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Program Overview
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="chapters/chapter1/exercises/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Chapter 1 - Myra's Color Magic Laboratory
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="chapters/chapter2/exercises/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Chapter 2 - Style Your Digital Art Canvas
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="chapters/chapter3/exercises/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Chapter 3 - Build Your Artist Network
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="chapters/chapter4/exercises/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Chapter 4 - Create Your Photo Gallery
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="chapters/chapter5/exercises/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Chapter 5 - Design Math Art Patterns
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="chapters/chapter6/exercises/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Chapter 6 - Layout Your Creative Space
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="chapters/chapter7/exercises/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Chapter 7 - Make Interactive Art Forms
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="chapters/chapter8/exercises/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Chapter 8 - CSS Mastery & Advanced Design
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="chapters/chapter9/exercises/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Chapter 9 - Multimedia Art Showcase
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="chapters/chapter10/exercises/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Chapter 10 - Myra Kumar Artist & Developer Portfolio
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-  </ul>
+</a>
+</li>
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#your-creative-coding-adventure-awaits" class="md-nav__link">
-    🚀 Your Creative Coding Adventure Awaits!
-  </a>
-  
-    <nav class="md-nav" aria-label="🚀 Your Creative Coding Adventure Awaits!">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-set-up-your-adventure-space" class="md-nav__link">
-    Step 1: Set Up Your Adventure Space
-  </a>
-  
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-see-all-the-amazing-things-youll-build" class="md-nav__link">
-    Step 2: See All the Amazing Things You'll Build
-  </a>
-  
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+<span class="md-ellipsis">
+    HTML Fundamentals
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+            HTML Fundamentals
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="chapters/chapter1/">
+<span class="md-ellipsis">
+    Chapter 1 - HTML Essentials
+  </span>
+</a>
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-start-creating-magic" class="md-nav__link">
-    Step 3: Start Creating Magic
-  </a>
-  
+<li class="md-nav__item">
+<a class="md-nav__link" href="chapters/chapter2/">
+<span class="md-ellipsis">
+    Chapter 2 - CSS Styling Fundamentals
+  </span>
+</a>
 </li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#your-amazing-learning-adventure-map" class="md-nav__link">
-    📚 Your Amazing Learning Adventure Map
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-youll-learn-the-fun-way" class="md-nav__link">
-    🎯 How You'll Learn (The Fun Way!)
-  </a>
-  
-    <nav class="md-nav" aria-label="🎯 How You'll Learn (The Fun Way!)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#art-comes-first" class="md-nav__link">
-    Art Comes First!
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#your-math-brain-will-love-this" class="md-nav__link">
-    Your Math Brain Will Love This
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#build-real-things-you-can-show-off" class="md-nav__link">
-    Build Real Things You Can Show Off
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#one-step-at-a-time" class="md-nav__link">
-    One Step at a Time
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#all-the-amazing-things-youll-create" class="md-nav__link">
-    🌟 All the Amazing Things You'll Create
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#if-you-ever-get-stuck-dont-worry-it-happens" class="md-nav__link">
-    🆘 If You Ever Get Stuck (Don't Worry, It Happens!)
-  </a>
-  
-    <nav class="md-nav" aria-label="🆘 If You Ever Get Stuck (Don't Worry, It Happens!)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#computer-acting-weird" class="md-nav__link">
-    Computer Acting Weird?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#feeling-confused-about-something" class="md-nav__link">
-    Feeling Confused About Something?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ready-to-start-your-creative-adventure" class="md-nav__link">
-    🎉 Ready to Start Your Creative Adventure?
-  </a>
-  
-</li>
-      
-    </ul>
-  
+</ul>
 </nav>
-                  </div>
-                </div>
-              </div>
-            
-          
-          
-            <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
-                
-                  
-
-  
-  
-
-
-<h1 id="welcome-to-your-html-adventure-myra">Welcome to Your HTML Adventure, Myra! 🎨<a class="headerlink" href="#welcome-to-your-html-adventure-myra" title="Permanent link">&para;</a></h1>
-<p>This is YOUR special place where art meets code! I've created this entire learning adventure just for you, Myra - a brilliant artist with an amazing mathematical mind. Get ready to paint with code using your favorite colors: teal, purple, and yellow!</p>
-<hr />
-<h2 id="your-creative-coding-adventure-awaits">🚀 Your Creative Coding Adventure Awaits!<a class="headerlink" href="#your-creative-coding-adventure-awaits" title="Permanent link">&para;</a></h2>
-<h3 id="step-1-set-up-your-adventure-space"><strong>Step 1: Set Up Your Adventure Space</strong><a class="headerlink" href="#step-1-set-up-your-adventure-space" title="Permanent link">&para;</a></h3>
-<p>Let's start here: <a href="setup-guide/">Setup Guide</a></p>
-<p>First, we'll get your computer ready to become your digital art canvas! Don't worry, I'll walk you through everything step by step.</p>
-<h3 id="step-2-see-all-the-amazing-things-youll-build"><strong>Step 2: See All the Amazing Things You'll Build</strong><a class="headerlink" href="#step-2-see-all-the-amazing-things-youll-build" title="Permanent link">&para;</a></h3>
-<p>Take a peek: <a href="program-overview/">Program Overview</a></p>
-<p>Want to see what incredible projects you'll create? From magical color experiments to your very own professional artist website!</p>
-<h3 id="step-3-start-creating-magic"><strong>Step 3: Start Creating Magic</strong><a class="headerlink" href="#step-3-start-creating-magic" title="Permanent link">&para;</a></h3>
-<p>Begin your journey: <a href="chapters/chapter1/exercises/">Chapter 1 - Myra's Color Magic Laboratory</a></p>
-<p>Ready to see how your favorite colors can come alive on a webpage? Let's dive in and start creating!</p>
-<hr />
-<h2 id="your-amazing-learning-adventure-map">📚 Your Amazing Learning Adventure Map<a class="headerlink" href="#your-amazing-learning-adventure-map" title="Permanent link">&para;</a></h2>
-<p>Look at all the incredible things you're going to create, Myra! Each chapter is like opening a new box of digital art supplies:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Your HTML Adventure/
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>├── 🏠 Home (this page)                    ← You are here!
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>├── Setup Guide                         ← Prepare your adventure space
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>├── 🗺️ Program Overview                    ← See your entire journey
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>├── 🌈 Chapter 1 - Your Color Magic Laboratory
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>├── 🎨 Chapter 2 - Style Your Digital Art Canvas
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>├── 🔗 Chapter 3 - Build Your Artist Network
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>├── 📸 Chapter 4 - Create Your Photo Gallery
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>├── 📊 Chapter 5 - Design Math Art Patterns
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>├── 🏗️ Chapter 6 - Layout Your Creative Space
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>├── 📝 Chapter 7 - Make Interactive Art Forms
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>├── 💼 Chapter 8 - Professional Artist Website
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>├── 🎪 Chapter 9 - Multimedia Art Showcase
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>└── 🌟 Chapter 10 - Myra Kumar: Artist &amp; Developer Portfolio
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>Every chapter has special starter files and templates just for you!
-</span></code></pre></div>
-<hr />
-<h2 id="how-youll-learn-the-fun-way">🎯 How You'll Learn (The Fun Way!)<a class="headerlink" href="#how-youll-learn-the-fun-way" title="Permanent link">&para;</a></h2>
-<h3 id="art-comes-first"><strong>Art Comes First!</strong><a class="headerlink" href="#art-comes-first" title="Permanent link">&para;</a></h3>
-<p>Every single lesson connects to your love of art and creativity. You're not just learning code - you're learning to paint with it!</p>
-<h3 id="your-math-brain-will-love-this"><strong>Your Math Brain Will Love This</strong><a class="headerlink" href="#your-math-brain-will-love-this" title="Permanent link">&para;</a></h3>
-<p>You'll discover amazing connections between your mathematical thinking and coding:
-- Color codes are like secret number formulas
-- Web pages work with coordinates just like art class<br />
-- Everything has proportions and measurements
-- Patterns and logic make beautiful designs</p>
-<h3 id="build-real-things-you-can-show-off"><strong>Build Real Things You Can Show Off</strong><a class="headerlink" href="#build-real-things-you-can-show-off" title="Permanent link">&para;</a></h3>
-<p>You'll create actual websites that you can proudly show to your family and friends - no toy projects here!</p>
-<h3 id="one-step-at-a-time"><strong>One Step at a Time</strong><a class="headerlink" href="#one-step-at-a-time" title="Permanent link">&para;</a></h3>
-<p>I promise never to overwhelm you. Each chapter teaches you just one new skill, then lets you play and experiment with it.</p>
-<hr />
-<h2 id="all-the-amazing-things-youll-create">🌟 All the Amazing Things You'll Create<a class="headerlink" href="#all-the-amazing-things-youll-create" title="Permanent link">&para;</a></h2>
-<p>By the time you finish this adventure, you'll have your very own collection of websites:</p>
-<ul>
-<li><strong>Your personal art gallery showcasing your favorite teal, purple &amp; yellow colors</strong></li>
-<li><strong>Interactive color experiments that respond to your creativity</strong></li>
-<li><strong>Mathematical art pattern generators that combine your love of math and art</strong></li>
-<li><strong>A multimedia showcase featuring all your artistic creations</strong></li>
-<li><strong>Your professional "Myra Kumar: Artist &amp; Developer" portfolio website</strong></li>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+<span class="md-ellipsis">
+    Building Projects
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Building Projects
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="chapters/chapter3/">
+<span class="md-ellipsis">
+    Chapter 3 - Page Layout &amp; Organization
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="chapters/chapter4/">
+<span class="md-ellipsis">
+    Chapter 4 - Working with Files &amp; Folders
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="chapters/chapter5/">
+<span class="md-ellipsis">
+    Chapter 5 - Tables &amp; Data Organization
+  </span>
+</a>
+</li>
 </ul>
-<p>Imagine showing these to your friends and family - they'll be so impressed!</p>
-<hr />
-<h2 id="if-you-ever-get-stuck-dont-worry-it-happens">🆘 If You Ever Get Stuck (Don't Worry, It Happens!)<a class="headerlink" href="#if-you-ever-get-stuck-dont-worry-it-happens" title="Permanent link">&para;</a></h2>
-<h3 id="computer-acting-weird"><strong>Computer Acting Weird?</strong><a class="headerlink" href="#computer-acting-weird" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Check out the troubleshooting section in your setup guide</li>
-<li>Use <a href="https://codepen.io/pen/" target="_blank">CodePen.io</a> as your backup coding space when things aren't working</li>
-<li>Remember: Every great artist has messy days - mistakes help you learn!</li>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--section md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" id="__nav_5" type="checkbox"/>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+<span class="md-ellipsis">
+    Advanced Design
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
+<span class="md-nav__icon md-icon"></span>
+            Advanced Design
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="chapters/chapter6/">
+<span class="md-ellipsis">
+    Chapter 6 - Advanced Layout &amp; Design
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="chapters/chapter7/">
+<span class="md-ellipsis">
+    Chapter 7 - Forms &amp; User Interaction
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="chapters/chapter8/">
+<span class="md-ellipsis">
+    Chapter 8 - CSS Mastery &amp; Advanced Design
+  </span>
+</a>
+</li>
 </ul>
-<h3 id="feeling-confused-about-something"><strong>Feeling Confused About Something?</strong><a class="headerlink" href="#feeling-confused-about-something" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Go back and review the previous chapter - sometimes you need to see something twice</li>
-<li>Try experimenting in <a href="https://codepen.io/pen/" target="_blank">CodePen</a> to see what happens</li>
-<li>Break big problems into tiny pieces (that's what programmers do!)</li>
+</nav>
+</li>
 </ul>
-<hr />
-<h2 id="ready-to-start-your-creative-adventure">🎉 Ready to Start Your Creative Adventure?<a class="headerlink" href="#ready-to-start-your-creative-adventure" title="Permanent link">&para;</a></h2>
-<p>Here's your mission, Myra:</p>
-<ol>
-<li>🔧 <strong>Set up your adventure space</strong> using the setup guide</li>
-<li>🗺️ <strong>Explore your learning journey</strong> in the program overview  </li>
-<li>🌈 <strong>Create your first masterpiece</strong> in Chapter 1!</li>
-</ol>
-<p><strong>Remember:</strong> You're not just learning to code - you're learning to create digital art! Every "oops" moment is actually a discovery, and every project is a chance to make something uniquely yours. </p>
-<p><strong>Now go forth and create amazing things, Myra!</strong> 🚀✨</p>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<h1 id="hey-myra-welcome-to-your-amazing-html-adventure">Hey Myra! Welcome to Your Amazing HTML Adventure<a class="headerlink" href="#hey-myra-welcome-to-your-amazing-html-adventure" title="Permanent link">¶</a></h1>
+<p>Did you know that you are about to learn the same magical language that connects every person on Earth? That's right, Myra! HTML is the secret code that makes the internet work, and you're going to master it.</p>
+<hr/>
+<h3 id="the-incredible-story-of-how-the-web-was-born">The Incredible Story of How the Web Was Born<a class="headerlink" href="#the-incredible-story-of-how-the-web-was-born" title="Permanent link">¶</a></h3>
+<p>Picture this, Myra: It's 1989, and computers exist, but they can't really talk to each other very well. Then along comes this brilliant scientist named <a href="https://www.w3.org/People/Berners-Lee/" target="_blank">Tim Berners-Lee</a> working at <a href="https://home.cern/" target="_blank">CERN</a> - a massive science laboratory in Switzerland where they study the tiniest particles in the universe! Tim had this wild idea that seemed impossible at the time: "What if scientists anywhere in the world could instantly share their research just by clicking on words that connect to other documents?"</p>
+<p>Most people thought he was dreaming too big, but Tim didn't give up. He spent months writing code, creating the very first web browser, and building what would become the foundation of everything we use today. When Tim was just 34 years old (only 23 years older than you are now!), he created the World Wide Web. The very first website went live on August 6, 1991 - that's over 30 years ago! It looked nothing like the colorful, interactive websites you see today. There were no videos, no photos, no fancy fonts, no games - just plain black text on a white background explaining what this "World Wide Web" thing was supposed to do.</p>
+<h4 id="amazing-web-trivia-just-for-you">Amazing Web Trivia Just for You<a class="headerlink" href="#amazing-web-trivia-just-for-you" title="Permanent link">¶</a></h4>
+<p>Here's where it gets really cool, Myra! Tim's first web browser was actually called "<a href="https://en.wikipedia.org/wiki/WorldWideWeb" target="_blank">WorldWideWeb</a>" - yes, the same name as the web itself! Can you imagine how confusing that was? People would say "I'm using the WorldWideWeb to browse the World Wide Web!" So they renamed the browser to "Nexus" to avoid all the confusion.</p>
+<p>And here's something absolutely amazing - <strong>the very first website is STILL online today!</strong> You can actually visit it right now at <a href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">http://info.cern.ch/hypertext/WWW/TheProject.html</a> and see exactly what the web looked like when it was born. It's like visiting a historical monument, but in cyberspace!</p>
+<p>But here's the most incredible part of all: Tim Berners-Lee could have become the richest person on Earth by putting a patent on his invention. Think about it - every time someone used the web, they would have had to pay him money! But instead, he gave it away completely FREE to the entire world because he believed everyone should have access to information and knowledge. That decision changed everything for billions of people, including you and me.</p>
+<p>Want to know just how explosive the web's growth has been? Let's look at some mind-blowing numbers:</p>
+<div style="margin: 20px 0; padding: 15px; background-color: #f8f9fa; border-radius: 8px;">
+<h4 style="margin-top: 0;">Website Growth Over Time</h4>
+<pre class="mermaid"><code>graph LR
+    A["1991&lt;br/&gt;1 website"] --&gt; B["1993&lt;br/&gt;623 websites"]
+    B --&gt; C["1996&lt;br/&gt;100,000 websites"]
+    C --&gt; D["2000&lt;br/&gt;17 million websites"]
+    D --&gt; E["2010&lt;br/&gt;207 million websites"]
+    E --&gt; F["2024&lt;br/&gt;1.8+ BILLION websites"]
 
-  <hr>
+    style A fill:#ff9999
+    style B fill:#ffcc99
+    style C fill:#99ccff
+    style D fill:#99ff99
+    style E fill:#cc99ff
+    style F fill:#ff99cc</code></pre>
+
+*From just 1 website to over 1.8 billion in just 33 years!*
+</div>
+<hr/>
+<h3 id="why-html-is-perfect-for-creative-minds-like-yours">Why HTML is Perfect for Creative Minds Like Yours<a class="headerlink" href="#why-html-is-perfect-for-creative-minds-like-yours" title="Permanent link">¶</a></h3>
+<p>You know how you love creating art with your favorite colors - teal, purple, and yellow? Well, Myra, HTML is like having an infinite digital art canvas that never runs out of paint, never tears, and can be shared with people all around the world instantly! But what makes HTML truly special is how it combines the two things you love most: math and art.</p>
+<h4 id="html-your-math-brain-pure-magic">HTML + Your Math Brain = Pure Magic!<a class="headerlink" href="#html-your-math-brain-pure-magic" title="Permanent link">¶</a></h4>
+<p>Here's something that will blow your mind: colors in HTML are actually secret mathematical recipes! Your favorite teal color? It's <code>#2dd4bf</code> - which is actually a mathematical formula telling the computer to mix specific amounts of red, green, and blue light. It's like being a scientist in a color laboratory! Web pages use coordinate systems just like the graphs you love in math class, where every element has an exact position measured in <a href="https://en.wikipedia.org/wiki/Pixel" target="_blank">pixels</a>. Everything on a webpage has precise proportions, measurements, and mathematical relationships. Your mathematical mind will start seeing patterns everywhere - in the spacing between elements, in the golden ratio used for beautiful layouts, even in how <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank">CSS Grid</a> uses mathematical principles to organize content!</p>
+<h4 id="html-your-artistic-soul-beautiful-digital-masterpieces">HTML + Your Artistic Soul = Beautiful Digital Masterpieces!<a class="headerlink" href="#html-your-artistic-soul-beautiful-digital-masterpieces" title="Permanent link">¶</a></h4>
+<p>Imagine being able to paint with code using any of the 16.7 million colors that computers can display! You can create layouts more flexible than any physical canvas, design interactive art that responds to people's mouse movements and clicks, build digital galleries to showcase your real artwork, and even create animations that bring your creations to life. Famous digital artists like <a href="https://www.lozano-hemmer.com/" target="_blank">Rafael Lozano-Hemmer</a> and <a href="https://reas.com/" target="_blank">Casey Reas</a> use code to create installations in major museums around the world!</p>
+<hr/>
+<h3 id="the-amazing-journey-of-web-browsers">The Amazing Journey of Web Browsers<a class="headerlink" href="#the-amazing-journey-of-web-browsers" title="Permanent link">¶</a></h3>
+<p>Every time you open a browser, Myra, you're using one of the most incredible inventions in human history! It's like having a magical window that can instantly transport you anywhere in the digital world. But browsers didn't start out as the powerful tools they are today. Their story is filled with competition, innovation, and some pretty dramatic battles!</p>
+<h4 id="the-1990s-when-everything-changed">The 1990s - When Everything Changed<a class="headerlink" href="#the-1990s-when-everything-changed" title="Permanent link">¶</a></h4>
+<p>Back in 1993, a group of students at the University of Illinois created something revolutionary called <a href="https://en.wikipedia.org/wiki/Mosaic_(web_browser)" target="_blank">Mosaic</a>. It was the first browser that could actually show pictures! Can you imagine using the internet without any images? Before Mosaic, the web was just black text on gray backgrounds - no photos, no colors, no fun graphics at all.</p>
+<p>Then in 1994, <a href="https://en.wikipedia.org/wiki/Netscape_Navigator" target="_blank">Netscape Navigator</a> burst onto the scene and changed everything. It made the web colorful, fast, and actually fun to use! Netscape became so popular that by 1995, almost everyone was using it. But then the giant Microsoft decided they wanted a piece of the action, so they created <a href="https://en.wikipedia.org/wiki/Internet_Explorer" target="_blank">Internet Explorer</a> and started what people called "the Browser Wars" - companies fighting to make the best browser!</p>
+<h4 id="the-2000s-the-revolution-begins">The 2000s - The Revolution Begins<a class="headerlink" href="#the-2000s-the-revolution-begins" title="Permanent link">¶</a></h4>
+<p>In 2003, Apple surprised everyone by releasing <a href="https://www.apple.com/safari/" target="_blank">Safari</a>, a browser so beautiful and fast that it felt like magic. Around the same time, a group of passionate developers created <a href="https://www.mozilla.org/en-US/firefox/" target="_blank">Mozilla Firefox</a> in 2004, giving people the freedom to customize their browsing experience like never before.</p>
+<p>But the biggest shock came in 2008 when Google - a search company! - released <a href="https://www.google.com/chrome/" target="_blank">Chrome</a>. Everyone thought Google was crazy to compete with established browsers, but Chrome was so incredibly fast and simple that it quickly became the most popular browser in the world!</p>
+<h4 id="browser-trivia-that-will-absolutely-amaze-you">Browser Trivia That Will Absolutely Amaze You<a class="headerlink" href="#browser-trivia-that-will-absolutely-amaze-you" title="Permanent link">¶</a></h4>
+<p>The very first <a href="https://en.wikipedia.org/wiki/Web_banner" target="_blank">banner advertisement</a> on the internet was just a simple rectangle that said "Have you ever clicked your mouse right HERE? YOU WILL" - and guess what? It got a 44% click rate! Today, if an ad gets even 1% of people to click it, that's considered successful.</p>
+<p>Here's something cool about <a href="https://design.google/library/google-chrome-logo/" target="_blank">Google Chrome's logo</a>: those colors aren't random! They're actually based on the mathematical color theory you love studying. The blue, red, yellow, and green represent the <a href="https://en.wikipedia.org/wiki/RGB_color_model" target="_blank">RGB color model</a> that computers use to create all colors on screen.</p>
+<p><a href="https://www.apple.com/safari/" target="_blank">Safari</a> got its name because Apple wanted people to think of "going on a safari" to explore the internet jungle - discovering new and exciting websites like an adventure! And the word "browser" itself was chosen because you "browse" through information, just like browsing through books in a library or clothes in a store.</p>
+<p>Want to see something really cool? There's a website called <a href="https://caniuse.com/" target="_blank">Can I Use</a> where you can type in any web feature and see which browsers support it. It's like a compatibility detective tool that web developers use every day!</p>
+<hr/>
+<h3 id="incredible-html-secrets-that-most-people-dont-know">Incredible HTML Secrets That Most People Don't Know<a class="headerlink" href="#incredible-html-secrets-that-most-people-dont-know" title="Permanent link">¶</a></h3>
+<p>Ready for some seriously mind-blowing facts, Myra? These are the kinds of secrets that even many adults who use the internet every day don't know!</p>
+<h4 id="the-magic-story-of-the-first-html-tags">The Magic Story of the First HTML Tags<a class="headerlink" href="#the-magic-story-of-the-first-html-tags" title="Permanent link">¶</a></h4>
+<p>Here's something amazing: the very first <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML tag</a> ever created was <code>&lt;TITLE&gt;</code> - because even Tim Berners-Lee knew that every website needed a name! It's like how every story needs a title, or every painting needs to be signed by the artist.</p>
+<p>But get this - the <code>&lt;IMG&gt;</code> tag (which lets us put pictures on websites) wasn't invented until 1993! That means the web existed for 2 whole years with absolutely NO IMAGES. Can you imagine <a href="https://www.instagram.com/" target="_blank">Instagram</a> or <a href="https://www.youtube.com/" target="_blank">YouTube</a> without any pictures or videos? It would be impossible!</p>
+<p>And here's something that will connect to your love of math: the <code>&lt;TABLE&gt;</code> tag was originally created specifically to display mathematical data and scientific research - exactly the kind of work you enjoy! Scientists needed a way to share their number tables and formulas with colleagues around the world.</p>
+<h4 id="mathematical-marvels-hidden-in-web-design">Mathematical Marvels Hidden in Web Design<a class="headerlink" href="#mathematical-marvels-hidden-in-web-design" title="Permanent link">¶</a></h4>
+<p>Remember the <a href="https://www.mathsisfun.com/numbers/golden-ratio.html" target="_blank">Golden Ratio</a> (1.618) that you see in sunflower spirals, seashells, and famous art masterpieces? Well, web designers use this same mathematical principle to create layouts that feel naturally beautiful to the human eye! Many of the world's most gorgeous websites use golden ratio proportions without most people even realizing it.</p>
+<p><a href="https://kids.kiddle.co/Fibonacci_sequence" target="_blank">Fibonacci sequences</a> (you know, 1, 1, 2, 3, 5, 8, 13...) actually appear in something called responsive design breakpoints - the points where websites change their layout to fit different screen sizes. It's math hidden in plain sight! Did you know that when you count the petals on flowers, they often follow Fibonacci numbers? <a href="https://www.scienceforkidsclub.com/projects/the-fibonacci-sequence-where-is-it-in-nature.html" target="_blank">Check out this fun explanation</a> of how nature uses this same pattern!</p>
+<p>And all those beautiful color combinations you see on websites? They're based on <a href="https://en.wikipedia.org/wiki/Color_theory" target="_blank">color theory mathematics</a> that determines which colors work harmoniously together - like your favorite teal, purple, and yellow combination!</p>
+<h4 id="html-trivia-that-will-absolutely-blow-your-mind">HTML Trivia That Will Absolutely Blow Your Mind<a class="headerlink" href="#html-trivia-that-will-absolutely-blow-your-mind" title="Permanent link">¶</a></h4>
+<p>There used to be an HTML tag called <code>&lt;BLINK&gt;</code> that made text flash on and off like a neon sign. It became SO annoying that web developers everywhere complained, and browsers eventually stopped supporting it entirely! It's like the internet's equivalent of a fashion trend that was so bad it had to be banned.</p>
+<p>When HTML was first created, it had only 18 different tags. Today, there are over 100 different <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">HTML elements</a> you can use - it's like having a massive box of digital art supplies! The longest valid HTML tag name is <code>&lt;figcaption&gt;</code> at 10 characters, and here's something incredible: you can actually create a complete website with just 7 words of HTML: <code>&lt;html&gt;&lt;body&gt;Hello World&lt;/body&gt;&lt;/html&gt;</code>.</p>
+<h4 id="your-future-possibilities-are-absolutely-endless">Your Future Possibilities Are Absolutely Endless<a class="headerlink" href="#your-future-possibilities-are-absolutely-endless" title="Permanent link">¶</a></h4>
+<p>Did you know that web developers can earn anywhere from $50,000 to $150,000+ per year just for creating digital art and websites? But more than the money, think about the possibilities: you could build the next <a href="https://www.instagram.com/" target="_blank">Instagram</a>, <a href="https://www.tiktok.com/" target="_blank">TikTok</a>, or create a completely new type of social platform that no one has even imagined yet! Digital artists who code their own websites have complete creative freedom - there are literally no limits to what you can create.</p>
+<hr/>
+<h3 id="why-you-myra-are-going-to-excel-at-this">Why YOU, Myra, Are Going to Excel at This<a class="headerlink" href="#why-you-myra-are-going-to-excel-at-this" title="Permanent link">¶</a></h3>
+<p>Here's something incredible that most people don't realize: your unique combination of artistic talent and mathematical thinking is EXACTLY what makes the most successful web developers in the world! You're not just learning to code - you're developing a superpower.</p>
+<h4 id="famous-web-designers-who-started-as-artists-just-like-you">Famous Web Designers Who Started as Artists Just Like You<a class="headerlink" href="#famous-web-designers-who-started-as-artists-just-like-you" title="Permanent link">¶</a></h4>
+<p>Meet <a href="https://jessicahische.is/" target="_blank">Jessica Hische</a>, who started as a lettering artist drawing beautiful fonts by hand. She fell in love with web design and now creates stunning digital experiences for major companies like <a href="https://en.wikipedia.org/wiki/Wes_Anderson" target="_blank">Wes Anderson movies</a> and <a href="https://www.nytimes.com/" target="_blank">The New York Times</a>!</p>
+<p>Then there's <a href="https://vanschneider.com/" target="_blank">Tobias van Schneider</a>, who began his career as a musician but discovered that the same creativity that helped him compose music could be used to design incredible websites. His portfolio is like a digital art museum!</p>
+<p>And <a href="https://sarahdrasnerdesign.com/" target="_blank">Sarah Drasner</a> started as a traditional artist and animator. Now she leads web development teams at major tech companies and creates <a href="https://css-tricks.com/" target="_blank">animations with code</a> that are displayed in galleries around the world.</p>
+<h4 id="your-secret-superpowers-in-web-development">Your Secret Superpowers in Web Development<a class="headerlink" href="#your-secret-superpowers-in-web-development" title="Permanent link">¶</a></h4>
+<p>Your love of math means you'll understand <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout" target="_blank">CSS layouts</a>, <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" target="_blank">responsive design</a>, and color mathematics more intuitively than most adults who've been coding for years! Your artistic eye will help you create websites that aren't just functional, but absolutely beautiful. Your attention to detail - the same skill that makes your artwork so precise - will make your code clean, professional, and bug-free. And your creativity will help you solve problems in ways that other developers never even think of trying.</p>
+<hr/>
+<h3 id="the-amazing-things-youll-discover-along-the-way">The Amazing Things You'll Discover Along the Way<a class="headerlink" href="#the-amazing-things-youll-discover-along-the-way" title="Permanent link">¶</a></h3>
+<p>As you learn HTML, Myra, you'll start uncovering incredible secrets about how the digital world really works! You'll understand how <a href="https://www.netflix.com/" target="_blank">Netflix</a> decides what shows to recommend to you (hint: it's partly based on web data and algorithms), why some websites load instantly while others take forever (you'll learn to make lightning-fast sites), how your favorite artists sell their work online through platforms like <a href="https://www.etsy.com/" target="_blank">Etsy</a> and <a href="https://www.deviantart.com/" target="_blank">DeviantArt</a> (you'll even build your own art marketplace), and why certain color combinations make people feel happy, excited, or calm (<a href="https://en.wikipedia.org/wiki/Color_psychology" target="_blank">color psychology</a> meets code!).</p>
+<p>But here's the most exciting part of all: Every single website you visit - from <a href="https://www.youtube.com/" target="_blank">YouTube</a> to <a href="https://www.instagram.com/" target="_blank">Instagram</a> to your school's website to <a href="https://www.nasa.gov/" target="_blank">NASA's space exploration site</a> - is built with the exact same HTML you're about to learn. You're not just learning a skill; you're learning the universal language that connects our entire digital world!</p>
+<hr/>
+<h3 id="ready-to-start-your-epic-journey">Ready to Start Your Epic Journey?<a class="headerlink" href="#ready-to-start-your-epic-journey" title="Permanent link">¶</a></h3>
+<p>Myra, you're about to join an exclusive club of creators who can build absolutely anything they can imagine on the internet! Think about this: <a href="https://www.w3.org/People/Berners-Lee/" target="_blank">Tim Berners-Lee</a> started with just an idea and changed the entire world. <a href="https://en.wikipedia.org/wiki/Mark_Zuckerberg" target="_blank">Mark Zuckerberg</a> created <a href="https://www.facebook.com/" target="_blank">Facebook</a> in his college dorm room when he was just 19 years old. <a href="https://reshmasaujani.com/" target="_blank">Reshma Saujani</a> founded <a href="https://girlswhocode.com/" target="_blank">Girls Who Code</a> to teach millions of girls like you to become programmers and change the world.</p>
+<p>You're starting your journey right here, right now, with the same exact tools they used - HTML. Your adventure begins with learning the foundational magic that powers everything from <a href="https://www.google.com/" target="_blank">Google</a> to <a href="https://www.spotify.com/" target="_blank">Spotify</a> to <a href="https://www.khanacademy.org/" target="_blank">Khan Academy</a>.</p>
+<p>Are you ready to discover how websites are really made? Ready to create digital art that millions of people around the world could see and enjoy? Ready to turn your mathematical mind and artistic soul into web development superpowers that could literally change the internet?</p>
+<hr/>
+<h3 id="lets-get-you-started-on-this-amazing-adventure">Let's Get You Started on This Amazing Adventure!<a class="headerlink" href="#lets-get-you-started-on-this-amazing-adventure" title="Permanent link">¶</a></h3>
+<p>First things first - let's make sure your digital art studio is ready to create magic:</p>
+<p><strong><a href="setup-guide/">Set up your coding workspace</a></strong> - Transform your computer into the ultimate digital canvas where you'll paint with code!</p>
+<p><strong>Ready to start learning?</strong> Jump directly into <a href="chapters/chapter1/">Chapter 1 - HTML Essentials</a> to begin your coding adventure and start building your very first websites!</p>
+<hr/>
+<h4 id="one-final-amazing-fact-to-inspire-you">One Final Amazing Fact to Inspire You<a class="headerlink" href="#one-final-amazing-fact-to-inspire-you" title="Permanent link">¶</a></h4>
+<p>The very first <a href="https://en.wikipedia.org/wiki/Emoticon" target="_blank">emoticon</a> :-) was created in 1982 by computer scientist <a href="https://en.wikipedia.org/wiki/Scott_Fahlman" target="_blank">Scott Fahlman</a> at Carnegie Mellon University. He had no idea that this simple combination of characters would eventually lead to the billions of emojis we use today! Now, over 40 years later, you can create websites with animated emojis, interactive graphics, and digital art that moves, dances, and responds to users in real-time.</p>
+<h4 id="get-inspired-by-whats-possible">Get Inspired by What's Possible<a class="headerlink" href="#get-inspired-by-whats-possible" title="Permanent link">¶</a></h4>
+<p>Before you start coding, check out these absolutely incredible websites that will show you what's possible when creativity meets code:</p>
+<p><strong><a href="https://codepen.io/pen/" target="_blank">CodePen.io</a></strong> - This is like the YouTube of coding! Explore thousands of creative projects made by artists and developers from around the world. You'll find everything from animated logos to interactive games built with just HTML, CSS, and JavaScript.</p>
+<p><strong><a href="https://www.cssdesignawards.com/" target="_blank">CSS Design Awards</a></strong> - See the most stunning, award-winning website designs on the planet. These sites will inspire your own projects and show you what's possible when you combine artistic vision with coding skills.</p>
+<p><strong><a href="https://thehistoryoftheweb.com/timeline/" target="_blank">The History of Web Design</a></strong> - Take an interactive journey through time and see how websites evolved from simple text pages to the incredible digital experiences we have today.</p>
+<p>Remember, Myra: Every expert was once a beginner. Every incredible website started with a single line of HTML. And every amazing web developer started exactly where you are right now - with curiosity, creativity, and the burning desire to build something amazing that the world has never seen before.</p>
+<p>The internet is waiting for what YOU will create! Let's begin your HTML adventure and turn your dreams into digital reality!</p>
+<hr/>
 <div class="md-source-file">
-  <small>
+<small>
     
       Last update:
       <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 28, 2025 22:58:03</span>
-      
-        <br>
+<br/>
         Created:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">August 28, 2025 08:39:33</span>
-      
-    
-  </small>
+</small>
 </div>
-
-
-  
-
-
-
-
-                
-              </article>
-            </div>
-          
-          
-        </div>
-        
-          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
   Back to top
 </button>
-        
-      </main>
-      
-        <footer class="md-footer">
-  
-    
-      
-      <nav class="md-footer__inner md-grid" aria-label="Footer" >
-        
-        
-          
-          <a href="setup-guide/" class="md-footer__link md-footer__link--next" aria-label="Next: Setup Guide">
-            <div class="md-footer__title">
-              <span class="md-footer__direction">
+</main>
+<footer class="md-footer">
+<nav aria-label="Footer" class="md-footer__inner md-grid">
+<a aria-label="Next: Setup Guide" class="md-footer__link md-footer__link--next" href="setup-guide/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
                 Next
               </span>
-              <div class="md-ellipsis">
+<div class="md-ellipsis">
                 Setup Guide
               </div>
-            </div>
-            <div class="md-footer__button md-icon">
-              
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-            </div>
-          </a>
-        
-      </nav>
-    
-  
-  <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
-  
-    <div class="md-copyright__highlight">
-      Copyright &copy; 2024 Myra Kumar<br>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"></path></svg>
+</div>
+</a>
+</nav>
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+<div class="md-copyright__highlight">
+      Copyright © 2024 Myra Kumar<br/>
 <small>Built with teal, purple, and yellow love by a young artist-developer</small>
-
-    </div>
+</div>
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
       Material for MkDocs
     </a>
-  
 </div>
-      
-        <div class="md-social">
-  
-    
-    
-    
-    
-      
-      
-    
-    <a href="https://github.com/anismiles/html-learning-adventure" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-    </a>
-  
+<div class="md-social">
+<a class="md-social__link" href="https://github.com/anismiles/html-learning-adventure" rel="noopener" target="_blank" title="github.com">
+<svg viewbox="0 0 496 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
+</a>
 </div>
-      
-    </div>
-  </div>
+</div>
+</div>
 </footer>
-      
-    </div>
-    <div class="md-dialog" data-md-component="dialog">
-      <div class="md-dialog__inner md-typeset"></div>
-    </div>
-    
-    
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "search.highlight", "search.share", "content.code.copy", "toc.follow"], "search": "assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
-    
-    
-      <script src="assets/javascripts/bundle.81fa17fe.min.js"></script>
-      
-    
-  </body>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.annotate", "content.tabs.link", "header.autohide"], "search": "assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+<script src="assets/javascripts/bundle.81fa17fe.min.js"></script>
+</body>
 </html>

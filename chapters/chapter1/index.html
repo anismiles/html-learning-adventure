@@ -1,0 +1,2111 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Myra Kumar's creative coding journey - learning HTML and CSS through art, math, and fun projects">
+      
+      
+        <meta name="author" content="Myra Kumar">
+      
+      
+        <link rel="canonical" href="https://anismiles.github.io/html-learning-adventure/chapters/chapter1/">
+      
+      
+        <link rel="prev" href="../../setup-guide/">
+      
+      
+        <link rel="next" href="../chapter2/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.8">
+    
+    
+      
+        <title>Chapter 1 - HTML Essentials - Myra's HTML Adventure</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4b4a2bd9.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.356b1318.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Arimo";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#chapter-1-html-essentials" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Myra&#39;s HTML Adventure" class="md-header__button md-logo" aria-label="Myra's HTML Adventure" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Myra's HTML Adventure
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Chapter 1 - HTML Essentials
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/anismiles/html-learning-adventure" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    anismiles/html-learning-adventure
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../setup-guide/" class="md-tabs__link">
+          
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  HTML Fundamentals
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter3/" class="md-tabs__link">
+          
+  
+  Building Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapter6/" class="md-tabs__link">
+          
+  
+  Advanced Design
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Myra&#39;s HTML Adventure" class="md-nav__button md-logo" aria-label="Myra's HTML Adventure" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Myra's HTML Adventure
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/anismiles/html-learning-adventure" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    anismiles/html-learning-adventure
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting Started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Guide
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    HTML Fundamentals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            HTML Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Chapter 1 - HTML Essentials
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 1 - HTML Essentials
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    Introduction
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-youll-master" class="md-nav__link">
+    What You'll Master 🎯
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#html-document-foundation" class="md-nav__link">
+    HTML Document Foundation
+  </a>
+  
+    <nav class="md-nav" aria-label="HTML Document Foundation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#the-essential-structure" class="md-nav__link">
+    The Essential Structure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-html-tags" class="md-nav__link">
+    Understanding HTML Tags
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#text-content-elements" class="md-nav__link">
+    Text Content Elements
+  </a>
+  
+    <nav class="md-nav" aria-label="Text Content Elements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#headings" class="md-nav__link">
+    Headings
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#paragraphs" class="md-nav__link">
+    Paragraphs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-formatting" class="md-nav__link">
+    Text Formatting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#line-breaks-and-horizontal-lines" class="md-nav__link">
+    Line Breaks and Horizontal Lines
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#other-useful-text-elements" class="md-nav__link">
+    Other Useful Text Elements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lists" class="md-nav__link">
+    Lists
+  </a>
+  
+    <nav class="md-nav" aria-label="Lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unordered-lists-bullet-points" class="md-nav__link">
+    Unordered Lists (Bullet Points)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ordered-lists-numbered" class="md-nav__link">
+    Ordered Lists (Numbered)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#links-connecting-pages" class="md-nav__link">
+    Links - Connecting Pages 🔗
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#images" class="md-nav__link">
+    Images
+  </a>
+  
+    <nav class="md-nav" aria-label="Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-image" class="md-nav__link">
+    Basic Image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-with-caption" class="md-nav__link">
+    Image with Caption
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-sizes" class="md-nav__link">
+    Image Sizes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-image-sources" class="md-nav__link">
+    Understanding Image Sources
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    Tables
+  </a>
+  
+    <nav class="md-nav" aria-label="Tables">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-table" class="md-nav__link">
+    Simple Table
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#your-first-css-styling" class="md-nav__link">
+    Your First CSS Styling
+  </a>
+  
+    <nav class="md-nav" aria-label="Your First CSS Styling">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-is-css" class="md-nav__link">
+    What is CSS?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-do-we-need-css" class="md-nav__link">
+    Why Do We Need CSS?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-css-works-with-html" class="md-nav__link">
+    How CSS Works with HTML
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#css-properties-your-styling-toolbox" class="md-nav__link">
+    CSS Properties - Your Styling Toolbox
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#interactive-color-playground" class="md-nav__link">
+    Interactive Color Playground
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#basic-css-properties" class="md-nav__link">
+    Basic CSS Properties
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#your-favorite-colors" class="md-nav__link">
+    Your Favorite Colors
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#before-we-start" class="md-nav__link">
+    Before We Start 🚀
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercises-practice" class="md-nav__link">
+    Exercises &amp; Practice 💪
+  </a>
+  
+    <nav class="md-nav" aria-label="Exercises & Practice 💪">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#exercise-1-html-structure-builder" class="md-nav__link">
+    Exercise 1: HTML Structure Builder
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercise-2-text-content-master" class="md-nav__link">
+    Exercise 2: Text Content Master
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercise-3-lists-and-links-explorer" class="md-nav__link">
+    Exercise 3: Lists and Links Explorer
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#exercise-4-complete-page-creator" class="md-nav__link">
+    Exercise 4: Complete Page Creator
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#html-showcase-see-what-youll-build" class="md-nav__link">
+    HTML Showcase - See What You'll Build! 🖼️
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-project-my-complete-introduction-page" class="md-nav__link">
+    Final Project: My Complete Introduction Page 🌟
+  </a>
+  
+    <nav class="md-nav" aria-label="Final Project: My Complete Introduction Page 🌟">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-youll-build" class="md-nav__link">
+    What You'll Build
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-requirements" class="md-nav__link">
+    Project Requirements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-structure" class="md-nav__link">
+    Example Structure
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-files" class="md-nav__link">
+    Project Files
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#success-criteria" class="md-nav__link">
+    Success Criteria
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#celebration-moment" class="md-nav__link">
+    Celebration Moment
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#congratulations-myra" class="md-nav__link">
+    🎉 Congratulations, Myra!
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter2/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 2 - CSS Styling Fundamentals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Building Projects
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Building Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 3 - Page Layout & Organization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 4 - Working with Files & Folders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 5 - Tables & Data Organization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Advanced Design
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced Design
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 6 - Advanced Layout & Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter7/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 7 - Forms & User Interaction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter8/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 8 - CSS Mastery & Advanced Design
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="chapter-1-html-essentials">Chapter 1: HTML Essentials 🌐<a class="headerlink" href="#chapter-1-html-essentials" title="Permanent link">&para;</a></h1>
+<h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>Welcome to your web development adventure, Myra! HTML is the foundation language that creates every website you've ever visited. Think of it like learning the alphabet before writing stories - once you know these building blocks, you can create amazing things on the web. Your mathematical mind will love how logical HTML is, while your artistic soul will be excited by all the beautiful pages you'll build.</p>
+<h2 id="what-youll-master">What You'll Master 🎯<a class="headerlink" href="#what-youll-master" title="Permanent link">&para;</a></h2>
+<p>By the end of this chapter, Myra, you'll be able to:</p>
+<ul>
+<li>Write complete HTML documents with proper structure</li>
+<li>Use all the major HTML elements (headings, text, lists, links, images, tables)</li>
+<li>Add colors and basic styling with CSS</li>
+<li>Organize your projects like a professional web developer</li>
+<li>Create a complete personal webpage using everything you've learned</li>
+</ul>
+<h2 id="html-document-foundation">HTML Document Foundation<a class="headerlink" href="#html-document-foundation" title="Permanent link">&para;</a></h2>
+<p>Every HTML page needs the same basic structure, like how every house needs walls, a roof, and a foundation.</p>
+<h3 id="the-essential-structure">The Essential Structure<a class="headerlink" href="#the-essential-structure" title="Permanent link">&para;</a></h3>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My First Webpage<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="cm">&lt;!-- This is a comment - browsers ignore this --&gt;</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="cm">&lt;!-- Main content starts here --&gt;</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Welcome to my page!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is where all your content goes.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span> <span class="cm">&lt;!-- This is a self-closing tag --&gt;</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;photo.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;My photo&quot;</span><span class="p">&gt;</span> <span class="cm">&lt;!-- Another self-closing tag --&gt;</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p><strong>What each part does:</strong></p>
+<ul>
+<li><code>&lt;!DOCTYPE html&gt;</code> - Tells the browser "This is modern HTML!"</li>
+<li><code>&lt;html lang="en"&gt;</code> - The container for everything (like the walls of a house)</li>
+<li><code>&lt;head&gt;</code> - Information about your page (visitors can't see this part)</li>
+<li><code>&lt;title&gt;</code> - What appears in the browser tab</li>
+<li><code>&lt;body&gt;</code> - All the content people will see and read</li>
+<li><code>&lt;!-- comments --&gt;</code> - Notes for yourself that browsers ignore completely</li>
+</ul>
+<h3 id="understanding-html-tags">Understanding HTML Tags<a class="headerlink" href="#understanding-html-tags" title="Permanent link">&para;</a></h3>
+<p><strong>Opening and Closing Tags:</strong>
+Most HTML tags come in pairs - they have an opening tag and a closing tag:</p>
+<p><div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>This is a heading<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is a paragraph<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div>
+- Opening tag: <code>&lt;h1&gt;</code> (starts the element)
+- Closing tag: <code>&lt;/h1&gt;</code> (ends the element - notice the forward slash!)
+- Content goes between the opening and closing tags</p>
+<p><strong>Self-Closing Tags:</strong></p>
+<p>Some tags don't need content inside them, so they close themselves:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>     <span class="cm">&lt;!-- Line break - correct way --&gt;</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>     <span class="cm">&lt;!-- Horizontal line - correct way --&gt;</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;photo.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Description&quot;</span><span class="p">&gt;</span>  <span class="cm">&lt;!-- Image - correct way --&gt;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>  <span class="cm">&lt;!-- Meta information - correct way --&gt;</span>
+</span></code></pre></div>
+<p><strong>Important Note:</strong> In modern HTML5, self-closing tags should NOT have a closing slash:</p>
+<ul>
+<li>✅ <strong>Correct:</strong> <code>&lt;br&gt;</code>, <code>&lt;hr&gt;</code>, <code>&lt;img src="photo.jpg" alt="Description"&gt;</code></li>
+<li>❌ <strong>Avoid:</strong> <code>&lt;br /&gt;</code>, <code>&lt;hr /&gt;</code>, <code>&lt;img src="photo.jpg" alt="Description" /&gt;</code></li>
+</ul>
+<p>These tags don't have separate closing tags because they don't contain other content.</p>
+<p><strong>HTML Comments:</strong>
+Comments are notes you can write in your code that browsers will ignore:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cm">&lt;!-- This is a comment - it won&#39;t show on the webpage --&gt;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>This heading will show<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="cm">&lt;!-- Comments help you remember what your code does --&gt;</span>
+</span></code></pre></div>
+<p>Comments are super helpful for:</p>
+<ul>
+<li>Explaining what your code does</li>
+<li>Leaving notes for yourself</li>
+<li>Temporarily hiding code without deleting it</li>
+</ul>
+<h2 id="text-content-elements">Text Content Elements<a class="headerlink" href="#text-content-elements" title="Permanent link">&para;</a></h2>
+<p>These elements help you organize and style your text content.</p>
+<h3 id="headings">Headings<a class="headerlink" href="#headings" title="Permanent link">&para;</a></h3>
+<p>Use headings like chapter titles in a book:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>My Art Portfolio<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>My Paintings<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Watercolor Collection<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p><strong>How it looks:</strong></p>
+<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
+<h1 style="margin: 10px 0;">My Art Portfolio</h1>
+<h2 style="margin: 10px 0;">My Paintings</h2>
+<h3 style="margin: 10px 0;">Watercolor Collection</h3>
+</div>
+
+<ul>
+<li><code>&lt;h1&gt;</code> - Main title (biggest and most important)</li>
+<li><code>&lt;h2&gt;</code> - Section titles  </li>
+<li><code>&lt;h3&gt;</code> - Subsection titles</li>
+<li><code>&lt;h4&gt;</code>, <code>&lt;h5&gt;</code>, <code>&lt;h6&gt;</code> - Even smaller headings</li>
+</ul>
+<h3 id="paragraphs">Paragraphs<a class="headerlink" href="#paragraphs" title="Permanent link">&para;</a></h3>
+<p>Every paragraph gets wrapped in <code>&lt;p&gt;</code> tags:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>I love creating art with bright colors.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>My favorite colors are teal, purple, and yellow.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<h3 id="text-formatting">Text Formatting<a class="headerlink" href="#text-formatting" title="Permanent link">&para;</a></h3>
+<p>Make words <strong>bold</strong> or <em>italic</em> for emphasis:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>I am <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>really excited<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span> about learning HTML!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Art is <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>absolutely amazing<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<h3 id="line-breaks-and-horizontal-lines">Line Breaks and Horizontal Lines<a class="headerlink" href="#line-breaks-and-horizontal-lines" title="Permanent link">&para;</a></h3>
+<p>Sometimes you need a new line or a divider:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>My name is Myra<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>I am 11 years old<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>I love art and math<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This appears after the line above.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p><strong>How it looks:</strong></p>
+<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
+<p>My name is Myra<br>
+I am 11 years old<br>
+I love art and math</p>
+
+<hr>
+
+<p>This appears after the line above.</p>
+</div>
+
+<h3 id="other-useful-text-elements">Other Useful Text Elements<a class="headerlink" href="#other-useful-text-elements" title="Permanent link">&para;</a></h3>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="p">&lt;</span><span class="nt">blockquote</span><span class="p">&gt;</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>&quot;Every artist was first an amateur.&quot; - Ralph Waldo Emerson
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="p">&lt;/</span><span class="nt">blockquote</span><span class="p">&gt;</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is normal text and <span class="p">&lt;</span><span class="nt">small</span><span class="p">&gt;</span>this is smaller text<span class="p">&lt;/</span><span class="nt">small</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p><strong>How it looks:</strong></p>
+<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
+<blockquote>
+"Every artist was first an amateur." - Ralph Waldo Emerson
+</blockquote>
+
+<p>This is normal text and <small>this is smaller text</small>.</p>
+</div>
+
+<details>
+<summary>Try it yourself - click to expand</summary>
+<div style="padding: 15px; margin: 10px 0;">
+<label style="font-weight: bold; color: #7c3aed;">Edit the HTML code:</label><br>
+<textarea id="textContentEditor" style="width: 100%; height: 200px; margin: 10px 0; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-family: monospace;" oninput="updateTextContent()"><!-- Headings -->
+<h1>My Art Portfolio</h1>
+<h2>My Paintings</h2>
+<h3>Watercolor Collection</h3>
+
+<!-- Paragraphs -->
+<p>I love creating art with bright colors.</p>
+<p>My favorite colors are <strong>teal</strong>, <em>purple</em>, and yellow.</p>
+
+<!-- Line breaks and special elements -->
+<p>My name is Myra<br>
+I am 11 years old<br>
+I love art and math</p>
+
+<hr>
+
+<blockquote>
+"Every artist was first an amateur." - Ralph Waldo Emerson
+</blockquote>
+
+<p>This is normal text and <small>this is smaller text</small>.</p></textarea>
+
+<strong>How it looks:</strong>
+<div id="textContentPreview" style="border: 1px solid #ddd; padding: 15px; margin: 10px 0;">
+<h1>My Art Portfolio</h1>
+<h2>My Paintings</h2>
+<h3>Watercolor Collection</h3>
+
+<p>I love creating art with bright colors.</p>
+<p>My favorite colors are <strong>teal</strong>, <em>purple</em>, and yellow.</p>
+
+<p>My name is Myra<br>
+I am 11 years old<br>
+I love art and math</p>
+
+<hr>
+
+<blockquote>
+"Every artist was first an amateur." - Ralph Waldo Emerson
+</blockquote>
+
+<p>This is normal text and <small>this is smaller text</small>.</p>
+</div>
+</div>
+</details>
+
+<h2 id="lists">Lists<a class="headerlink" href="#lists" title="Permanent link">&para;</a></h2>
+<p>Lists help you organize information clearly.</p>
+<h3 id="unordered-lists-bullet-points">Unordered Lists (Bullet Points)<a class="headerlink" href="#unordered-lists-bullet-points" title="Permanent link">&para;</a></h3>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>My Hobbies<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Painting<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Drawing<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Math puzzles<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Reading<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<h3 id="ordered-lists-numbered">Ordered Lists (Numbered)<a class="headerlink" href="#ordered-lists-numbered" title="Permanent link">&para;</a></h3>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Steps to Paint a Picture<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Gather your supplies<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Sketch your idea<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Mix your colors<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>  <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Start painting<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<details>
+  <summary>Try it yourself - click to expand</summary>
+  <div style="padding: 15px; margin: 10px 0;">
+  <label style="font-weight: bold; color: #7c3aed;">Edit the HTML code:</label><br>
+  <textarea id="orderedListEditor" style="width: 100%; height: 120px; margin: 10px 0; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-family: monospace;" oninput="updateOrderedList()">
+  <!-- Ordered List -->
+  <h3>Steps to Paint a Picture</h3>
+  <ol>
+    <li>Gather your supplies</li>
+    <li>Sketch your idea</li>
+    <li>Mix your colors</li>
+    <li>Start painting</li>
+  </ol>
+
+  <!-- Unordered List -->
+  <h3>My Hobbies</h3>
+  <ul>
+    <li>Painting</li>
+    <li>Drawing</li>
+    <li>Math puzzles</li>
+    <li>Reading</li>
+  </ul></textarea>
+
+  <strong>How it looks:</strong>
+  <div id="orderedListPreview" style="border: 1px solid #ddd; padding: 15px; margin: 10px 0;">
+  <h3>Steps to Paint a Picture</h3>
+  <ol>
+      <li>Gather your supplies</li>
+      <li>Sketch your idea</li>
+      <li>Mix your colors</li>
+      <li>Start painting</li>
+  </ol>
+  <h3>My Hobbies</h3>
+  <ul>
+    <li>Painting</li>
+    <li>Drawing</li>
+    <li>Math puzzles</li>
+    <li>Reading</li>
+  </ul>
+  </div>
+  </div>
+
+</details>
+
+<h2 id="links-connecting-pages">Links - Connecting Pages 🔗<a class="headerlink" href="#links-connecting-pages" title="Permanent link">&para;</a></h2>
+<p>Links let you connect to other pages or websites.</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Check out <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.google.com&quot;</span> <span class="na">target</span><span class="o">=</span><span class="s">&quot;_blank&quot;</span><span class="p">&gt;</span>Google<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> for research.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Visit my <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;about.html&quot;</span><span class="p">&gt;</span>About Me<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> page.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Send me an <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;mailto:myra@email.com&quot;</span><span class="p">&gt;</span>email<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<details>
+<summary>Try it yourself - click to expand</summary>
+<div style="padding: 15px; margin: 10px 0;">
+<label style="font-weight: bold; color: #7c3aed;">Edit the HTML code:</label><br>
+<textarea id="linksEditor" style="width: 100%; height: 100px; margin: 10px 0; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-family: monospace;" oninput="updateLinks()"><p>Check out <a href="https://www.google.com" target="_blank">Google</a> for research.</p>
+<p>Visit my <a href="about.html">About Me</a> page.</p>
+<p>Send me an <a href="mailto:myra@email.com">email</a>!</p></textarea>
+
+<strong>How it looks:</strong>
+<div id="linksPreview" style="border: 1px solid #ddd; padding: 15px; margin: 10px 0;">
+<p>Check out <a href="https://www.google.com" target="_blank">Google</a> for research.</p>
+<p>Visit my <a href="about.html">About Me</a> page.</p>
+<p>Send me an <a href="mailto:myra@email.com">email</a>!</p>
+</div>
+</div>
+</details>
+
+<p><strong>Link types:</strong></p>
+<ul>
+<li>External links (to other websites)</li>
+<li>Internal links (to other pages on your site)</li>
+<li>Email links (opens email program)</li>
+</ul>
+<h2 id="images">Images<a class="headerlink" href="#images" title="Permanent link">&para;</a></h2>
+<p>Images make your pages more interesting and beautiful. Let's learn how to add pictures to your webpage!</p>
+<h3 id="basic-image">Basic Image<a class="headerlink" href="#basic-image" title="Permanent link">&para;</a></h3>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;art-supplies.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Bright colorful art supplies&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p><strong>How it looks:</strong></p>
+<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
+<img src="../../../assets/images/art-supplies.jpg" alt="Bright colorful art supplies" style="max-width: 100%; height: auto; border-radius: 8px;">
+</div>
+
+<p><strong>Important parts:</strong></p>
+<ul>
+<li><code>src</code> - The location of your image file (like a file address)</li>
+<li><code>alt</code> - Description for people who can't see the image (very important!)</li>
+</ul>
+<p><strong>Where can images come from?</strong></p>
+<ul>
+<li><strong>Local files:</strong> Images saved on your computer (<code>my-drawing.jpg</code>, <code>unicorn.png</code>)</li>
+<li><strong>Downloaded images:</strong> Pictures you save from websites to use in your projects</li>
+</ul>
+<h3 id="image-with-caption">Image with Caption<a class="headerlink" href="#image-with-caption" title="Permanent link">&para;</a></h3>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="p">&lt;</span><span class="nt">figure</span><span class="p">&gt;</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>  <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;rainbow-painting.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Beautiful rainbow painting with bright colors&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>  <span class="p">&lt;</span><span class="nt">figcaption</span><span class="p">&gt;</span>My favorite rainbow artwork!<span class="p">&lt;/</span><span class="nt">figcaption</span><span class="p">&gt;</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="p">&lt;/</span><span class="nt">figure</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p><strong>How it looks:</strong></p>
+<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
+<figure style="margin: 0; text-align: center;">
+    <img src="../../../assets/images/rainbow-painting.jpg" alt="Beautiful rainbow painting with bright colors" style="max-width: 100%; height: auto; border-radius: 8px;">
+    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">My favorite rainbow artwork!</figcaption>
+</figure>
+</div>
+
+<h3 id="image-sizes">Image Sizes<a class="headerlink" href="#image-sizes" title="Permanent link">&para;</a></h3>
+<p>You can control how big your images appear:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;unicorn-toy.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Cute unicorn toy&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;width: 150px;&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;colorful-toys.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Fun colorful toys&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;width: 300px;&quot;</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p><strong>How it looks:</strong></p>
+<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
+<img src="../../../assets/images/unicorn-toy.jpg" alt="Cute unicorn toy" style="width: 150px; height: auto; border-radius: 8px; margin-right: 15px;">
+<img src="../../../assets/images/colorful-toys.jpg" alt="Fun colorful toys" style="width: 300px; height: auto; border-radius: 8px;">
+</div>
+
+<h3 id="understanding-image-sources">Understanding Image Sources<a class="headerlink" href="#understanding-image-sources" title="Permanent link">&para;</a></h3>
+<p><strong>In these examples above:</strong></p>
+<ul>
+<li>The images are saved locally in our project folder</li>
+<li>They're stored in the <code>assets/images/</code> folder for organization</li>
+<li>Simple filenames like <code>unicorn-toy.jpg</code> and <code>colorful-toys.jpg</code></li>
+</ul>
+<p><strong>For your own projects, you'll use:</strong></p>
+<ul>
+<li><strong>Downloaded images:</strong> <code>unicorn.png</code>, <code>peppa-pig.jpg</code>, <code>rainbow.png</code></li>
+<li><strong>Your drawings:</strong> <code>my-artwork.jpg</code>, <code>my-painting.png</code></li>
+<li><strong>Images in folders:</strong> <code>images/my-photo.jpg</code>, <code>pictures/vacation.png</code></li>
+</ul>
+<p><strong>File organization tip:</strong> Create an <code>images</code> folder in your project and put all your pictures there!</p>
+<details>
+<summary>Try it yourself - click to expand</summary>
+<div style="padding: 15px; margin: 10px 0;">
+<label style="font-weight: bold; color: #7c3aed;">Edit the HTML code:</label><br>
+<textarea id="imagesEditor" style="width: 100%; height: 120px; margin: 10px 0; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-family: monospace;" oninput="updateImages()"><img src="../../../assets/images/art-supplies.jpg" alt="Bright colorful art supplies">
+
+<figure>
+  <img src="../../../assets/images/unicorn-toy.jpg" alt="Cute unicorn toy">
+  <figcaption>My magical unicorn friend!</figcaption>
+</figure></textarea>
+
+<strong>How it looks:</strong>
+<div id="imagesPreview" style="border: 1px solid #ddd; padding: 15px; margin: 10px 0;">
+<img src="../../../assets/images/art-supplies.jpg" alt="Bright colorful art supplies" style="max-width: 100%; height: auto; border-radius: 8px;">
+
+<figure style="margin: 15px 0 0 0; text-align: center;">
+    <img src="../../../assets/images/unicorn-toy.jpg" alt="Cute unicorn toy" style="max-width: 100%; height: auto; border-radius: 8px;">
+    <figcaption style="margin-top: 10px; font-style: italic; color: #666;">My magical unicorn friend!</figcaption>
+</figure>
+</div>
+</div>
+</details>
+
+<h2 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">&para;</a></h2>
+<p>Tables help you organize information in rows and columns.</p>
+<h3 id="simple-table">Simple Table<a class="headerlink" href="#simple-table" title="Permanent link">&para;</a></h3>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Subject<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>    <span class="p">&lt;</span><span class="nt">th</span><span class="p">&gt;</span>Grade<span class="p">&lt;/</span><span class="nt">th</span><span class="p">&gt;</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Math<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>A+<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span><span id="__span-15-10"><a id="__codelineno-15-10" name="__codelineno-15-10" href="#__codelineno-15-10"></a>  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span><span id="__span-15-11"><a id="__codelineno-15-11" name="__codelineno-15-11" href="#__codelineno-15-11"></a>    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>Art<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span><span id="__span-15-12"><a id="__codelineno-15-12" name="__codelineno-15-12" href="#__codelineno-15-12"></a>    <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>A+<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+</span><span id="__span-15-13"><a id="__codelineno-15-13" name="__codelineno-15-13" href="#__codelineno-15-13"></a>  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+</span><span id="__span-15-14"><a id="__codelineno-15-14" name="__codelineno-15-14" href="#__codelineno-15-14"></a><span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<details>
+<summary>Try it yourself - click to expand</summary>
+<div style="padding: 15px; margin: 10px 0;">
+<label style="font-weight: bold; color: #7c3aed;">Edit the HTML code:</label><br>
+<textarea id="tableEditor" style="width: 100%; height: 140px; margin: 10px 0; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-family: monospace;" oninput="updateTable()"><table>
+  <tr>
+    <th>Subject</th>
+    <th>Grade</th>
+  </tr>
+  <tr>
+    <td>Math</td>
+    <td>A+</td>
+  </tr>
+  <tr>
+    <td>Art</td>
+    <td>A+</td>
+  </tr>
+</table></textarea>
+
+<strong>How it looks:</strong>
+<div id="tablePreview" style="border: 1px solid #ddd; padding: 15px; margin: 10px 0;">
+<table style="border-collapse: collapse; width: 100%;">
+    <tr>
+        <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">Subject</th>
+        <th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">Grade</th>
+    </tr>
+    <tr>
+        <td style="border: 1px solid #ddd; padding: 8px;">Math</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">A+</td>
+    </tr>
+    <tr>
+        <td style="border: 1px solid #ddd; padding: 8px;">Art</td>
+        <td style="border: 1px solid #ddd; padding: 8px;">A+</td>
+    </tr>
+</table>
+</div>
+</div>
+</details>
+
+<p><strong>Table parts:</strong></p>
+<ul>
+<li><code>&lt;table&gt;</code> - The whole table</li>
+<li><code>&lt;tr&gt;</code> - Table row</li>
+<li><code>&lt;th&gt;</code> - Table header (bold)</li>
+<li><code>&lt;td&gt;</code> - Table data (regular text)</li>
+</ul>
+<h2 id="your-first-css-styling">Your First CSS Styling<a class="headerlink" href="#your-first-css-styling" title="Permanent link">&para;</a></h2>
+<h3 id="what-is-css">What is CSS?<a class="headerlink" href="#what-is-css" title="Permanent link">&para;</a></h3>
+<p>Think of HTML as the skeleton of a house - it gives structure and holds everything together. CSS is like the interior decorator that makes the house beautiful! CSS stands for <strong>Cascading Style Sheets</strong>, and it's the language that tells your webpage how to look.</p>
+<p><strong>The HTML and CSS Partnership:</strong></p>
+<ul>
+<li><strong>HTML</strong> = Structure and content ("What goes where?")</li>
+<li><strong>CSS</strong> = Appearance and design ("How should it look?")</li>
+</ul>
+<p><strong>A Simple Analogy:</strong>
+Imagine you're creating a poster for an art show:</p>
+<ul>
+<li><strong>HTML</strong> writes the words and decides what information to include</li>
+<li><strong>CSS</strong> chooses the colors, fonts, sizes, and makes it visually appealing</li>
+</ul>
+<h3 id="why-do-we-need-css">Why Do We Need CSS?<a class="headerlink" href="#why-do-we-need-css" title="Permanent link">&para;</a></h3>
+<p>Without CSS, all webpages would look plain and boring - just black text on white backgrounds! CSS lets you:</p>
+<ul>
+<li>Choose colors that match your personality</li>
+<li>Pick fonts that express your style  </li>
+<li>Add spacing to make things easy to read</li>
+<li>Create layouts that guide the eye</li>
+<li>Make your website unique and beautiful</li>
+</ul>
+<h3 id="how-css-works-with-html">How CSS Works with HTML<a class="headerlink" href="#how-css-works-with-html" title="Permanent link">&para;</a></h3>
+<p>CSS connects to HTML through the <code>style</code> attribute. It's like giving instructions to each HTML element about how to dress up:</p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: purple;&quot;</span><span class="p">&gt;</span>This heading will be purple!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<p>Think of it as whispering styling secrets to each HTML tag! </p>
+<h3 id="css-properties-your-styling-toolbox">CSS Properties - Your Styling Toolbox<a class="headerlink" href="#css-properties-your-styling-toolbox" title="Permanent link">&para;</a></h3>
+<p>CSS has different "properties" - like different tools in an artist's toolbox:</p>
+<ul>
+<li><strong>Color properties</strong> - Choose text and background colors (like picking paint colors)</li>
+<li><strong>Font properties</strong> - Control text appearance (like choosing different brushes)</li>
+<li><strong>Spacing properties</strong> - Add room around elements (like matting around artwork)</li>
+<li><strong>Size properties</strong> - Make things bigger or smaller (like scaling a drawing)</li>
+</ul>
+<h3 id="interactive-color-playground">Interactive Color Playground<a class="headerlink" href="#interactive-color-playground" title="Permanent link">&para;</a></h3>
+<p>Let's experiment with colors! Pick any color below and watch the magic happen:</p>
+<div style="border: 2px solid #2dd4bf; padding: 20px; border-radius: 10px; background-color: #f8f9ff; margin: 20px 0;">
+
+**🎨 Color Picker Playground**
+
+<label for="colorPicker" style="font-weight: bold; color: #7c3aed;">Choose your color:</label>
+<input type="color" id="colorPicker" value="#7c3aed" style="width: 50px; height: 30px; border: none; border-radius: 5px; margin: 0 10px;" onchange="updateColorDemo()">
+
+<div style="margin: 15px 0;">
+<h3 id="demoHeading" style="color: #7c3aed; margin: 10px 0;">This is my colorful heading!</h3>
+<p id="demoText" style="color: #7c3aed; font-weight: bold; margin: 10px 0;">And this text changes color too!</p>
+</div>
+
+<div id="htmlCode" style="background-color: #f0f0f0; padding: 10px; border-radius: 5px; font-family: monospace; margin: 10px 0; border-left: 4px solid #7c3aed;">
+&lt;h3 style="color: <span id="colorValue" style="font-weight: bold;">#7c3aed</span>;"&gt;This is my colorful heading!&lt;/h3&gt;<br>
+&lt;p style="color: <span id="colorValue2" style="font-weight: bold;">#7c3aed</span>;"&gt;And this text changes color too!&lt;/p&gt;
+</div>
+
+</div>
+
+<script>
+function updateColorDemo() {
+    const colorPicker = document.getElementById('colorPicker');
+    const selectedColor = colorPicker.value;
+
+    document.getElementById('demoHeading').style.color = selectedColor;
+    document.getElementById('demoText').style.color = selectedColor;
+
+    document.getElementById('colorValue').textContent = selectedColor;
+    document.getElementById('colorValue2').textContent = selectedColor;
+    document.getElementById('colorValue').style.color = selectedColor;
+    document.getElementById('colorValue2').style.color = selectedColor;
+}
+</script>
+
+<h3 id="basic-css-properties">Basic CSS Properties<a class="headerlink" href="#basic-css-properties" title="Permanent link">&para;</a></h3>
+<p>Here are the most useful CSS properties to get you started:</p>
+<p><strong>Colors:</strong>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: purple;&quot;</span><span class="p">&gt;</span>Purple Heading<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;background-color: yellow;&quot;</span><span class="p">&gt;</span>Text with yellow background<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<details>
+<summary>Try it yourself - click to expand</summary>
+<div style="padding: 15px; margin: 10px 0;">
+<label style="font-weight: bold; color: #7c3aed;">Edit the HTML code:</label><br>
+<textarea id="cssEditor" style="width: 100%; height: 80px; margin: 10px 0; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-family: monospace;" oninput="updateCSSColors()"><h1 style="color: purple;">Purple Heading</h1>
+<p style="background-color: yellow;">Text with yellow background</p></textarea>
+
+<strong>How it looks:</strong>
+<div id="cssPreview" style="border: 1px solid #ddd; padding: 15px; margin: 10px 0;">
+<h1 style="color: purple; margin: 10px 0;">Purple Heading</h1>
+<p style="background-color: yellow; margin: 10px 0; padding: 5px;">Text with yellow background</p>
+</div>
+</div>
+</details>
+
+<p><strong>Text Styling:</strong>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="p">&lt;</span><span class="nt">h2</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;font-size: 24px; font-family: Arial;&quot;</span><span class="p">&gt;</span>Bigger Arial Text<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;text-align: center; font-weight: bold;&quot;</span><span class="p">&gt;</span>Centered Bold Text<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<p><strong>How it looks:</strong></p>
+<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
+<h2 style="font-size: 24px; font-family: Arial; margin: 10px 0;">Bigger Arial Text</h2>
+<p style="text-align: center; font-weight: bold; margin: 10px 0;">Centered Bold Text</p>
+</div>
+
+<p><strong>Spacing:</strong>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;margin: 20px; padding: 10px;&quot;</span><span class="p">&gt;</span>Text with space around it<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div></p>
+<p><strong>How it looks:</strong></p>
+<div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; background-color: #f9f9f9;">
+<p style="margin: 20px; padding: 10px; background-color: #e6f3ff; border: 1px dashed #007acc;">Text with space around it</p>
+</div>
+
+<h3 id="your-favorite-colors">Your Favorite Colors<a class="headerlink" href="#your-favorite-colors" title="Permanent link">&para;</a></h3>
+<p>Let's use your beautiful favorite colors in your projects:</p>
+<ul>
+<li><strong>Teal:</strong> <span style="color: #2dd4bf; font-weight: normal;"><code>#2dd4bf</code></span> - calm like ocean waves</li>
+<li><strong>Purple:</strong> <span style="color: #7c3aed; font-weight: normal;"><code>#7c3aed</code></span> - creative and magical  </li>
+<li><strong>Yellow:</strong> <span style="color: #f59e0b; font-weight: normal;"><code>#f59e0b</code></span> - bright and cheerful</li>
+</ul>
+<h2 id="before-we-start">Before We Start 🚀<a class="headerlink" href="#before-we-start" title="Permanent link">&para;</a></h2>
+<p><strong>Setup Check</strong></p>
+<p>First time coding? Make sure you're ready:
+<strong>See: <a href="../../setup-guide/">Setup Guide</a></strong> for detailed installation instructions</p>
+<p><strong>Chapter 1 Files</strong></p>
+<p>You'll need these files for this chapter:</p>
+<ul>
+<li><strong><a href="../../assets/downloads/chapter1-starter.txt" target="_blank"><code>chapter1-starter.html</code></a></strong> <small>(<a download="chapter1-starter.html" href="../../assets/downloads/chapter1-starter.html">download</a>)</small> - Your HTML practice playground</li>
+<li><strong><a href="../../assets/downloads/chapter1-template.txt" target="_blank"><code>chapter1-template.html</code></a></strong> <small>(<a download="chapter1-template.html" href="../../assets/downloads/chapter1-template.html">download</a>)</small> - Template for your personal introduction project</li>
+</ul>
+<p><strong>Ready to Begin</strong></p>
+<p>Download the starter file and open it in your text editor and browser side by side!</p>
+<p><strong>File Organization Tips</strong></p>
+<ul>
+<li>Create a folder called <code>myra-html-projects</code></li>
+<li>Name files clearly: <code>about-me.html</code> not <code>page1.html</code></li>
+<li>Always use <code>.html</code> extension for web pages</li>
+<li>Keep images in a folder called <code>images</code></li>
+</ul>
+<h2 id="exercises-practice">Exercises &amp; Practice 💪<a class="headerlink" href="#exercises-practice" title="Permanent link">&para;</a></h2>
+<h3 id="exercise-1-html-structure-builder">Exercise 1: HTML Structure Builder<a class="headerlink" href="#exercise-1-html-structure-builder" title="Permanent link">&para;</a></h3>
+<p>Create a complete HTML document with:
+- Proper DOCTYPE and basic structure
+- A meaningful title for the browser tab
+- One h1 heading with your name
+- Two paragraphs about yourself</p>
+<h3 id="exercise-2-text-content-master">Exercise 2: Text Content Master<a class="headerlink" href="#exercise-2-text-content-master" title="Permanent link">&para;</a></h3>
+<p>Take your document from Exercise 1 and add:
+- Three different heading levels (h1, h2, h3)
+- Text formatting (bold and italic words)
+- A line break within a paragraph
+- A horizontal line to separate sections</p>
+<h3 id="exercise-3-lists-and-links-explorer">Exercise 3: Lists and Links Explorer<a class="headerlink" href="#exercise-3-lists-and-links-explorer" title="Permanent link">&para;</a></h3>
+<p>Add to your growing webpage:
+- An unordered list of your hobbies
+- An ordered list of your daily routine
+- One external link to your favorite website
+- One email link to contact you</p>
+<h3 id="exercise-4-complete-page-creator">Exercise 4: Complete Page Creator<a class="headerlink" href="#exercise-4-complete-page-creator" title="Permanent link">&para;</a></h3>
+<p>Now make your webpage complete by adding:
+- One simple image (can be any photo you like)
+- A small table with information about yourself
+- CSS styling with your favorite colors
+- Proper spacing and formatting</p>
+<h2 id="html-showcase-see-what-youll-build">HTML Showcase - See What You'll Build! 🖼️<a class="headerlink" href="#html-showcase-see-what-youll-build" title="Permanent link">&para;</a></h2>
+<p>By the end of this chapter, you'll create a complete personal webpage that includes all the HTML elements you've learned. It will have proper structure, beautiful colors, and everything organized professionally!</p>
+<h2 id="final-project-my-complete-introduction-page">Final Project: My Complete Introduction Page 🌟<a class="headerlink" href="#final-project-my-complete-introduction-page" title="Permanent link">&para;</a></h2>
+<p>Time to create your masterpiece, Myra! This project brings together everything you've learned.</p>
+<h3 id="what-youll-build">What You'll Build<a class="headerlink" href="#what-youll-build" title="Permanent link">&para;</a></h3>
+<p>Create a complete personal webpage about yourself using ALL the HTML elements and CSS styling from this chapter.</p>
+<h3 id="project-requirements">Project Requirements<a class="headerlink" href="#project-requirements" title="Permanent link">&para;</a></h3>
+<p>Your webpage must include:</p>
+<p><strong>HTML Structure:</strong>
+- Complete HTML document (DOCTYPE, html, head, body)
+- Meaningful title in the browser tab
+- Well-organized content with multiple sections</p>
+<p><strong>Content Sections:</strong>
+- <strong>Main heading</strong> with your name
+- <strong>About Me</strong> section with 2-3 paragraphs
+- <strong>My Hobbies</strong> list (unordered)
+- <strong>My Daily Schedule</strong> list (ordered)
+- <strong>Contact Information</strong> with email link
+- <strong>My Favorite Websites</strong> with external links
+- <strong>My Achievements</strong> table
+- <strong>My Photo</strong> with proper alt text</p>
+<p><strong>CSS Styling:</strong>
+- Use your favorite colors (teal, purple, yellow)
+- Style headings and text appropriately
+- Add proper spacing with margin and padding
+- Make text bold or italic where appropriate</p>
+<p><strong>Code Quality:</strong>
+- Clean, well-organized HTML
+- Proper nesting of all elements
+- Consistent styling throughout</p>
+<h3 id="example-structure">Example Structure<a class="headerlink" href="#example-structure" title="Permanent link">&para;</a></h3>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a><span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-20-5"><a id="__codelineno-20-5" name="__codelineno-20-5" href="#__codelineno-20-5"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>About Myra Kumar<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span><span id="__span-20-6"><a id="__codelineno-20-6" name="__codelineno-20-6" href="#__codelineno-20-6"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-20-7"><a id="__codelineno-20-7" name="__codelineno-20-7" href="#__codelineno-20-7"></a><span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-20-8"><a id="__codelineno-20-8" name="__codelineno-20-8" href="#__codelineno-20-8"></a>    <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: #7c3aed; text-align: center;&quot;</span><span class="p">&gt;</span>Welcome! I&#39;m Myra Kumar<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-20-9"><a id="__codelineno-20-9" name="__codelineno-20-9" href="#__codelineno-20-9"></a>
+</span><span id="__span-20-10"><a id="__codelineno-20-10" name="__codelineno-20-10" href="#__codelineno-20-10"></a>    <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: #2dd4bf;&quot;</span><span class="p">&gt;</span>About Me<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-20-11"><a id="__codelineno-20-11" name="__codelineno-20-11" href="#__codelineno-20-11"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Hi! I&#39;m Myra, and I&#39;m 11 years old. I love creating art and solving math problems.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-20-12"><a id="__codelineno-20-12" name="__codelineno-20-12" href="#__codelineno-20-12"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is my first website, and I&#39;m excited to share it with you!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-20-13"><a id="__codelineno-20-13" name="__codelineno-20-13" href="#__codelineno-20-13"></a>
+</span><span id="__span-20-14"><a id="__codelineno-20-14" name="__codelineno-20-14" href="#__codelineno-20-14"></a>    <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: #2dd4bf;&quot;</span><span class="p">&gt;</span>My Hobbies<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-20-15"><a id="__codelineno-20-15" name="__codelineno-20-15" href="#__codelineno-20-15"></a>    <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-20-16"><a id="__codelineno-20-16" name="__codelineno-20-16" href="#__codelineno-20-16"></a>        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Painting and drawing<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-20-17"><a id="__codelineno-20-17" name="__codelineno-20-17" href="#__codelineno-20-17"></a>        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Solving math puzzles<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-20-18"><a id="__codelineno-20-18" name="__codelineno-20-18" href="#__codelineno-20-18"></a>        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Reading books<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-20-19"><a id="__codelineno-20-19" name="__codelineno-20-19" href="#__codelineno-20-19"></a>        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>Playing games<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+</span><span id="__span-20-20"><a id="__codelineno-20-20" name="__codelineno-20-20" href="#__codelineno-20-20"></a>    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+</span><span id="__span-20-21"><a id="__codelineno-20-21" name="__codelineno-20-21" href="#__codelineno-20-21"></a>
+</span><span id="__span-20-22"><a id="__codelineno-20-22" name="__codelineno-20-22" href="#__codelineno-20-22"></a>    <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: #2dd4bf;&quot;</span><span class="p">&gt;</span>Contact Me<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-20-23"><a id="__codelineno-20-23" name="__codelineno-20-23" href="#__codelineno-20-23"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Send me an <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;mailto:myra@email.com&quot;</span><span class="p">&gt;</span>email<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-20-24"><a id="__codelineno-20-24" name="__codelineno-20-24" href="#__codelineno-20-24"></a>
+</span><span id="__span-20-25"><a id="__codelineno-20-25" name="__codelineno-20-25" href="#__codelineno-20-25"></a>    <span class="cm">&lt;!-- Add more sections following this pattern --&gt;</span>
+</span><span id="__span-20-26"><a id="__codelineno-20-26" name="__codelineno-20-26" href="#__codelineno-20-26"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-20-27"><a id="__codelineno-20-27" name="__codelineno-20-27" href="#__codelineno-20-27"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<h3 id="project-files">Project Files<a class="headerlink" href="#project-files" title="Permanent link">&para;</a></h3>
+<p><a href="../../assets/downloads/chapter1-final-template.txt" target="_blank">chapter1-final-template.html</a> <a download="chapter1-final-template.html" href="../../assets/downloads/chapter1-final-template.html" title="Download">(💾)</a> - Get started with this template</p>
+<h3 id="success-criteria">Success Criteria<a class="headerlink" href="#success-criteria" title="Permanent link">&para;</a></h3>
+<p>When you're finished, your webpage should:
+- Display correctly in any web browser
+- Include all required HTML elements
+- Use colors that make you happy
+- Be organized and easy to read
+- Show your personality clearly</p>
+<h3 id="celebration-moment">Celebration Moment<a class="headerlink" href="#celebration-moment" title="Permanent link">&para;</a></h3>
+<p>Once you complete this project, take a moment to celebrate! You've just:
+- Written your first complete HTML document using ALL major elements
+- Applied CSS styling to make it beautiful
+- Created something you can share with family and friends
+- Learned the foundation of web development</p>
+<p><strong>You should feel incredibly proud, Myra! You now know the essentials of HTML and are ready for more advanced techniques.</strong> </p>
+<h2 id="congratulations-myra">🎉 Congratulations, Myra!<a class="headerlink" href="#congratulations-myra" title="Permanent link">&para;</a></h2>
+<p>You've completed Chapter 1! Take a moment to celebrate your progress - you now know the fundamentals of HTML structure, text formatting, lists, links, images, tables, and basic CSS styling.</p>
+<p><strong>Keep practicing and exploring!</strong> The more you experiment with these concepts, the more confident you'll become. You're building the foundation for creating amazing websites! 🌟</p>
+<script>
+// Individual update functions for each "Try it yourself" editor
+
+// 1. Text Content Editor (Consolidated)
+function updateTextContent() {
+    const editor = document.getElementById('textContentEditor');
+    const preview = document.getElementById('textContentPreview');
+
+    if (editor && preview) {
+        try {
+            preview.innerHTML = editor.value;
+        } catch (error) {
+            preview.innerHTML = '<p style="color: red; font-style: italic;">Invalid HTML - keep editing!</p>';
+        }
+    }
+}
+
+// 2. Lists Editor (Combined Ordered/Unordered)
+function updateOrderedList() {
+    const editor = document.getElementById('orderedListEditor');
+    const preview = document.getElementById('orderedListPreview');
+
+    if (editor && preview) {
+        try {
+            preview.innerHTML = editor.value;
+        } catch (error) {
+            preview.innerHTML = '<p style="color: red; font-style: italic;">Invalid HTML - keep editing!</p>';
+        }
+    }
+}
+
+// 5. Links Editor
+function updateLinks() {
+    const editor = document.getElementById('linksEditor');
+    const preview = document.getElementById('linksPreview');
+
+    if (editor && preview) {
+        try {
+            preview.innerHTML = editor.value;
+        } catch (error) {
+            preview.innerHTML = '<p style="color: red; font-style: italic;">Invalid HTML - keep editing!</p>';
+        }
+    }
+}
+
+// 6. Table Editor (with automatic styling)
+function updateTable() {
+    const editor = document.getElementById('tableEditor');
+    const preview = document.getElementById('tablePreview');
+
+    if (editor && preview) {
+        try {
+            let htmlContent = editor.value;
+
+            // Add basic styling for tables if no style attribute exists
+            if (htmlContent.includes('<table>') && !htmlContent.includes('style=')) {
+                htmlContent = htmlContent.replace(/<table>/g, '<table style="border-collapse: collapse; width: 100%;">');
+                htmlContent = htmlContent.replace(/<th>/g, '<th style="border: 1px solid #ddd; padding: 8px; background-color: #f2f2f2;">');
+                htmlContent = htmlContent.replace(/<td>/g, '<td style="border: 1px solid #ddd; padding: 8px;">');
+            }
+
+            preview.innerHTML = htmlContent;
+        } catch (error) {
+            preview.innerHTML = '<p style="color: red; font-style: italic;">Invalid HTML - keep editing!</p>';
+        }
+    }
+}
+
+// 7. CSS Colors Editor
+function updateCSSColors() {
+    const editor = document.getElementById('cssEditor');
+    const preview = document.getElementById('cssPreview');
+
+    if (editor && preview) {
+        try {
+            preview.innerHTML = editor.value;
+        } catch (error) {
+            preview.innerHTML = '<p style="color: red; font-style: italic;">Invalid HTML - keep editing!</p>';
+        }
+    }
+}
+
+// 8. Special Elements Editor (Line Breaks, HR, Blockquotes, Small)
+function updateSpecialElements() {
+    const editor = document.getElementById('specialElementsEditor');
+    const preview = document.getElementById('specialElementsPreview');
+
+    if (editor && preview) {
+        try {
+            preview.innerHTML = editor.value;
+        } catch (error) {
+            preview.innerHTML = '<p style="color: red; font-style: italic;">Invalid HTML - keep editing!</p>';
+        }
+    }
+}
+
+// 9. Images Editor
+function updateImages() {
+    const editor = document.getElementById('imagesEditor');
+    const preview = document.getElementById('imagesPreview');
+
+    if (editor && preview) {
+        try {
+            let htmlContent = editor.value;
+
+            // Add basic styling to images for better presentation
+            htmlContent = htmlContent.replace(/<img /g, '<img style="max-width: 100%; height: auto; border-radius: 8px;" ');
+            htmlContent = htmlContent.replace(/<figure>/g, '<figure style="margin: 15px 0 0 0; text-align: center;">');
+            htmlContent = htmlContent.replace(/<figcaption>/g, '<figcaption style="margin-top: 10px; font-style: italic; color: #666;">');
+
+            preview.innerHTML = htmlContent;
+        } catch (error) {
+            preview.innerHTML = '<p style="color: red; font-style: italic;">Invalid HTML - keep editing!</p>';
+        }
+    }
+}
+
+// Initialize all previews when the page loads
+document.addEventListener('DOMContentLoaded', function() {
+    updateTextContent();
+    updateOrderedList();
+    updateLinks();
+    updateImages();
+    updateTable();
+    updateCSSColors();
+});
+</script>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 1, 2025 15:57:41</span>
+      
+        <br>
+        Created:
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">September 1, 2025 15:57:41</span>
+      
+    
+  </small>
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../setup-guide/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setup Guide">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Setup Guide
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../chapter2/" class="md-footer__link md-footer__link--next" aria-label="Next: Chapter 2 - CSS Styling Fundamentals">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Chapter 2 - CSS Styling Fundamentals
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2024 Myra Kumar<br>
+<small>Built with teal, purple, and yellow love by a young artist-developer</small>
+
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/anismiles/html-learning-adventure" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.annotate", "content.tabs.link", "header.autohide"], "search": "../../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.81fa17fe.min.js"></script>
+      
+    
+  </body>
+</html>

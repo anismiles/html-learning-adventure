@@ -2,67 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://anismiles.github.io/html-learning-adventure/</loc>
-         <lastmod>2025-08-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://anismiles.github.io/html-learning-adventure/program-overview/</loc>
-         <lastmod>2025-08-28</lastmod>
+         <lastmod>2025-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://anismiles.github.io/html-learning-adventure/setup-guide/</loc>
-         <lastmod>2025-08-28</lastmod>
+         <lastmod>2025-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://anismiles.github.io/html-learning-adventure/chapters/chapter1/exercises/</loc>
-         <lastmod>2025-08-28</lastmod>
+         <loc>https://anismiles.github.io/html-learning-adventure/chapters/chapter1/</loc>
+         <lastmod>2025-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://anismiles.github.io/html-learning-adventure/chapters/chapter10/exercises/</loc>
-         <lastmod>2025-08-28</lastmod>
+         <loc>https://anismiles.github.io/html-learning-adventure/chapters/chapter2/</loc>
+         <lastmod>2025-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://anismiles.github.io/html-learning-adventure/chapters/chapter2/exercises/</loc>
-         <lastmod>2025-08-28</lastmod>
+         <loc>https://anismiles.github.io/html-learning-adventure/chapters/chapter3/</loc>
+         <lastmod>2025-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://anismiles.github.io/html-learning-adventure/chapters/chapter3/exercises/</loc>
-         <lastmod>2025-08-28</lastmod>
+         <loc>https://anismiles.github.io/html-learning-adventure/chapters/chapter4/</loc>
+         <lastmod>2025-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://anismiles.github.io/html-learning-adventure/chapters/chapter4/exercises/</loc>
-         <lastmod>2025-08-28</lastmod>
+         <loc>https://anismiles.github.io/html-learning-adventure/chapters/chapter5/</loc>
+         <lastmod>2025-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://anismiles.github.io/html-learning-adventure/chapters/chapter5/exercises/</loc>
-         <lastmod>2025-08-28</lastmod>
+         <loc>https://anismiles.github.io/html-learning-adventure/chapters/chapter6/</loc>
+         <lastmod>2025-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://anismiles.github.io/html-learning-adventure/chapters/chapter6/exercises/</loc>
-         <lastmod>2025-08-28</lastmod>
+         <loc>https://anismiles.github.io/html-learning-adventure/chapters/chapter7/</loc>
+         <lastmod>2025-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://anismiles.github.io/html-learning-adventure/chapters/chapter7/exercises/</loc>
-         <lastmod>2025-08-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://anismiles.github.io/html-learning-adventure/chapters/chapter8/exercises/</loc>
-         <lastmod>2025-08-28</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://anismiles.github.io/html-learning-adventure/chapters/chapter9/exercises/</loc>
-         <lastmod>2025-08-28</lastmod>
+         <loc>https://anismiles.github.io/html-learning-adventure/chapters/chapter8/</loc>
+         <lastmod>2025-09-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

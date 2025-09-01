@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Debug Practice - Find the Mistakes!
+<body>
+    <!-- This file has several HTML errors for Myra to practice fixing -->
+    
+    <h1>Welcome to My Webpage<h1>
+    
+    <h2>About Me
+    <p>Hi! I'm learning HTML and I love art.</p>
+    
+    <h3>My Favorite Colors</h3>
+    <p style="color: purple">Purple is my favorite color.
+    <p style="color: teal;">Teal is also amazing!</p>
+    
+    <h2>My Goals</h2>
+    <p>I want to become a <strong>great web developer</p>
+    <p>Math and art are <em>so much fun!</p>
+    
+    <!-- Missing closing body and html tags -->

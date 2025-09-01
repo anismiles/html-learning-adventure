@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>My First Art Gallery</title>
-    </head>
-    <body bgcolor="#f0f8ff" text="#2c3e50">
-        <h1>Welcome to My Art Gallery!</h1>
-        
-        <!-- TODO: Add your name here! -->
-        <h2>Created by: [Your Name Here]</h2>
-        
-        <!-- TODO: Try changing these colors! -->
-        <h3 style="color: purple;">My Favorite Colors</h3>
-        <h4 style="color: orange;">Orange like a sunset</h4>
-        <h5 style="color: green;">Green like grass</h5>
-        <h6 style="color: blue;">Blue like the ocean</h6>
-        
-        <!-- Challenge: Add 3 more headings with your favorite colors! -->
-        
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Page - Myra</title>
+</head>
+<body>
+    <!-- Welcome to HTML, Myra! -->
+    
+    <h1>Welcome to My Website</h1>
+    
+    <h2>About Me</h2>
+    <p>Hi! My name is Myra and I'm learning HTML.</p>
+    
+    <!-- Try adding your favorite colors here! -->
+    <h2>My Favorite Things</h2>
+    <p>I love art, math, and creating beautiful things.</p>
+    
+    <h3>My Goals</h3>
+    <p>I want to learn how to build amazing websites.</p>
+    
+    <!-- Practice adding inline CSS styles to make this colorful! -->
+    
+</body>
 </html>

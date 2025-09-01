@@ -18,7 +18,7 @@
         <link rel="prev" href="..">
       
       
-        <link rel="next" href="../program-overview/">
+        <link rel="next" href="../chapters/chapter1/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -47,8 +47,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arimo:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Arimo";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -57,16 +57,6 @@
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
-  
-
-
-  
-  
-
-<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-XXXXXXXXXX",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
-  
-    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
-  
 
     
     
@@ -111,7 +101,7 @@
 
   
 
-<header class="md-header md-header--shadow" data-md-component="header">
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href=".." title="Myra&#39;s HTML Adventure" class="md-header__button md-logo" aria-label="Myra's HTML Adventure" data-md-component="logo">
       
@@ -196,6 +186,8 @@
         </button>
       </nav>
       
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
@@ -225,13 +217,113 @@
     
   </nav>
   
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  Getting Started
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapters/chapter1/" class="md-tabs__link">
+          
+  
+  HTML Fundamentals
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapters/chapter3/" class="md-tabs__link">
+          
+  
+  Building Projects
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chapters/chapter6/" class="md-tabs__link">
+          
+  
+  Advanced Design
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
 </header>
     
     <div class="md-container" data-md-component="container">
       
       
-        
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -245,8 +337,12 @@
                     
 
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="Myra&#39;s HTML Adventure" class="md-nav__button md-logo" aria-label="Myra's HTML Adventure" data-md-component="logo">
       
@@ -446,79 +542,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#setup-for-windows" class="md-nav__link">
-    🪟 Setup for Windows
+  <a href="#codepen-your-online-html-playground-ipad-solution" class="md-nav__link">
+    🌐 CodePen - Your Online HTML Playground &amp; iPad Solution
   </a>
   
-    <nav class="md-nav" aria-label="🪟 Setup for Windows">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-choose-your-text-editor_1" class="md-nav__link">
-    Step 1: Choose Your Text Editor
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 1: Choose Your Text Editor">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-a-notepad-already-on-windows-free" class="md-nav__link">
-    Option A: Notepad (Already on Windows - FREE!)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-b-visual-studio-code-free-recommended" class="md-nav__link">
-    Option B: Visual Studio Code (FREE - Recommended)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-c-notepad-free-great-middle-option" class="md-nav__link">
-    Option C: Notepad++ (FREE - Great middle option)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-create-your-html-workspace_1" class="md-nav__link">
-    Step 2: Create Your HTML Workspace
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-test-your-setup_1" class="md-nav__link">
-    Step 3: Test Your Setup
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4-make-life-easier" class="md-nav__link">
-    Step 4: Make Life Easier
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#codepen-your-online-html-playground" class="md-nav__link">
-    🌐 CodePen - Your Online HTML Playground
-  </a>
-  
-    <nav class="md-nav" aria-label="🌐 CodePen - Your Online HTML Playground">
+    <nav class="md-nav" aria-label="🌐 CodePen - Your Online HTML Playground & iPad Solution">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -568,119 +596,78 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#troubleshooting-common-issues" class="md-nav__link">
-    🛠️ Troubleshooting Common Issues
-  </a>
-  
-    <nav class="md-nav" aria-label="🛠️ Troubleshooting Common Issues">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#file-wont-open-in-browser" class="md-nav__link">
-    File Won't Open in Browser
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#code-doesnt-look-right" class="md-nav__link">
-    Code Doesn't Look Right
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#colorsstyles-not-working" class="md-nav__link">
-    Colors/Styles Not Working
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cant-find-saved-files" class="md-nav__link">
-    Can't Find Saved Files
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#browser-shows-old-version" class="md-nav__link">
-    Browser Shows Old Version
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-start-checklist" class="md-nav__link">
-    🎯 Quick Start Checklist
-  </a>
-  
-    <nav class="md-nav" aria-label="🎯 Quick Start Checklist">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#before-your-first-chapter" class="md-nav__link">
-    Before Your First Chapter:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#for-each-coding-session" class="md-nav__link">
-    For Each Coding Session:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#success-indicators" class="md-nav__link">
-    Success Indicators:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#when-things-go-wrong" class="md-nav__link">
-    🆘 When Things Go Wrong
-  </a>
-  
-    <nav class="md-nav" aria-label="🆘 When Things Go Wrong">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#emergency-backup-plan" class="md-nav__link">
-    Emergency Backup Plan:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getting-help" class="md-nav__link">
-    Getting Help:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    HTML Fundamentals
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            HTML Fundamentals
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapters/chapter1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 1 - HTML Essentials
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -692,11 +679,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../program-overview/" class="md-nav__link">
+      <a href="../chapters/chapter2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Program Overview
+    Chapter 2 - CSS Styling Fundamentals
   </span>
   
 
@@ -718,16 +705,105 @@
   
   
   
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Building Projects
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Building Projects
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../chapters/chapter1/exercises/" class="md-nav__link">
+      <a href="../chapters/chapter3/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Chapter 1 - Myra's Color Magic Laboratory
+    Chapter 3 - Page Layout & Organization
   </span>
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapters/chapter4/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 4 - Working with Files & Folders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapters/chapter5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 5 - Tables & Data Organization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -737,12 +813,53 @@
   
   
   
+    
+    
+    
+    
+    
+      
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Advanced Design
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Advanced Design
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
     <li class="md-nav__item">
-      <a href="../chapters/chapter2/exercises/" class="md-nav__link">
+      <a href="../chapters/chapter6/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Chapter 2 - Style Your Digital Art Canvas
+    Chapter 6 - Advanced Layout & Design
   </span>
   
 
@@ -750,18 +867,19 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../chapters/chapter3/exercises/" class="md-nav__link">
+      <a href="../chapters/chapter7/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Chapter 3 - Build Your Artist Network
+    Chapter 7 - Forms & User Interaction
   </span>
   
 
@@ -769,90 +887,15 @@
     </li>
   
 
-    
-      
-      
+              
+            
+              
+                
   
   
   
     <li class="md-nav__item">
-      <a href="../chapters/chapter4/exercises/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Chapter 4 - Create Your Photo Gallery
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapters/chapter5/exercises/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Chapter 5 - Design Math Art Patterns
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapters/chapter6/exercises/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Chapter 6 - Layout Your Creative Space
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapters/chapter7/exercises/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Chapter 7 - Make Interactive Art Forms
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapters/chapter8/exercises/" class="md-nav__link">
+      <a href="../chapters/chapter8/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -864,41 +907,11 @@
     </li>
   
 
-    
+              
+            
+          </ul>
+        </nav>
       
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapters/chapter9/exercises/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Chapter 9 - Multimedia Art Showcase
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../chapters/chapter10/exercises/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Chapter 10 - Myra Kumar Artist & Developer Portfolio
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -909,327 +922,6 @@
                 </div>
               </div>
             
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-  
-
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      On this page
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#setup-for-mac" class="md-nav__link">
-    🍎 Setup for Mac
-  </a>
-  
-    <nav class="md-nav" aria-label="🍎 Setup for Mac">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-choose-your-text-editor" class="md-nav__link">
-    Step 1: Choose Your Text Editor
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 1: Choose Your Text Editor">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-a-textedit-already-on-your-mac-free" class="md-nav__link">
-    Option A: TextEdit (Already on your Mac - FREE!)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-b-visual-studio-code-free-recommended-for-serious-coding" class="md-nav__link">
-    Option B: Visual Studio Code (FREE - Recommended for serious coding)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-create-your-html-workspace" class="md-nav__link">
-    Step 2: Create Your HTML Workspace
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-test-your-setup" class="md-nav__link">
-    Step 3: Test Your Setup
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4-make-it-easy-create-shortcuts" class="md-nav__link">
-    Step 4: Make it Easy (Create Shortcuts)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setup-for-windows" class="md-nav__link">
-    🪟 Setup for Windows
-  </a>
-  
-    <nav class="md-nav" aria-label="🪟 Setup for Windows">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#step-1-choose-your-text-editor_1" class="md-nav__link">
-    Step 1: Choose Your Text Editor
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 1: Choose Your Text Editor">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#option-a-notepad-already-on-windows-free" class="md-nav__link">
-    Option A: Notepad (Already on Windows - FREE!)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-b-visual-studio-code-free-recommended" class="md-nav__link">
-    Option B: Visual Studio Code (FREE - Recommended)
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#option-c-notepad-free-great-middle-option" class="md-nav__link">
-    Option C: Notepad++ (FREE - Great middle option)
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-create-your-html-workspace_1" class="md-nav__link">
-    Step 2: Create Your HTML Workspace
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-test-your-setup_1" class="md-nav__link">
-    Step 3: Test Your Setup
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4-make-life-easier" class="md-nav__link">
-    Step 4: Make Life Easier
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#codepen-your-online-html-playground" class="md-nav__link">
-    🌐 CodePen - Your Online HTML Playground
-  </a>
-  
-    <nav class="md-nav" aria-label="🌐 CodePen - Your Online HTML Playground">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-is-codepen" class="md-nav__link">
-    What is CodePen?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getting-started-with-codepen" class="md-nav__link">
-    Getting Started with CodePen
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#codepen-advantages" class="md-nav__link">
-    CodePen Advantages:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#codepen-limitations" class="md-nav__link">
-    CodePen Limitations:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#when-should-you-use-codepen-myra" class="md-nav__link">
-    When Should You Use CodePen, Myra?
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#creating-a-free-account-optional" class="md-nav__link">
-    Creating a Free Account (Optional):
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#troubleshooting-common-issues" class="md-nav__link">
-    🛠️ Troubleshooting Common Issues
-  </a>
-  
-    <nav class="md-nav" aria-label="🛠️ Troubleshooting Common Issues">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#file-wont-open-in-browser" class="md-nav__link">
-    File Won't Open in Browser
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#code-doesnt-look-right" class="md-nav__link">
-    Code Doesn't Look Right
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#colorsstyles-not-working" class="md-nav__link">
-    Colors/Styles Not Working
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cant-find-saved-files" class="md-nav__link">
-    Can't Find Saved Files
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#browser-shows-old-version" class="md-nav__link">
-    Browser Shows Old Version
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick-start-checklist" class="md-nav__link">
-    🎯 Quick Start Checklist
-  </a>
-  
-    <nav class="md-nav" aria-label="🎯 Quick Start Checklist">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#before-your-first-chapter" class="md-nav__link">
-    Before Your First Chapter:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#for-each-coding-session" class="md-nav__link">
-    For Each Coding Session:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#success-indicators" class="md-nav__link">
-    Success Indicators:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#when-things-go-wrong" class="md-nav__link">
-    🆘 When Things Go Wrong
-  </a>
-  
-    <nav class="md-nav" aria-label="🆘 When Things Go Wrong">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#emergency-backup-plan" class="md-nav__link">
-    Emergency Backup Plan:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#getting-help" class="md-nav__link">
-    Getting Help:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
             
           
           
@@ -1244,11 +936,10 @@
 
 <h1 id="time-to-set-up-your-html-adventure">🖥️ Time to Set Up Your HTML Adventure!<a class="headerlink" href="#time-to-set-up-your-html-adventure" title="Permanent link">&para;</a></h1>
 <p><strong>This guide will help you get everything ready for your amazing coding adventure!</strong></p>
-<p>Myra, we're going to set up three different ways for you to create beautiful HTML pages:</p>
+<p>Myra, we're going to set up two perfect ways for you to create beautiful HTML pages:</p>
 <ol>
-<li><strong>On your computer</strong> (Mac or Windows) - Best for saving all your masterpieces</li>
-<li><strong>Online with CodePen</strong> - Perfect for quick experiments and trying new ideas</li>
-<li><strong>Backup options</strong> - Simple alternatives that work anywhere, anytime</li>
+<li><strong>On your Mac</strong> - Best for saving all your masterpieces and serious coding</li>
+<li><strong>Online with CodePen</strong> - Perfect for iPad, quick experiments, and sharing your creations</li>
 </ol>
 <hr />
 <h2 id="setup-for-mac">🍎 Setup for Mac<a class="headerlink" href="#setup-for-mac" title="Permanent link">&para;</a></h2>
@@ -1284,7 +975,7 @@
 <p><strong>Great for kids who want professional tools!</strong></p>
 <ol>
 <li><strong>Download VS Code:</strong></li>
-<li>Go to <a href="https://code.visualstudio.com">code.visualstudio.com</a></li>
+<li>Go to <a href="https://code.visualstudio.com" target="_blank">code.visualstudio.com</a></li>
 <li>Click "Download for Mac"</li>
 <li>
 <p>Open the downloaded file and drag VS Code to Applications</p>
@@ -1369,136 +1060,8 @@
 <li>You'll use it to see your creations!</li>
 </ol>
 <hr />
-<h2 id="setup-for-windows">🪟 Setup for Windows<a class="headerlink" href="#setup-for-windows" title="Permanent link">&para;</a></h2>
-<h3 id="step-1-choose-your-text-editor_1"><strong>Step 1: Choose Your Text Editor</strong><a class="headerlink" href="#step-1-choose-your-text-editor_1" title="Permanent link">&para;</a></h3>
-<h4 id="option-a-notepad-already-on-windows-free"><strong>Option A: Notepad (Already on Windows - FREE!)</strong><a class="headerlink" href="#option-a-notepad-already-on-windows-free" title="Permanent link">&para;</a></h4>
-<p><strong>Simple and reliable!</strong></p>
-<ol>
-<li><strong>Open Notepad:</strong></li>
-<li>Press <code>Windows + R</code></li>
-<li>
-<p>Type "notepad" and press Enter</p>
-</li>
-<li>
-<p><strong>Important settings:</strong></p>
-</li>
-<li>When saving files, you'll need to:</li>
-<li>Choose "All Files" in the save dialog</li>
-<li>
-<p>Always end filenames with <code>.html</code></p>
-</li>
-<li>
-<p><strong>Test it works:</strong></p>
-</li>
-<li>Type: <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code></li>
-<li>File → Save As</li>
-<li>Name: <code>test.html</code></li>
-<li>Save as type: "All Files"</li>
-<li>Save</li>
-</ol>
-<h4 id="option-b-visual-studio-code-free-recommended"><strong>Option B: Visual Studio Code (FREE - Recommended)</strong><a class="headerlink" href="#option-b-visual-studio-code-free-recommended" title="Permanent link">&para;</a></h4>
-<p><strong>Professional but kid-friendly!</strong></p>
-<ol>
-<li><strong>Download VS Code:</strong></li>
-<li>Go to <a href="https://code.visualstudio.com">code.visualstudio.com</a></li>
-<li>Click "Download for Windows"</li>
-<li>Run the installer</li>
-<li>
-<p>Follow the setup wizard - default options are fine</p>
-</li>
-<li>
-<p><strong>First launch:</strong></p>
-</li>
-<li>Open VS Code from Start menu</li>
-<li>Close welcome tabs</li>
-<li>
-<p>It's ready to use!</p>
-</li>
-<li>
-<p><strong>Make it colorful:</strong></p>
-</li>
-<li>Press <code>Ctrl + Shift + P</code></li>
-<li>Type "color theme"</li>
-<li>Choose a theme you like!</li>
-</ol>
-<h4 id="option-c-notepad-free-great-middle-option"><strong>Option C: Notepad++ (FREE - Great middle option)</strong><a class="headerlink" href="#option-c-notepad-free-great-middle-option" title="Permanent link">&para;</a></h4>
-<p><strong>More features than Notepad, simpler than VS Code</strong></p>
-<ol>
-<li><strong>Download:</strong></li>
-<li>Go to <a href="https://notepad-plus-plus.org">notepad-plus-plus.org</a></li>
-<li>
-<p>Download and install</p>
-</li>
-<li>
-<p><strong>It's ready to use right away!</strong></p>
-</li>
-</ol>
-<h3 id="step-2-create-your-html-workspace_1"><strong>Step 2: Create Your HTML Workspace</strong><a class="headerlink" href="#step-2-create-your-html-workspace_1" title="Permanent link">&para;</a></h3>
-<ol>
-<li><strong>Make your folder:</strong></li>
-<li>Open File Explorer</li>
-<li>Go to Documents</li>
-<li>Right-click → New → Folder</li>
-<li>
-<p>Name: "My HTML Art Gallery"</p>
-</li>
-<li>
-<p><strong>Create subfolders:</strong></p>
-</li>
-<li>Double-click into your new folder</li>
-<li>Create folders: chapter1, chapter2, images, practice</li>
-</ol>
-<h3 id="step-3-test-your-setup_1"><strong>Step 3: Test Your Setup</strong><a class="headerlink" href="#step-3-test-your-setup_1" title="Permanent link">&para;</a></h3>
-<ol>
-<li>
-<p><strong>Write your first code:</strong>
-   <div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My First Windows Page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="p">&lt;</span><span class="nt">body</span> <span class="na">bgcolor</span><span class="o">=</span><span class="s">&quot;lightblue&quot;</span><span class="p">&gt;</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: red;&quot;</span><span class="p">&gt;</span>Hello from Windows!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>I&#39;m ready to learn HTML!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</span></code></pre></div></p>
-</li>
-<li>
-<p><strong>Save properly:</strong></p>
-</li>
-<li>File → Save As</li>
-<li>Navigate to your HTML folder</li>
-<li>Filename: <code>my-first-page.html</code></li>
-<li>Save as type: "All Files" (important!)</li>
-<li>
-<p>Click Save</p>
-</li>
-<li>
-<p><strong>View in browser:</strong></p>
-</li>
-<li>Open File Explorer</li>
-<li>Find your HTML file</li>
-<li>Double-click it (should open in your browser)</li>
-<li>Or right-click → Open with → Chrome/Edge/Firefox</li>
-</ol>
-<h3 id="step-4-make-life-easier"><strong>Step 4: Make Life Easier</strong><a class="headerlink" href="#step-4-make-life-easier" title="Permanent link">&para;</a></h3>
-<ol>
-<li><strong>Pin your folder:</strong></li>
-<li>In File Explorer, navigate to your HTML folder</li>
-<li>
-<p>Right-click the folder → "Pin to Quick access"</p>
-</li>
-<li>
-<p><strong>Browser shortcut:</strong></p>
-</li>
-<li>Right-click your desktop → New → Shortcut</li>
-<li>Browse to your browser (Chrome, Edge, Firefox)</li>
-<li>Name it "HTML Preview Browser"</li>
-</ol>
-<hr />
-<h2 id="codepen-your-online-html-playground">🌐 CodePen - Your Online HTML Playground<a class="headerlink" href="#codepen-your-online-html-playground" title="Permanent link">&para;</a></h2>
-<p><strong>This is perfect for your quick experiments and sharing your creations with friends and family!</strong></p>
+<h2 id="codepen-your-online-html-playground-ipad-solution">🌐 CodePen - Your Online HTML Playground &amp; iPad Solution<a class="headerlink" href="#codepen-your-online-html-playground-ipad-solution" title="Permanent link">&para;</a></h2>
+<p><strong>This is perfect for coding on iPad, quick experiments, and sharing your creations with friends and family!</strong></p>
 <h3 id="what-is-codepen"><strong>What is CodePen?</strong><a class="headerlink" href="#what-is-codepen" title="Permanent link">&para;</a></h3>
 <p><a href="https://codepen.io/pen/" target="_blank">CodePen</a> is like a digital art studio for web code, Myra! You can write HTML, see results instantly, and share your creations with family and friends!</p>
 <h3 id="getting-started-with-codepen"><strong>Getting Started with CodePen</strong><a class="headerlink" href="#getting-started-with-codepen" title="Permanent link">&para;</a></h3>
@@ -1510,13 +1073,13 @@
 </li>
 <li>
 <p><strong>Understanding the interface:</strong>
-   <div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>┌─────────────┬─────────────┬─────────────┐
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>│    HTML     │     CSS     │     JS      │
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>│   (code)    │  (styling)  │ (advanced)  │
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>├─────────────┴─────────────┴─────────────┤
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>│           RESULT PREVIEW                │
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>│        (your webpage here)              │
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>└─────────────────────────────────────────┘
+   <div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>┌─────────────┬─────────────┬─────────────┐
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>│    HTML     │     CSS     │     JS      │
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>│   (code)    │  (styling)  │ (advanced)  │
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>├─────────────┴─────────────┴─────────────┤
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>│           RESULT PREVIEW                │
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>│        (your webpage here)              │
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>└─────────────────────────────────────────┘
 </span></code></pre></div></p>
 </li>
 <li>
@@ -1524,19 +1087,19 @@
 </li>
 <li>Click in the HTML box</li>
 <li>Type:
-   <div class="language-html highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>My CodePen Art!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: blue;&quot;</span><span class="p">&gt;</span>This is so cool!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="p">&lt;</span><span class="nt">h2</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;background-color: yellow;&quot;</span><span class="p">&gt;</span>I can see changes instantly!<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+   <div class="language-html highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>My CodePen Art!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="p">&lt;</span><span class="nt">p</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;color: blue;&quot;</span><span class="p">&gt;</span>This is so cool!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="p">&lt;</span><span class="nt">h2</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;background-color: yellow;&quot;</span><span class="p">&gt;</span>I can see changes instantly!<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
 </span></code></pre></div></li>
 <li>Watch it appear in the preview below!</li>
 </ol>
 <h3 id="codepen-advantages"><strong>CodePen Advantages:</strong><a class="headerlink" href="#codepen-advantages" title="Permanent link">&para;</a></h3>
 <ul>
 <li>✅ <strong>Instant preview</strong> - see changes immediately</li>
-<li>✅ <strong>No setup needed</strong> - works on any computer</li>
+<li>✅ <strong>No setup needed</strong> - works on Mac, iPad, or any device</li>
 <li>✅ <strong>Easy sharing</strong> - send links to family</li>
 <li>✅ <strong>Safe experimenting</strong> - can't break anything</li>
-<li>✅ <strong>Works on tablets</strong> - even iPad!</li>
+<li>✅ <strong>Perfect for iPad</strong> - full coding experience on tablet!</li>
 </ul>
 <h3 id="codepen-limitations"><strong>CodePen Limitations:</strong><a class="headerlink" href="#codepen-limitations" title="Permanent link">&para;</a></h3>
 <ul>
@@ -1546,10 +1109,11 @@
 </ul>
 <h3 id="when-should-you-use-codepen-myra"><strong>When Should You Use CodePen, Myra?</strong><a class="headerlink" href="#when-should-you-use-codepen-myra" title="Permanent link">&para;</a></h3>
 <ul>
+<li>📱 <strong>iPad coding sessions</strong> - full HTML experience on your tablet</li>
 <li>🔬 <strong>Quick experiments</strong> - "What if I try this color?"</li>
 <li>🎯 <strong>Specific exercises</strong> - testing one concept at a time</li>
 <li>👥 <strong>Sharing your work</strong> - showing family your amazing progress</li>
-<li>💡 <strong>Getting unstuck</strong> - when your computer setup has issues</li>
+<li>💡 <strong>Getting unstuck</strong> - when your Mac setup has issues</li>
 </ul>
 <h3 id="creating-a-free-account-optional"><strong>Creating a Free Account (Optional):</strong><a class="headerlink" href="#creating-a-free-account-optional" title="Permanent link">&para;</a></h3>
 <ol>
@@ -1558,61 +1122,6 @@
 <li>Choose "Free" plan (perfect for your learning adventure!)</li>
 <li>Now you can save your work!</li>
 </ol>
-<hr />
-<h2 id="troubleshooting-common-issues">🛠️ Troubleshooting Common Issues<a class="headerlink" href="#troubleshooting-common-issues" title="Permanent link">&para;</a></h2>
-<h3 id="file-wont-open-in-browser"><strong>File Won't Open in Browser</strong><a class="headerlink" href="#file-wont-open-in-browser" title="Permanent link">&para;</a></h3>
-<p><strong>Problem:</strong> Double-clicking HTML file opens in text editor
-<strong>Solution (Mac):</strong> Right-click → Open With → Safari/Chrome
-<strong>Solution (Windows):</strong> Right-click → Open With → Choose browser</p>
-<h3 id="code-doesnt-look-right"><strong>Code Doesn't Look Right</strong><a class="headerlink" href="#code-doesnt-look-right" title="Permanent link">&para;</a></h3>
-<p><strong>Problem:</strong> Seeing code instead of webpage
-<strong>Solution:</strong> Check file extension is <code>.html</code> not <code>.txt</code></p>
-<h3 id="colorsstyles-not-working"><strong>Colors/Styles Not Working</strong><a class="headerlink" href="#colorsstyles-not-working" title="Permanent link">&para;</a></h3>
-<p><strong>Problem:</strong> HTML shows but no colors
-<strong>Solution:</strong> Check for typos in style attributes, missing quotes</p>
-<h3 id="cant-find-saved-files"><strong>Can't Find Saved Files</strong><a class="headerlink" href="#cant-find-saved-files" title="Permanent link">&para;</a></h3>
-<p><strong>Mac:</strong> Check Documents folder, use Spotlight search
-<strong>Windows:</strong> Check Documents folder, use Windows search</p>
-<h3 id="browser-shows-old-version"><strong>Browser Shows Old Version</strong><a class="headerlink" href="#browser-shows-old-version" title="Permanent link">&para;</a></h3>
-<p><strong>Solution:</strong> Refresh the page (F5 or Ctrl+R or Cmd+R)</p>
-<hr />
-<h2 id="quick-start-checklist">🎯 Quick Start Checklist<a class="headerlink" href="#quick-start-checklist" title="Permanent link">&para;</a></h2>
-<h3 id="before-your-first-chapter"><strong>Before Your First Chapter:</strong><a class="headerlink" href="#before-your-first-chapter" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Text editor installed and tested</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> HTML folder created and organized</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> First test file opens in browser</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> CodePen account created (optional)</li>
-</ul>
-<h3 id="for-each-coding-session"><strong>For Each Coding Session:</strong><a class="headerlink" href="#for-each-coding-session" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> HTML folder bookmarked/easily accessible</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Text editor ready to open</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Browser ready for previewing</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> CodePen open in another tab (for experiments)</li>
-</ul>
-<h3 id="success-indicators"><strong>Success Indicators:</strong><a class="headerlink" href="#success-indicators" title="Permanent link">&para;</a></h3>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Can create new HTML file</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Can save with correct extension</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Can open file in browser</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Can make simple changes and see results</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Know where to find saved work</li>
-</ul>
-<hr />
-<h2 id="when-things-go-wrong">🆘 When Things Go Wrong<a class="headerlink" href="#when-things-go-wrong" title="Permanent link">&para;</a></h2>
-<h3 id="emergency-backup-plan"><strong>Emergency Backup Plan:</strong><a class="headerlink" href="#emergency-backup-plan" title="Permanent link">&para;</a></h3>
-<p>If your local setup fails completely, don't worry Myra!
-1. Go straight to <a href="https://codepen.io/pen/" target="_blank">CodePen.io</a>
-2. Continue your learning adventure online
-3. Fix the local setup later when you have help</p>
-<h3 id="getting-help"><strong>Getting Help:</strong><a class="headerlink" href="#getting-help" title="Permanent link">&para;</a></h3>
-<ul>
-<li><strong>CodePen Community:</strong> Very friendly and helpful</li>
-<li><strong>Local library:</strong> Often has coding clubs or help</li>
-<li><strong>Online tutorials:</strong> YouTube has great HTML basics videos</li>
-<li><strong>School computer teacher:</strong> Might be willing to help</li>
-</ul>
 <hr />
 <p><em>Remember: The goal is to make coding feel like art, not work. Every challenge is a chance to problem-solve together, and every success is worth celebrating! 🎨✨</em></p>
 
@@ -1632,8 +1141,6 @@
 </div>
 
 
-  
-
 
 
 
@@ -1642,6 +1149,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
         </div>
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
@@ -1676,13 +1185,13 @@
         
         
           
-          <a href="../program-overview/" class="md-footer__link md-footer__link--next" aria-label="Next: Program Overview">
+          <a href="../chapters/chapter1/" class="md-footer__link md-footer__link--next" aria-label="Next: Chapter 1 - HTML Essentials">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Program Overview
+                Chapter 1 - HTML Essentials
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1737,7 +1246,7 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "search.highlight", "search.share", "content.code.copy", "toc.follow"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.footer", "toc.follow", "toc.integrate", "search.highlight", "search.share", "search.suggest", "content.code.copy", "content.code.annotate", "content.tabs.link", "header.autohide"], "search": "../assets/javascripts/workers/search.f886a092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"default": "latest", "provider": "mike"}}</script>
     
     
       <script src="../assets/javascripts/bundle.81fa17fe.min.js"></script>
